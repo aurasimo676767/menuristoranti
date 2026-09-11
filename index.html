@@ -6,7 +6,7 @@
   <title>Oliva — Il nostro menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="menu.css"><script src="app.js" defer></script>
 </head>
 <body>
   <header class="topbar"><a class="wordmark" href="#" aria-label="Oliva, inizio pagina">oliva<span class="logo-leaf">◒</span></a><a class="info-link" href="#informazioni">Il locale <span>↗</span></a></header>
@@ -17,11 +17,16 @@
     </section>
     <div class="welcome-strip"><span>Benvenuti da Oliva</span><span class="strip-star">✳</span><p>Prenditi il tuo tempo. Al resto pensiamo noi.</p><span class="edition">IL MENU · EDIZIONE DI STAGIONE</span></div>
     <section id="menu" class="menu-area" aria-labelledby="menu-title">
-      <div class="section-heading"><div><span class="eyebrow">DALLA NOSTRA CUCINA</span><h2 id="menu-title">Cosa ti va <em>oggi?</em></h2></div><p>Ogni piatto, una piccola storia.<br>Toccalo per scoprirla.</p></div>
+      <div class="section-heading"><div><span class="eyebrow">FATTO IN CASA, CON CURA</span><h2 id="menu-title">La nostra <em>carta.</em></h2></div><p>Segui l’appetito.<br>Al resto pensiamo noi.</p></div>
+      <div class="menu-layout">
       <nav class="category-bar" aria-label="Categorie del menu"><div id="categories"></div><span class="season-note">✳ Seguiamo le stagioni</span></nav>
-      <div class="menu-description"><h3 id="category-title">Per cominciare</h3><span id="dish-count"></span></div>
+      <div class="menu-page">
+      <div class="menu-description"><div><span class="eyebrow" id="category-number">01 / LA CARTA</span><h3 id="category-title">Per cominciare</h3></div><span id="dish-count"></span></div>
+      <p class="menu-hint">Scegli un piatto per ingredienti e allergeni <span aria-hidden="true">↗</span></p>
       <div id="dishes" class="dish-grid" aria-live="polite"></div>
-      <div class="kitchen-note"><span>✳</span><p><strong>Buono per te, gentile con la natura.</strong> Trovi proposte vegetariane e senza glutine. Per allergie o intolleranze, chiedi sempre al nostro staff.</p></div>
+      <div class="menu-page-end"><span>oliva</span><span>BUON APPETITO.</span><span aria-hidden="true">✳</span></div>
+      </div></div>
+      <div class="kitchen-note"><span>✳</span><p><strong>A ognuno il suo piatto.</strong> Scopri le nostre proposte vegetariane e vegane. Per allergie o intolleranze, chiedi sempre al nostro staff.</p></div>
     </section>
     <section class="manifesto"><span class="eyebrow">LA NOSTRA FILOSOFIA</span><h2>Non serve molto.<br>Serve che sia <em>buono.</em></h2><p>Scegliamo ingredienti che conosciamo, rispettiamo il ritmo delle stagioni e lasciamo che siano i sapori a parlare.</p><span class="manifesto-signature">Con amore, Oliva.</span><div class="olive-art" aria-hidden="true">❧</div></section>
     <section id="informazioni" class="info-section"><div class="section-heading"><div><span class="eyebrow">TI ASPETTIAMO QUI</span><h2>Un posto dove <em>stare bene.</em></h2></div></div><div class="info-grid"><article><span class="info-icon">⌁</span><h3>Dove siamo</h3><p>Via degli Ulivi, 12<br>00100 Roma, Italia</p><span class="muted">Indirizzo dimostrativo</span></article><article><span class="info-icon">◷</span><h3>Quando vuoi</h3><dl><div><dt>Mar — Dom</dt><dd>12:00 — 14:30<br>19:00 — 22:30</dd></div><div><dt>Lunedì</dt><dd>Ci riposiamo</dd></div></dl></article><article><span class="info-icon">♡</span><h3>Due cose da sapere</h3><p>Coperto € 2,50 a persona.<br>I piccoli ospiti sono benvenuti.<br>Chiedici il piatto del giorno.</p></article></div></section>

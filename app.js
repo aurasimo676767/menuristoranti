@@ -36,15 +36,16 @@ function renderCategory(category){
   selectedCategory = category;
   categories.querySelectorAll('button').forEach(button=>{const active=button.dataset.category===category.id;button.classList.toggle('active',active);button.setAttribute('aria-pressed',String(active));});
   document.querySelector('#category-title').textContent=category.title;
+  document.querySelector('#category-number').textContent=`0${menu.indexOf(category)+1} / LA CARTA`;
   document.querySelector('#dish-count').textContent=`${category.dishes.length} proposte`;
   dishes.replaceChildren();
   category.dishes.forEach((dish,index)=>{
     const card=document.createElement('button');card.className='dish-card';card.style.setProperty('--i',index);card.setAttribute('aria-label',`${dish.name}, ${money(dish.price)}. Scopri ingredienti e allergeni`);
-    card.innerHTML=`<div class="dish-photo"><img src="${photo(dish.image)}" alt="${dish.name}" loading="lazy">${dish.badge?`<span class="dish-badge">${dish.badge}</span>`:''}<span class="dish-arrow" aria-hidden="true">↗</span></div><div class="dish-heading"><h4>${dish.name}</h4><span class="dish-price">${money(dish.price)}</span></div><p class="dish-description">${dish.description}</p><div class="tags">${dish.tags.map(tag=>`<span class="tag">${tag==='Vegetariano'||tag==='Vegano'?'❧ ':''}${tag}</span>`).join('')}</div>`;
+    card.innerHTML=`<span class="dish-index" aria-hidden="true">${String(index+1).padStart(2,'0')}</span><div class="dish-content">${dish.badge?`<span class="dish-badge">✳ ${dish.badge}</span>`:''}<div class="dish-heading"><h4>${dish.name}</h4><span class="price-leader" aria-hidden="true"></span><span class="dish-price">${money(dish.price)}</span></div><p class="dish-description">${dish.description}</p><div class="tags">${dish.tags.map(tag=>`<span class="tag">${tag==='Vegetariano'||tag==='Vegano'?'❧ ':''}${tag}</span>`).join('')}</div></div><div class="dish-photo"><img src="${photo(dish.image)}" alt="" loading="lazy"><span class="dish-arrow" aria-hidden="true">↗</span></div>`;
     card.addEventListener('click',()=>openDish(dish,card));dishes.append(card);
   });
 }
-menu.forEach(category=>{const button=document.createElement('button');button.className='category-button';button.textContent=category.name;button.dataset.category=category.id;button.addEventListener('click',()=>{renderCategory(category);button.scrollIntoView({block:'nearest',inline:'nearest'});});categories.append(button);});
+menu.forEach((category,index)=>{const button=document.createElement('button');button.className='category-button';button.innerHTML=`<span class="category-index" aria-hidden="true">0${index+1}</span><span>${category.name}</span><span class="category-arrow" aria-hidden="true">↗</span>`;button.dataset.category=category.id;button.addEventListener('click',()=>{renderCategory(category);button.scrollIntoView({block:'nearest',inline:'nearest'});});categories.append(button);});
 function openDish(dish,trigger){
   lastTrigger=trigger;
   const img=document.querySelector('#detail-image');img.src=photo(dish.image);img.alt=dish.name;

@@ -6,7 +6,7 @@ Menu dimostrativo responsive per un ristorante, realizzato in HTML, CSS e JavaSc
 
 - `index.html`: nome, logo testuale, presentazione, indirizzo, orari e coperto.
 - `app.js`: categorie, piatti, prezzi, foto, etichette e allergeni.
-- `style.css`: colori, caratteri, layout e animazioni. Le animazioni rispettano la preferenza di movimento ridotto.
+- `style.css`: stili di base. `menu.css`: design della carta, indice laterale, righe dei piatti e scheda dettagli mobile. Le animazioni rispettano la preferenza di movimento ridotto.
 
 Foto illustrative da Unsplash e caratteri da Google Fonts richiedono accesso a Internet. Il locale, l'indirizzo e il menu sono dimostrativi: sostituire con dati reali e verificare ingredienti e allergeni con il ristorante prima dell'uso pubblico.
 
