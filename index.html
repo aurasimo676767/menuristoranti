@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ed"><meta name="description" content="Oliva, cucina di stagione. Scopri il nostro menu, i piatti e le informazioni del locale.">
+  <title>Oliva — Il nostro menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a class="wordmark" href="#" aria-label="Oliva, inizio pagina">oliva<span class="logo-leaf">◒</span></a><a class="info-link" href="#informazioni">Il locale <span>↗</span></a></header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><span class="eyebrow"><span class="little-line"></span> A TAVOLA, CON CALMA</span><h1 id="hero-title">Le cose buone.<br>Quelle <em>semplici.</em></h1><p>Ingredienti di stagione, ricette di casa.<br>Il piacere di stare insieme, un piatto alla volta.</p><a class="hero-cta" href="#menu">Scopri il menu <span>↓</span></a><div class="hero-foot">CUCINA ITALIANA <span>·</span> FATTA CON AMORE</div></div>
+      <div class="hero-image"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1300&q=85" alt="Pasta fresca con pomodoro e basilico" fetchpriority="high"><div class="image-shade"></div><span class="photo-caption">Un po’ di casa, in ogni piatto.</span><div class="season-stamp">FRESCO OGNI GIORNO<span>✳</span>SECONDO NATURA</div></div>
+    </section>
+    <div class="welcome-strip"><span>Benvenuti da Oliva</span><span class="strip-star">✳</span><p>Prenditi il tuo tempo. Al resto pensiamo noi.</p><span class="edition">IL MENU · EDIZIONE DI STAGIONE</span></div>
+    <section id="menu" class="menu-area" aria-labelledby="menu-title">
+      <div class="section-heading"><div><span class="eyebrow">DALLA NOSTRA CUCINA</span><h2 id="menu-title">Cosa ti va <em>oggi?</em></h2></div><p>Ogni piatto, una piccola storia.<br>Toccalo per scoprirla.</p></div>
+      <nav class="category-bar" aria-label="Categorie del menu"><div id="categories"></div><span class="season-note">✳ Seguiamo le stagioni</span></nav>
+      <div class="menu-description"><h3 id="category-title">Per cominciare</h3><span id="dish-count"></span></div>
+      <div id="dishes" class="dish-grid" aria-live="polite"></div>
+      <div class="kitchen-note"><span>✳</span><p><strong>Buono per te, gentile con la natura.</strong> Trovi proposte vegetariane e senza glutine. Per allergie o intolleranze, chiedi sempre al nostro staff.</p></div>
+    </section>
+    <section class="manifesto"><span class="eyebrow">LA NOSTRA FILOSOFIA</span><h2>Non serve molto.<br>Serve che sia <em>buono.</em></h2><p>Scegliamo ingredienti che conosciamo, rispettiamo il ritmo delle stagioni e lasciamo che siano i sapori a parlare.</p><span class="manifesto-signature">Con amore, Oliva.</span><div class="olive-art" aria-hidden="true">❧</div></section>
+    <section id="informazioni" class="info-section"><div class="section-heading"><div><span class="eyebrow">TI ASPETTIAMO QUI</span><h2>Un posto dove <em>stare bene.</em></h2></div></div><div class="info-grid"><article><span class="info-icon">⌁</span><h3>Dove siamo</h3><p>Via degli Ulivi, 12<br>00100 Roma, Italia</p><span class="muted">Indirizzo dimostrativo</span></article><article><span class="info-icon">◷</span><h3>Quando vuoi</h3><dl><div><dt>Mar — Dom</dt><dd>12:00 — 14:30<br>19:00 — 22:30</dd></div><div><dt>Lunedì</dt><dd>Ci riposiamo</dd></div></dl></article><article><span class="info-icon">♡</span><h3>Due cose da sapere</h3><p>Coperto € 2,50 a persona.<br>I piccoli ospiti sono benvenuti.<br>Chiedici il piatto del giorno.</p></article></div></section>
+  </main>
+  <footer><a class="wordmark" href="#">oliva<span class="logo-leaf">◒</span></a><p>La felicità è una tavola condivisa.</p><span>LOCALE E MENU DIMOSTRATIVI · PREZZI IN EURO</span><a class="back-top" href="#">Torna su ↑</a></footer>
+  <dialog id="dish-dialog"><button class="close-dialog" aria-label="Chiudi dettagli">×</button><img id="detail-image" alt=""><div class="detail-copy"><span class="eyebrow" id="detail-label"></span><div class="detail-heading"><h2 id="detail-title"></h2><span id="detail-price"></span></div><p id="detail-description"></p><div id="detail-tags" class="tags"></div><div class="allergen-box"><strong>Allergeni</strong><p id="detail-allergens"></p><small>In cucina vengono lavorati tutti i principali allergeni. Segnala eventuali allergie al personale prima di ordinare.</small></div></div></dialog>
+</body>
+</html>
