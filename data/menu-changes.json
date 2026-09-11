@@ -1,0 +1,4182 @@
+[
+  {
+    "id": "33",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "A MODO MIO",
+    "name": "A modo mio",
+    "oldDescription": "Carne cavallo*,porch,mozz,cipolla,lattuga,patat*,sale,olio,orig.K,M",
+    "description": "Carne di cavallo*, porchetta, mozzarella, cipolla, lattuga, patatine*, sale, olio, origano, K, M.",
+    "price": "13.00"
+  },
+  {
+    "id": "31",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "BOCCONCINI DI CAVALL",
+    "name": "Bocconcini di cavallo",
+    "oldDescription": "Carne cavallo*,peperoni,cipolla,aglio,mozz,pata*,sale,olio, orig,K,m",
+    "description": "Carne di cavallo*, peperoni, cipolla, aglio, mozzarella, patatine*, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "11",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "BOMBER",
+    "name": "Bomber",
+    "oldDescription": "Hamburger derivati del latte,por***tch,lattuga,mozz,patat,sale,olio,origano,K,M. aromi nat",
+    "description": "Hamburger, derivati del latte, «por***tch» (voce da confermare), lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.",
+    "price": "12.00"
+  },
+  {
+    "id": "36",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "BUFALO BILL",
+    "name": "Bufalo Bill",
+    "oldDescription": "Carne bufala,emmenthal,cipolla,lattuga,patat*,sale,olio,orig,K,M.",
+    "description": "Carne di bufala, emmental, cipolla, lattuga, patatine*, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "8",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "CAPRESE",
+    "name": "Caprese",
+    "oldDescription": "Mozzarella,emmenthal,lattuga,pomodoro,sale,olio,origano",
+    "description": "Mozzarella, emmental, lattuga, pomodoro, sale, olio, origano.",
+    "price": "6.50"
+  },
+  {
+    "id": "30",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "CARNE DI CAVALLO",
+    "name": "Carne di cavallo",
+    "oldDescription": "Carne cavallo,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "5",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "CARTOCCIO",
+    "name": "Cartoccio",
+    "oldDescription": "Prosciutto di spalla,,mozzarella,patatine*,sale,olio,origano,K,M.",
+    "description": "Prosciutto di spalla, mozzarella, patatine*, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "37",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "CICCIUZZO",
+    "name": "Cicciuzzo",
+    "oldDescription": "Carne asina*,mozz,cipolla,lattuga,patat*,sale,olio,orig,k,M.",
+    "description": "Carne di asina*, mozzarella, cipolla, lattuga, patatine*, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "20",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "CORDON BLEU CASA*",
+    "name": "Cordon bleu della casa*",
+    "oldDescription": "Cotol*pollo,prosc.spalla,mozz,olive,patat*,sale,olio,orig,K,M.",
+    "description": "Cotoletta* di pollo, prosciutto di spalla, mozzarella, olive, patatine*, sale, olio, origano, K, M.",
+    "price": "9.50"
+  },
+  {
+    "id": "19",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "CORDON BLEU*",
+    "name": "Cordon bleu*",
+    "oldDescription": "Petto pollo imp,prosc.spalla,patat*sale,olio,orig,K,M.",
+    "description": "Petto di pollo impanato, prosciutto di spalla, patatine*, sale, olio, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "18",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "COTOLETTA*",
+    "name": "Cotoletta*",
+    "oldDescription": "Cotol.pollo,patat*,sale,olio,orig,K,M.",
+    "description": "Cotoletta di pollo, patatine*, sale, olio, origano, K, M.",
+    "price": "6.50"
+  },
+  {
+    "id": "369",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Cocktail di gamberi",
+    "name": "Cocktail di gamberi",
+    "oldDescription": "Lattuga, cocktail di gamberi",
+    "description": "Lattuga, cocktail di gamberi.",
+    "price": "9.00"
+  },
+  {
+    "id": "321",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Cotolett della  casa",
+    "name": "Cotoletta della casa",
+    "oldDescription": "Pollo uova pan gratato aromi nat pat*k.m",
+    "description": "Pollo, uova, pangrattato, aromi naturali, patatine*, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "42",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "DEER*",
+    "name": "Deer*",
+    "oldDescription": "Hamb.cervo,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Hamburger di cervo, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "12",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "DIAVOLA",
+    "name": "Diavola",
+    "oldDescription": "Ventr.picc,funghi picc,tabasco,mozz,patat*,sale,olio,orig,K,M.",
+    "description": "Ventricina piccante, funghi piccanti, Tabasco, mozzarella, patatine*, sale, olio, origano, K, M.",
+    "price": "7.50"
+  },
+  {
+    "id": "6033",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "ELLY",
+    "name": "Elly",
+    "oldDescription": "Scottona,polpetta di cavallo,bacon,pollo,pomodoro,funghi dolci,chedar,fontina,mozzarella,lattuga,pat*k,m",
+    "description": "Scottona, polpetta di cavallo, bacon, pollo, pomodoro, funghi dolci, cheddar, fontina, mozzarella, lattuga, patatine*, K, M.",
+    "price": "30.00"
+  },
+  {
+    "id": "25",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "EXTRA LARGE",
+    "name": "Extra large",
+    "oldDescription": "Panc.maiale,porch,mozz,olive,patat*,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, porchetta, mozzarella, olive, patatine*, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "46",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "FABRIZIO",
+    "name": "Fabrizio",
+    "oldDescription": "Hamb.scottona polacc,pom,cheddar,rucola,aceto bals,patat,K,M,olio,sal.aromi.derivati del latte",
+    "description": "Hamburger di scottona polacca, pomodoro, cheddar, rucola, aceto balsamico, patatine, K, M, olio, sale, aromi, derivati del latte.",
+    "price": "10.00"
+  },
+  {
+    "id": "48",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "FANTASIA DI ANDREA",
+    "name": "Fantasia di Andrea",
+    "oldDescription": "condimenti a fantasia+pat*salse  varie",
+    "description": "Condimenti a fantasia, patatine* e salse varie.",
+    "price": "15.00"
+  },
+  {
+    "id": "594",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini-dolci",
+    "oldName": "Fragolosa",
+    "name": "Fragolosa",
+    "oldDescription": "Crema di fragola ,panna,zucchero avvelo",
+    "description": "Crema di fragola, panna e zucchero a velo.",
+    "price": "8.00"
+  },
+  {
+    "id": "29",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "GINO",
+    "name": "Gino",
+    "oldDescription": "Polp.cavallo,prosc,mozz,aromi nat,cipolla,grana,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, prosciutto, mozzarella, aromi naturali, cipolla, grana, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "14",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "GIOVANNI",
+    "name": "Giovanni",
+    "oldDescription": "Salsicc,porch,mozz,cipolla,patat*,sale,olio,orig,K,M.",
+    "description": "Salsiccia, porchetta, mozzarella, cipolla, patatine*, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "7",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "HAMBURGER",
+    "name": "Hamburger",
+    "oldDescription": "Hamburger,lattuga,patatine*,sale,olio,origano,katchup,mayo,aromi nat,derivati del latte",
+    "description": "Hamburger, lattuga, patatine*, sale, olio, origano, ketchup, maionese, aromi naturali, derivati del latte.",
+    "price": "8.00"
+  },
+  {
+    "id": "9",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "HOT DOG",
+    "name": "Hot dog",
+    "oldDescription": "Wurstel,patatine*,sale,olio,origano,K.,M.",
+    "description": "Würstel, patatine*, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "460",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Hamburg di chenina",
+    "name": "Hamburger di Chianina",
+    "oldDescription": "Amburgh* di chianina pomodoro lattuga mozzarella pat*ketchup maionese olio evo origano  arom misti che contiene paprika",
+    "description": "Hamburger* di Chianina, pomodoro, lattuga, mozzarella, patatine*, ketchup, maionese, olio extravergine di oliva, origano e aromi misti contenenti paprika.",
+    "price": "15.00"
+  },
+  {
+    "id": "1",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "IL PANINO DI MARCO",
+    "name": "Il panino di Marco",
+    "oldDescription": "Polp. di caval,porch. a rtigianale,cipolla,mozz,aglio,aromit,patat*k m aromi naturali",
+    "description": "Polpetta di cavallo, porchetta artigianale, cipolla, mozzarella, aglio, aromi, patatine*, K, M, aromi naturali.",
+    "price": "12.00"
+  },
+  {
+    "id": "45",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "IVANO",
+    "name": "Ivano",
+    "oldDescription": "Ventr.picc,pros.spalla,wurstel,mozz,cipolla,pata*t,harissa,M.",
+    "description": "Ventricina piccante, prosciutto di spalla, würstel, mozzarella, cipolla, patatine*, harissa, M.",
+    "price": "13.00"
+  },
+  {
+    "id": "35",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "KEBAB*",
+    "name": "Kebab*",
+    "oldDescription": "Pollo e tacch,pom,mozz,lattuga,salsa yogurt,salsa harissa,patat*sale   aromi",
+    "description": "Pollo e tacchino, pomodoro, mozzarella, lattuga, salsa yogurt, salsa harissa, patatine*, sale aromi.",
+    "price": "8.00"
+  },
+  {
+    "id": "47",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Kiko",
+    "name": "Kiko",
+    "oldDescription": "Carne suino pulled  cipolla croccante salsa bbq. M.  aromi naturale origano olio evo sale pat f cedar",
+    "description": "Pulled pork di suino, cipolla croccante, salsa barbecue, M, aromi naturali, origano, olio extravergine di oliva, sale, patatine fritte e cheddar.",
+    "price": "9.00"
+  },
+  {
+    "id": "569",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini-dolci",
+    "oldName": "Kiner cereali",
+    "name": "Kinder Cereali",
+    "oldDescription": "Nutella nocciola nutella bianca cereali soffiati",
+    "description": "Nutella alla nocciola, crema bianca e cereali soffiati.",
+    "price": "7.00"
+  },
+  {
+    "id": "28",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "MARIO",
+    "name": "Mario",
+    "oldDescription": "Polp.cavallo,ventr.picc,aromi nat,mozz,funghi picc,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, ventricina piccante, aromi naturali, mozzarella, funghi piccanti, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "414",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Mizzica",
+    "name": "Mizzica",
+    "oldDescription": "Ventricina picc, mozzarella,emment, fungh dolci,patat, tab ,k,m,harisa, olio e origano",
+    "description": "Ventricina piccante, mozzarella, emmental, funghi dolci, patatine, Tabasco, K, M, harissa, olio e origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "24",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "PANCETTATA",
+    "name": "Pancettata",
+    "oldDescription": "Panc.maiale,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "27",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "PAOLO",
+    "name": "Paolo",
+    "oldDescription": "Polp.cavallo*,mozz,funghi,olive snocc,grana,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo*, mozzarella, funghi, olive snocciolate, grana, patatine, sale, olio, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "4",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "PATAPANINO*",
+    "name": "Patapanino*",
+    "oldDescription": "Patatine,sale,olio,origano,katchup,maionese",
+    "description": "Patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "4.00"
+  },
+  {
+    "id": "26",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "PEPPINO",
+    "name": "Peppino",
+    "oldDescription": "Panc.maiale,mozz,tabasco,olive,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, Tabasco, olive, patatine, sale, olio, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "15",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "PETTO DI POLLO*",
+    "name": "Petto di pollo*",
+    "oldDescription": "Petto pollo,latt,patat,sale,olio,orig,K,M.*",
+    "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M. *",
+    "price": "8.00"
+  },
+  {
+    "id": "32",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "POLP. DI CAVALLO",
+    "name": "Polpetta di cavallo",
+    "oldDescription": "Polp.cavallo*,aromi nat,cipolla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo*, aromi naturali, cipolla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "6",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "PORCHETTATA",
+    "name": "Porchettata",
+    "oldDescription": "Porchetta,mozzarella,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Porchetta, mozzarella, patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "8.50"
+  },
+  {
+    "id": "474",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Panino vuoto ",
+    "name": "Panino vuoto",
+    "oldDescription": "",
+    "description": "",
+    "price": "1.00"
+  },
+  {
+    "id": "17",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "ROVAGNATI*",
+    "name": "Rovagnati*",
+    "oldDescription": "Petto pollo,prosc.spalla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, prosciutto di spalla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "22",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "RUSPANTE",
+    "name": "Ruspante",
+    "oldDescription": "Cosc.pollo dissos,mozz,pom,olive,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "16",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "RUSTICO*",
+    "name": "Rustico*",
+    "oldDescription": "Petto pollo,speck,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "41",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Romana",
+    "name": "Romana",
+    "oldDescription": "Porch.al forno,mozz,patat*,sale,olio,orig,K,M.",
+    "description": "Porchetta al forno, mozzarella, patatine*, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "13",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "SALSICCIA",
+    "name": "Salsiccia",
+    "oldDescription": "Salsicc,patat,sale,olio,orig,K,M.",
+    "description": "Salsiccia, patatine, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "2",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "SPIZICAG. DELLA CASA",
+    "name": "Spizzicagnolo della casa",
+    "oldDescription": "Prosciutto di spalla,lattuga,mozzarella,pomod.,olive,sale,olio,origano",
+    "description": "Prosciutto di spalla, lattuga, mozzarella, pomodoro, olive, sale, olio, origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "44",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "STRACOTTO",
+    "name": "Stracotto",
+    "oldDescription": "Angus,vitel,pom,cheddar/mozz,lattuga,BBQ,M,carota,cipolla,sedan,patat.",
+    "description": "Angus, vitello, pomodoro, cheddar/mozzarella, lattuga, salsa barbecue, M, carota, cipolla, sedano, patatine.",
+    "price": "15.00"
+  },
+  {
+    "id": "23",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "SUPERBIG",
+    "name": "Superbig",
+    "oldDescription": "Cosc.pollo dissos,porch,mozz,pom,olive,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, porchetta, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "14.00"
+  },
+  {
+    "id": "21",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "SUPERBOMBER",
+    "name": "Superbomber",
+    "oldDescription": "Cosc.pollo dissos Derivati del latte,hamb,porchde,mozzom,oive,lattug,patat,sale,o lio,orig,K,M   ",
+    "description": "Coscia di pollo disossata, derivati del latte, hamburger, «porchde» e «mozzom» (voci da confermare), olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "16.00"
+  },
+  {
+    "id": "281",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Schiacciatina",
+    "name": "Schiacciatina",
+    "oldDescription": "",
+    "description": "",
+    "price": "1.00"
+  },
+  {
+    "id": "40",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "TOP",
+    "name": "Top",
+    "oldDescription": "Angus,pom,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Angus, pomodoro, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "34",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "TORNADO",
+    "name": "Tornado",
+    "oldDescription": "Carne cavallo,ventr.picc,mozz,emmenthal,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo, ventricina piccante, mozzarella, emmental, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "10",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "TSUNAMY",
+    "name": "Tsunami",
+    "oldDescription": "Porch,prosc. di spalla,ventricina picc.,mozz.,funghi,patat,sale,olio,orig,K,M.",
+    "description": "Porchetta, prosciutto di spalla, ventricina piccante, mozzarella, funghi, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "426",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Talia",
+    "name": "Talia",
+    "oldDescription": "Prosciutt  cotto wustel mozzar emmental patat k.m ",
+    "description": "Prosciutto cotto, würstel, mozzarella, emmental, patatine, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "286",
+    "sourceCategory": "PANINI - PANINI",
+    "category": "panini",
+    "oldName": "Vitello",
+    "name": "Vitello",
+    "oldDescription": "Vitello,lattuga,pat*,k,m,olio evo,aromi,origano,sale",
+    "description": "Vitello, lattuga, patatine*, K, M, olio extravergine di oliva, aromi, origano, sale.",
+    "price": "9.00"
+  },
+  {
+    "id": "81",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP A MODO MIO",
+    "name": "A modo mio",
+    "oldDescription": "Carne cavallo*,porch,mozz,cipolla,lattuga,patat,sale,olio,orig.k.m",
+    "description": "Carne di cavallo*, porchetta, mozzarella, cipolla, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "13.00"
+  },
+  {
+    "id": "79",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP BOCCONC.CAVALLO",
+    "name": "Bocconcini di cavallo",
+    "oldDescription": "Carne c*avallo,peperoni,cipolla,aglio,mozz,peperonc,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo*, peperoni, cipolla, aglio, mozzarella, peperoncino, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "59",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP BOMBER",
+    "name": "Bomber",
+    "oldDescription": "Hamburger,derivati del latte porch,lattuga,mozz,patat,sale,olio,origano,K,M.aromi nat",
+    "description": "Hamburger, derivati del latte, porchetta, lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.",
+    "price": "12.00"
+  },
+  {
+    "id": "84",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP BUFALO BILL",
+    "name": "Bufalo Bill",
+    "oldDescription": "Carne bufala,emmenthal,cipolla,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di bufala, emmental, cipolla, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "56",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP CAPRESE",
+    "name": "Caprese",
+    "oldDescription": "Mozzarella,emmenthal,lattuga,pomodoro,sale,olio,origano",
+    "description": "Mozzarella, emmental, lattuga, pomodoro, sale, olio, origano.",
+    "price": "6.50"
+  },
+  {
+    "id": "78",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP CARNE DI CAVALL",
+    "name": "Carne di cavallo",
+    "oldDescription": "Carne cavallo,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "53",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP CARTOCCIO",
+    "name": "Cartoccio",
+    "oldDescription": "Prosciutto di spalla,,mozzarella,patatine,sale,olio,origano,K,M.",
+    "description": "Prosciutto di spalla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "85",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP CICCIUZZO",
+    "name": "Cicciuzzo",
+    "oldDescription": "Carne asina*,mozz,cipolla,lattuga,patat,sale,olio,orig,k,M.",
+    "description": "Carne di asina*, mozzarella, cipolla, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "67",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP CORDON BLEU*",
+    "name": "Cordon bleu*",
+    "oldDescription": "Petto pollo imp,prosc.spalla,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo impanato, prosciutto di spalla, patatine, sale, olio, origano, K, M.",
+    "price": "7.50"
+  },
+  {
+    "id": "68",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP CORDONBLEU CAS*",
+    "name": "Cordon bleu della casa*",
+    "oldDescription": "Cotol.pollo*,prosc.spalla,mozz,olive,patat,sale,olio,orig,K,M.",
+    "description": "Cotoletta di pollo*, prosciutto di spalla, mozzarella, olive, patatine, sale, olio, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "66",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP COTOLETTA*",
+    "name": "Cotoletta*",
+    "oldDescription": "Cotol.pollo,patat,sale,olio,orig,K,M.",
+    "description": "Cotoletta di pollo, patatine, sale, olio, origano, K, M.",
+    "price": "6.50"
+  },
+  {
+    "id": "90",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP DEER*",
+    "name": "Deer*",
+    "oldDescription": "Hamb.cervo,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Hamburger di cervo, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "15.00"
+  },
+  {
+    "id": "49",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP DI MARCO",
+    "name": "Di Marco",
+    "oldDescription": "Polp. di cavallo*,derivati del latte porch. artigianale,cipolla,mozz,aglio,aromi nat,patat.orig,K,M. ",
+    "description": "Polpetta di cavallo*, derivati del latte, porchetta artigianale, cipolla, mozzarella, aglio, aromi naturali, patatine, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "60",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP DIAVOLA",
+    "name": "Diavola",
+    "oldDescription": "Ventr.picc,funghi picc,tabasco,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Ventricina piccante, funghi piccanti, Tabasco, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "7.50"
+  },
+  {
+    "id": "73",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP EXTRA LARGE",
+    "name": "Extra large",
+    "oldDescription": "Panc.maiale,porch,mozz,olive,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, porchetta, mozzarella, olive, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "94",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP FABRIZIO",
+    "name": "Fabrizio",
+    "oldDescription": "Hamb.scottona polacc,pom,cheddar,rucola,aceto bals,patat,K,M,olio,sal",
+    "description": "Hamburger di scottona polacca, pomodoro, cheddar, rucola, aceto balsamico, patatine, K, M, olio, sale.",
+    "price": "10.00"
+  },
+  {
+    "id": "96",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP FANTASIA ANDREA",
+    "name": "Fantasia di Andrea",
+    "oldDescription": "condimenti a fantasia",
+    "description": "Condimenti a fantasia.",
+    "price": "15.00"
+  },
+  {
+    "id": "91",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP FIORENTINA*",
+    "name": "Fiorentina*",
+    "oldDescription": "Hamb.chianina,pom,cheddar,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Hamburger di Chianina, pomodoro, cheddar, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "15.00"
+  },
+  {
+    "id": "77",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP GINO",
+    "name": "Gino",
+    "oldDescription": "Polp.cavallo,prosc,mozz,aromi nat,cipolla,grana,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, prosciutto, mozzarella, aromi naturali, cipolla, grana, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "62",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP GIOVANNI",
+    "name": "Giovanni",
+    "oldDescription": "Salsicc,porch,mozz,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Salsiccia, porchetta, mozzarella, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "55",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP HAMBURGER",
+    "name": "Hamburger",
+    "oldDescription": "Hamburger, derivat del latte aromi natlattuga,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Hamburger, derivati del latte, aromi naturali, lattuga, patatine, sale, olio, origano, ketchup e maionese.",
+    "price": "8.00"
+  },
+  {
+    "id": "57",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP HOT DOG",
+    "name": "Hot dog",
+    "oldDescription": "Wurstel,patatine,sale,olio,origano,K.,M.",
+    "description": "Würstel, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "93",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP IVANO",
+    "name": "Ivano",
+    "oldDescription": "Ventr.picc,pros.spalla,wurstel,mozz,cipolla,patat,harissa,M.",
+    "description": "Ventricina piccante, prosciutto di spalla, würstel, mozzarella, cipolla, patatine, harissa, M.",
+    "price": "15.00"
+  },
+  {
+    "id": "83",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP KEBAB*",
+    "name": "Kebab*",
+    "oldDescription": "Pollo e tacch,pom,mozz,lattuga,salsa yogurt,salsa harissa,patat,sale,olio,orig.",
+    "description": "Pollo e tacchino, pomodoro, mozzarella, lattuga, salsa yogurt, salsa harissa, patatine, sale, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "76",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP MARIO",
+    "name": "Mario",
+    "oldDescription": "Polp.cavallo*,ventr.picc,aromi nat,mozz,funghi picc,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo*, ventricina piccante, aromi naturali, mozzarella, funghi piccanti, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "72",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP PANCETTATA",
+    "name": "Pancettata",
+    "oldDescription": "Panc.maiale,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "75",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP PAOLO",
+    "name": "Paolo",
+    "oldDescription": "Polp.cavallo*,mozz,funghi,olive snocc,grana,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo*, mozzarella, funghi, olive snocciolate, grana, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "74",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP PEPPINO",
+    "name": "Peppino",
+    "oldDescription": "Panc.maiale,mozz,tabasco,olive,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, Tabasco, olive, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "63",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP PETTO DI POLLO*",
+    "name": "Petto di pollo*",
+    "oldDescription": "Petto pollo,latt,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "80",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP POLP. DI CAVALL",
+    "name": "Polpetta di cavallo",
+    "oldDescription": "Polp.cavallo*,aromi nat,cipolla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo*, aromi naturali, cipolla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "54",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP PORCHETTATA",
+    "name": "Porchettata",
+    "oldDescription": "Porchetta,mozzarella,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Porchetta, mozzarella, patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "8.50"
+  },
+  {
+    "id": "89",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP ROMANA",
+    "name": "Romana",
+    "oldDescription": "Porch.al forno,mozz,patat*,sale,olio,orig,K,M.",
+    "description": "Porchetta al forno, mozzarella, patatine*, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "65",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP ROVAGNATI*",
+    "name": "Rovagnati*",
+    "oldDescription": "Petto pollo,prosc.spalla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, prosciutto di spalla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "70",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP RUSPANTE",
+    "name": "Ruspante",
+    "oldDescription": "Cosc.pollo dissos,mozz,pom,olive,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "64",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP RUSTICO*",
+    "name": "Rustico*",
+    "oldDescription": "Petto pollo,speck,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "61",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP SALSICCIA",
+    "name": "Salsiccia",
+    "oldDescription": "Salsicc,patat,sale,olio,orig,K,M.",
+    "description": "Salsiccia, patatine, sale, olio, origano, K, M.",
+    "price": "6.50"
+  },
+  {
+    "id": "51",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP SPIZICAG. ",
+    "name": "Spizzicagnolo",
+    "oldDescription": "Speck,mozz.,lattuga,pomod.,sale,olio,origano",
+    "description": "Speck, mozzarella, lattuga, pomodoro, sale, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "50",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP SPIZICAG. CASA",
+    "name": "Spizzicagnolo della casa",
+    "oldDescription": "Prosciutto di spalla,lattuga,mozzarella,pomod.,olive,sale,olio,origano",
+    "description": "Prosciutto di spalla, lattuga, mozzarella, pomodoro, olive, sale, olio, origano.",
+    "price": "11.00"
+  },
+  {
+    "id": "92",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP STRACOTTO",
+    "name": "Stracotto",
+    "oldDescription": "Angus,vitel,pom,cheddar/mozz,lattuga,BBQ,M,carota,cipolla,sedan,patat.",
+    "description": "Angus, vitello, pomodoro, cheddar/mozzarella, lattuga, salsa barbecue, M, carota, cipolla, sedano, patatine.",
+    "price": "15.00"
+  },
+  {
+    "id": "71",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP SUPERBIG",
+    "name": "Superbig",
+    "oldDescription": "Cosc.pollo dissos,porch,mozz,pom,olive,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, porchetta, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "14.00"
+  },
+  {
+    "id": "69",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP SUPERBOMBER",
+    "name": "Superbomber",
+    "oldDescription": "Cosc.pollo dissos,hamb derivati del latte ,porch,mozz,pom,olive,lattug,patat,sale,olio,orig,K,M. ",
+    "description": "Coscia di pollo disossata, hamburger, derivati del latte, porchetta, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "16.00"
+  },
+  {
+    "id": "88",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP TOP",
+    "name": "Top",
+    "oldDescription": "Angus,pom,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Angus, pomodoro, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "82",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP TORNADO",
+    "name": "Tornado",
+    "oldDescription": "Carne cavallo*,ventr.picc,mozz,emmenthal,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo*, ventricina piccante, mozzarella, emmental, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "58",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP TSUNAMY",
+    "name": "Tsunami",
+    "oldDescription": "Porch,prosc. di spalla,ventricina picc.,mozz.,funghi,patat,sale,olio,orig,K,M.",
+    "description": "Porchetta, prosciutto di spalla, ventricina piccante, mozzarella, funghi, patatine, sale, olio, origano, K, M.",
+    "price": "11.00"
+  },
+  {
+    "id": "87",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "CREP VITELLO",
+    "name": "Vitello",
+    "oldDescription": "Carne vitello,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di vitello, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "473",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Crep cioccolat bianc",
+    "name": "Cioccolato bianco",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "468",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Crep nutel+ nocciol",
+    "name": "Nutella e noccioline",
+    "oldDescription": "",
+    "description": "",
+    "price": "5.50"
+  },
+  {
+    "id": "535",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Crep nutell e mascar",
+    "name": "Nutella e mascarpone",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "467",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Crep nutella",
+    "name": "Nutella",
+    "oldDescription": "",
+    "description": "",
+    "price": "5.00"
+  },
+  {
+    "id": "469",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Crep nutella ricotta",
+    "name": "Nutella e ricotta",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "470",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Crep ricot e pistacc",
+    "name": "Ricotta e pistacchio",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "349",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "KIKO",
+    "name": "Kiko",
+    "oldDescription": "Puled porc,cipol,chedar,salsa BQ,maio,pata*",
+    "description": "Pulled pork, cipolla, cheddar, salsa barbecue, maionese e patatine*.",
+    "price": "9.00"
+  },
+  {
+    "id": "570",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes-dolci",
+    "oldName": "Kinder cereali",
+    "name": "Kinder Cereali",
+    "oldDescription": "Nuttella nocciola nutella bianca cereali soffiati",
+    "description": "Nutella alla nocciola, crema bianca e cereali soffiati.",
+    "price": "7.00"
+  },
+  {
+    "id": "52",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "PATACREP*",
+    "name": "Patacrep*",
+    "oldDescription": "Patatine,sale,olio,origano,katchup,maionese",
+    "description": "Patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "4.00"
+  },
+  {
+    "id": "559",
+    "sourceCategory": "CREPES - CREPES",
+    "category": "crepes",
+    "oldName": "Pink",
+    "name": "Pink",
+    "oldDescription": "Porchet wustel  patat*cip mozz k.m",
+    "description": "Porchetta, würstel, patatine*, cipolla, mozzarella, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "350",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "KIKO",
+    "name": "Kiko",
+    "oldDescription": "Puled porc,chedar,cipol,salsa BQ,maio,pat*",
+    "description": "Pulled pork, cheddar, cipolla, salsa barbecue, maionese e patatine*.",
+    "price": "9.00"
+  },
+  {
+    "id": "560",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "Pink",
+    "name": "Pink",
+    "oldDescription": "Porchet wust  cipol  mozz  patat* k.m",
+    "description": "Porchetta, würstel, cipolla, mozzarella, patatine*, K, M.",
+    "price": "10.50"
+  },
+  {
+    "id": "129",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP A MODO MIO",
+    "name": "A modo mio",
+    "oldDescription": "Carne cavallo,porch,mozz,cipolla,lattuga,patat,sale,olio,orig.k.m",
+    "description": "Carne di cavallo, porchetta, mozzarella, cipolla, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "13.00"
+  },
+  {
+    "id": "127",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP BOCC. CAVALLO",
+    "name": "Bocconcini di cavallo",
+    "oldDescription": "Carne cavallo,peperoni,cipolla,aglio,mozz,peperonc,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo, peperoni, cipolla, aglio, mozzarella, peperoncino, patatine, sale, olio, origano, K, M.",
+    "price": "9.50"
+  },
+  {
+    "id": "107",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP BOMBER",
+    "name": "Bomber",
+    "oldDescription": "Hamburger,porch,lattuga,mozz,patat,sale,olio,origano,K,M.",
+    "description": "Hamburger, porchetta, lattuga, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "132",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP BUFALO BILL",
+    "name": "Bufalo Bill",
+    "oldDescription": "Carne bufala,emmenthal,cipolla,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di bufala, emmental, cipolla, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "104",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP CAPRESE",
+    "name": "Caprese",
+    "oldDescription": "Mozzarella,emmenthal,lattuga,pomodoro,sale,olio,origano",
+    "description": "Mozzarella, emmental, lattuga, pomodoro, sale, olio, origano.",
+    "price": "6.50"
+  },
+  {
+    "id": "126",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP CARNE CAVALLO",
+    "name": "Carne di cavallo",
+    "oldDescription": "Carne cavallo,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "101",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP CARTOCCIO",
+    "name": "Cartoccio",
+    "oldDescription": "Prosciutto di spalla,,mozzarella,patatine,sale,olio,origano,K,M.",
+    "description": "Prosciutto di spalla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "133",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP CICCIUZZO",
+    "name": "Cicciuzzo",
+    "oldDescription": "Carne asina,mozz,cipolla,lattuga,patat,sale,olio,orig,k,M.",
+    "description": "Carne di asina, mozzarella, cipolla, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "116",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP CORDON BLEU CA*",
+    "name": "Cordon bleu della casa*",
+    "oldDescription": "Cotol.pollo,prosc.spalla,mozz,olive,patat,sale,olio,orig,K,M.",
+    "description": "Cotoletta di pollo, prosciutto di spalla, mozzarella, olive, patatine, sale, olio, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "115",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP CORDON BLEU*",
+    "name": "Cordon bleu*",
+    "oldDescription": "Petto pollo imp,prosc.spalla,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo impanato, prosciutto di spalla, patatine, sale, olio, origano, K, M.",
+    "price": "7.50"
+  },
+  {
+    "id": "114",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP COTOLETTA*",
+    "name": "Cotoletta*",
+    "oldDescription": "Cotol.pollo,patat,sale,olio,orig,K,M.",
+    "description": "Cotoletta di pollo, patatine, sale, olio, origano, K, M.",
+    "price": "6.50"
+  },
+  {
+    "id": "138",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP DEER",
+    "name": "Deer",
+    "oldDescription": "Hamb.cervo,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Hamburger di cervo, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "15.00"
+  },
+  {
+    "id": "97",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP DI MARCO",
+    "name": "Di Marco",
+    "oldDescription": "Polp. di cavallo,porch. artigianale,cipolla,mozz,aglio,aromi nat,patat.orig,K,M.",
+    "description": "Polpetta di cavallo, porchetta artigianale, cipolla, mozzarella, aglio, aromi naturali, patatine, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "108",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP DIAVOLA",
+    "name": "Diavola",
+    "oldDescription": "Ventr.picc,funghi picc,tabasco,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Ventricina piccante, funghi piccanti, Tabasco, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "7.50"
+  },
+  {
+    "id": "121",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP EXTRA LARGE",
+    "name": "Extra large",
+    "oldDescription": "Panc.maiale,porch,mozz,olive,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, porchetta, mozzarella, olive, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "142",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP FABRIZIO",
+    "name": "Fabrizio",
+    "oldDescription": "Hamb.scottona polacc,pom,cheddar,rucola,aceto bals,patat,K,M,olio,sal",
+    "description": "Hamburger di scottona polacca, pomodoro, cheddar, rucola, aceto balsamico, patatine, K, M, olio, sale.",
+    "price": "10.00"
+  },
+  {
+    "id": "144",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP FANTASIA ANDREA",
+    "name": "Fantasia di Andrea",
+    "oldDescription": "condimenti a fantasia",
+    "description": "Condimenti a fantasia.",
+    "price": "15.00"
+  },
+  {
+    "id": "139",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP FIORENTINA",
+    "name": "Fiorentina",
+    "oldDescription": "Hamb.chianina,pom,cheddar,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Hamburger di Chianina, pomodoro, cheddar, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "15.00"
+  },
+  {
+    "id": "125",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP GINO",
+    "name": "Gino",
+    "oldDescription": "Polp.cavallo,prosc,mozz,aromi nat,cipolla,grana,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, prosciutto, mozzarella, aromi naturali, cipolla, grana, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "110",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP GIOVANNI",
+    "name": "Giovanni",
+    "oldDescription": "Salsicc,porch,mozz,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Salsiccia, porchetta, mozzarella, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "103",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP HAMBURGER",
+    "name": "Hamburger",
+    "oldDescription": "Hamburger,lattuga,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Hamburger, lattuga, patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "8.00"
+  },
+  {
+    "id": "105",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP HOT DOG",
+    "name": "Hot dog",
+    "oldDescription": "Wurstel,patatine,sale,olio,origano,K.,M.",
+    "description": "Würstel, patatine, sale, olio, origano, K, M.",
+    "price": "6.50"
+  },
+  {
+    "id": "141",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP IVANO",
+    "name": "Ivano",
+    "oldDescription": "Ventr.picc,pros.spalla,wurstel,mozz,cipolla,patat,harissa,M.",
+    "description": "Ventricina piccante, prosciutto di spalla, würstel, mozzarella, cipolla, patatine, harissa, M.",
+    "price": "15.00"
+  },
+  {
+    "id": "131",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP KEBAB",
+    "name": "Kebab",
+    "oldDescription": "Pollo e tacch,pom,mozz,lattuga,salsa yogurt,salsa harissa,patat,sale,olio,orig.",
+    "description": "Pollo e tacchino, pomodoro, mozzarella, lattuga, salsa yogurt, salsa harissa, patatine, sale, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "124",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP MARIO",
+    "name": "Mario",
+    "oldDescription": "Polp.cavallo,ventr.picc,aromi nat,mozz,funghi picc,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, ventricina piccante, aromi naturali, mozzarella, funghi piccanti, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "120",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PANCETTATA",
+    "name": "Pancettata",
+    "oldDescription": "Panc.maiale,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "123",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PAOLO",
+    "name": "Paolo",
+    "oldDescription": "Polp.cavallo,mozz,funghi,olive snocc,grana,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, mozzarella, funghi, olive snocciolate, grana, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "100",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PATAPANINO",
+    "name": "Patapanino",
+    "oldDescription": "Patatine,sale,olio,origano,katchup,maionese",
+    "description": "Patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "4.00"
+  },
+  {
+    "id": "122",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PEPPINO",
+    "name": "Peppino",
+    "oldDescription": "Panc.maiale,mozz,tabasco,olive,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, Tabasco, olive, patatine, sale, olio, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "111",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PETTO DI POLLO",
+    "name": "Petto di pollo",
+    "oldDescription": "Petto pollo,latt,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "128",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP POLP. CAVALLO",
+    "name": "Polpetta di cavallo",
+    "oldDescription": "Polp.cavallo,aromi nat,cipolla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo, aromi naturali, cipolla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "137",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PORCH. CASA",
+    "name": "Porchetta della casa",
+    "oldDescription": "Porch.al forno,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Porchetta al forno, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "102",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP PORCHETTATA",
+    "name": "Porchettata",
+    "oldDescription": "Porchetta,mozzarella,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Porchetta, mozzarella, patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "8.50"
+  },
+  {
+    "id": "113",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP ROVAGNATI*",
+    "name": "Rovagnati*",
+    "oldDescription": "Petto pollo,prosc.spalla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, prosciutto di spalla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "118",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP RUSPANTE",
+    "name": "Ruspante",
+    "oldDescription": "Cosc.pollo dissos,mozz,pom,olive,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "112",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP RUSTICO",
+    "name": "Rustico",
+    "oldDescription": "Petto pollo,speck,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "109",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP SALSICCIA",
+    "name": "Salsiccia",
+    "oldDescription": "Salsicc,patat,sale,olio,orig,K,M.",
+    "description": "Salsiccia, patatine, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "98",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP SPIZ. DELLA CAS",
+    "name": "Spizzicagnolo della casa",
+    "oldDescription": "Prosciutto di spalla,lattuga,mozzarella,pomod.,olive,sale,olio,origano",
+    "description": "Prosciutto di spalla, lattuga, mozzarella, pomodoro, olive, sale, olio, origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "140",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP STRACOTTO",
+    "name": "Stracotto",
+    "oldDescription": "Angus,vitel,pom,cheddar/mozz,lattuga,BBQ,M,carota,cipolla,sedan,patat.",
+    "description": "Angus, vitello, pomodoro, cheddar/mozzarella, lattuga, salsa barbecue, M, carota, cipolla, sedano, patatine.",
+    "price": "15.00"
+  },
+  {
+    "id": "119",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP SUPERBIG",
+    "name": "Superbig",
+    "oldDescription": "Cosc.pollo dissos,porch,mozz,pom,olive,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, porchetta, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "14.00"
+  },
+  {
+    "id": "117",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP SUPERBOMBER",
+    "name": "Superbomber",
+    "oldDescription": "Cosc.pollo dissos,hamb,porch,mozz,pom,olive,lattug,patat,sale,olio,orig,K,M.",
+    "description": "Coscia di pollo disossata, hamburger, porchetta, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "16.00"
+  },
+  {
+    "id": "136",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP TOP",
+    "name": "Top",
+    "oldDescription": "Angus,pom,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Angus, pomodoro, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "130",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP TORNADO",
+    "name": "Tornado",
+    "oldDescription": "Carne cavallo,ventr.picc,mozz,emmenthal,cipolla,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo, ventricina piccante, mozzarella, emmental, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "13.00"
+  },
+  {
+    "id": "106",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP TSUNAMY",
+    "name": "Tsunami",
+    "oldDescription": "Porch,prosc. di spalla,ventricina picc.,mozz.,funghi,patat,sale,olio,orig,K,M.",
+    "description": "Porchetta, prosciutto di spalla, ventricina piccante, mozzarella, funghi, patatine, sale, olio, origano, K, M.",
+    "price": "13.00"
+  },
+  {
+    "id": "135",
+    "sourceCategory": "WRAP - WRAP",
+    "category": "wrap",
+    "oldName": "WRAP VITELLO",
+    "name": "Vitello",
+    "oldDescription": "Carne vitello,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di vitello, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "424",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "A modo mio",
+    "name": "A modo mio",
+    "oldDescription": "Carne di cavallo *porch cipolla latt mozz patatine sale olio evo aromi nat ",
+    "description": "Carne di cavallo*, porchetta, cipolla, lattuga, mozzarella, patatine, sale, olio extravergine di oliva e aromi naturali.",
+    "price": "9.00"
+  },
+  {
+    "id": "430",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Angus",
+    "name": "Angus",
+    "oldDescription": "Carne di angus pomod lattug patat k.m sale olio evo arom natur ",
+    "description": "Carne di Angus, pomodoro, lattuga, patatine, K, M, sale, olio extravergine di oliva e aromi naturali.",
+    "price": "8.00"
+  },
+  {
+    "id": "422",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Bocconcini cavallo",
+    "name": "Bocconcini di cavallo",
+    "oldDescription": "Carne di cavallo* peperoni cipolla mozzarella patatin k m sale olio evo aromi natur",
+    "description": "Carne di cavallo*, peperoni, cipolla, mozzarella, patatine, K, M, sale, olio extravergine di oliva e aromi naturali.",
+    "price": "7.00"
+  },
+  {
+    "id": "565",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Bomber",
+    "name": "Bomber",
+    "oldDescription": "Hamb porch lattug mozzar  patat* sale olio orig k.m",
+    "description": "Hamburger, porchetta, lattuga, mozzarella, patatine*, sale, olio, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "421",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Bufalo billy",
+    "name": "Bufalo Billy",
+    "oldDescription": "Carne di bufalo emmental cipoll lattug  patatin k.m.olio evo sale aromi natural ",
+    "description": "Carne di bufalo, emmental, cipolla, lattuga, patatine, K, M, olio extravergine di oliva, sale e aromi naturali.",
+    "price": "8.50"
+  },
+  {
+    "id": "149",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "CAPRESE",
+    "name": "Caprese",
+    "oldDescription": "Mozzarella,emmenthal,lattuga,pomodoro,sale,olio,origano",
+    "description": "Mozzarella, emmental, lattuga, pomodoro, sale, olio, origano.",
+    "price": "5.50"
+  },
+  {
+    "id": "155",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "CARNE CAVALLO",
+    "name": "Carne di cavallo",
+    "oldDescription": "Carne cavallo*,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Carne di cavallo*, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "147",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "CARTOCCIO",
+    "name": "Cartoccio",
+    "oldDescription": "Prosciutto di spalla,,mozzarella,patatine,sale,olio,origano,K,M.",
+    "description": "Prosciutto di spalla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "154",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "CORDON BLEU",
+    "name": "Cordon bleu",
+    "oldDescription": "Petto pollo imp,prosc.spalla,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo impanato, prosciutto di spalla, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "157",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "COTOLETTA",
+    "name": "Cotoletta",
+    "oldDescription": "Cotol.pollo,patat,sale,olio,orig,K,M.",
+    "description": "Cotoletta di pollo, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "420",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Cicciuzzo",
+    "name": "Cicciuzzo",
+    "oldDescription": "Asina mozz cipoll lattug patatin  k.m sale olio evo aromi naturali",
+    "description": "Carne di asina, mozzarella, cipolla, lattuga, patatine, K, M, sale, olio extravergine di oliva e aromi naturali.",
+    "price": "8.50"
+  },
+  {
+    "id": "443",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Cord bleu della casa",
+    "name": "Cordon bleu della casa",
+    "oldDescription": "Cotoletta di pollo prosciutt mozzar olive patatin sale olio origan k.m",
+    "description": "Cotoletta di pollo, prosciutto, mozzarella, olive, patatine, sale, olio, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "150",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "DIAVOLA",
+    "name": "Diavola",
+    "oldDescription": "Ventr.picc,funghi picc,tabasco,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Ventricina piccante, funghi piccanti, Tabasco, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "436",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Deer",
+    "name": "Deer",
+    "oldDescription": "Hamburg di cervo cipoll patat sale olio origan k.m",
+    "description": "Hamburger di cervo, cipolla, patatine, sale, olio, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "431",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Exstra large",
+    "name": "Extra Large",
+    "oldDescription": "Pancetta di maiale porchetta mozzar olive patat  sale olio evo aromi natur k.m",
+    "description": "Pancetta di maiale, porchetta, mozzarella, olive, patatine, sale, olio extravergine di oliva, aromi naturali, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "450",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Fabrizio",
+    "name": "Fabrizio",
+    "oldDescription": "Hamburg di scottona polacca pomod cheddar mozz rucola  aceto balsamico patat sale olio evo origan  k.m",
+    "description": "Hamburger di scottona polacca, pomodoro, cheddar, mozzarella, rucola, aceto balsamico, patatine, sale, olio extravergine di oliva, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "429",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Fantasia di andrea",
+    "name": "Fantasia di Andrea",
+    "oldDescription": "Mix di carne e formaggi cipoll e sott 'olio patat k.m  o  bbq olio evo aromi natural ",
+    "description": "Mix di carne e formaggi, cipolla, sottoli, patatine, K e M oppure salsa barbecue, olio extravergine di oliva e aromi naturali.",
+    "price": "10.00"
+  },
+  {
+    "id": "439",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Fiorentina",
+    "name": "Fiorentina",
+    "oldDescription": "Hamburg di chianina pom cheddar lattug patat sale olio evo origan k.m",
+    "description": "Hamburger di Chianina, pomodoro, cheddar, lattuga, patatine, sale, olio extravergine di oliva, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "419",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Gino",
+    "name": "Gino",
+    "oldDescription": "Polpetta di cavallo* cipolla prosciutto mozzarella grana pat k m aromi naturali",
+    "description": "Polpetta di cavallo*, cipolla, prosciutto, mozzarella, grana, patatine, K, M, aromi naturali.",
+    "price": "8.50"
+  },
+  {
+    "id": "563",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Giovanni",
+    "name": "Giovanni",
+    "oldDescription": "Salsicc porch mozz cipoll patat*sale olio orig k.m",
+    "description": "Salsiccia, porchetta, mozzarella, cipolla, patatine*, sale, olio, origano, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "156",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "HAMBURGER",
+    "name": "Hamburger",
+    "oldDescription": "Hamburger,lattuga,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Hamburger, lattuga, patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "6.00"
+  },
+  {
+    "id": "146",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "HOT DOG",
+    "name": "Hot dog",
+    "oldDescription": "Wurstel,patatine,sale,olio,origano,K.,M.",
+    "description": "Würstel, patatine, sale, olio, origano, K, M.",
+    "price": "5.00"
+  },
+  {
+    "id": "449",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Ivano",
+    "name": "Ivano",
+    "oldDescription": "Ventrina picc prosciutto wurstel mozzar cipoll patat harissa. m.",
+    "description": "Ventricina piccante, prosciutto, würstel, mozzarella, cipolla, patatine, harissa, M.",
+    "price": "9.00"
+  },
+  {
+    "id": "416",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Kebab",
+    "name": "Kebab",
+    "oldDescription": "Kebab.pomodoro lattuga mozzarella yogurt harissa",
+    "description": "Kebab, pomodoro, lattuga, mozzarella, yogurt e harissa.",
+    "price": "7.00"
+  },
+  {
+    "id": "612",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Kiko",
+    "name": "Kiko",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "158",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "MIZZICA",
+    "name": "Mizzica",
+    "oldDescription": "Ventr.picc,mozz,emmenthal,funghi,harissa,tabasco,patat,sale,olio,orig,K,M.",
+    "description": "Ventricina piccante, mozzarella, emmental, funghi, harissa, Tabasco, patatine, sale, olio, origano, K, M.",
+    "price": "6.50"
+  },
+  {
+    "id": "440",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Marco",
+    "name": "Marco",
+    "oldDescription": "Polp.di cavall* porch artigianale cipoll mozz aglio aromi natural patat origan k.m",
+    "description": "Polpetta di cavallo*, porchetta artigianale, cipolla, mozzarella, aglio, aromi naturali, patatine, origano, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "413",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Mario",
+    "name": "Mario",
+    "oldDescription": "Polpetta cavallo* ventricina piccante mozzarella olive patatine k e m",
+    "description": "Polpetta di cavallo*, ventricina piccante, mozzarella, olive, patatine, K e M.",
+    "price": "8.50"
+  },
+  {
+    "id": "159",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "PANCETTATA",
+    "name": "Pancettata",
+    "oldDescription": "Panc.maiale,mozz,lattuga,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "145",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "PATAPANINO",
+    "name": "Patapanino",
+    "oldDescription": "Patatine,sale,olio,origano,katchup,maionese",
+    "description": "Patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "3.00"
+  },
+  {
+    "id": "151",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "PEPPINO",
+    "name": "Peppino",
+    "oldDescription": "Panc.maiale,mozz,tabasco,olive,patat,sale,olio,orig,K,M.",
+    "description": "Pancetta di maiale, mozzarella, Tabasco, olive, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "153",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "PETTO POLLO",
+    "name": "Petto di pollo",
+    "oldDescription": "Petto pollo,latt,patat,sale,olio,orig,K,M.",
+    "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "161",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "POLPETTE CAVALLO",
+    "name": "Polpette di cavallo",
+    "oldDescription": "Polp.cavallo*,aromi nat,cipolla,mozz,patat,sale,olio,orig,K,M.",
+    "description": "Polpetta di cavallo*, aromi naturali, cipolla, mozzarella, patatine, sale, olio, origano, K, M.",
+    "price": "7.00"
+  },
+  {
+    "id": "412",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Paolo",
+    "name": "Paolo",
+    "oldDescription": "Paolo polpetta mozzarella olive funghi patatine k e m aglio aromi naturali",
+    "description": "Polpetta, mozzarella, olive, funghi, patatine, K e M, aglio e aromi naturali.",
+    "price": "8.00"
+  },
+  {
+    "id": "428",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Patanegra",
+    "name": "Pata Negra",
+    "oldDescription": "Hamburg di patanegra chedar cipol di tropea cruda rucola m.bbq ",
+    "description": "Hamburger di Pata Negra, cheddar, cipolla di Tropea cruda, rucola, M e salsa barbecue.",
+    "price": "9.00"
+  },
+  {
+    "id": "561",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Pink",
+    "name": "Pink",
+    "oldDescription": "Porchet wustel mozz cipol patat* k.m",
+    "description": "Porchetta, würstel, mozzarella, cipolla, patatine*, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "271",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Porchetta",
+    "name": "Porchetta",
+    "oldDescription": "Porchetta ,moz,pat*,k,m",
+    "description": "Porchetta, mozzarella, patatine*, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "148",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Romana",
+    "name": "Romana",
+    "oldDescription": "Porch al forno,mozzarella,patatine,sale,olio,origano,katchup,maionese",
+    "description": "Porchetta al forno, mozzarella, patatine, sale, olio, origano, ketchup, maionese.",
+    "price": "7.00"
+  },
+  {
+    "id": "435",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Rovagnati",
+    "name": "Rovagnati",
+    "oldDescription": "Petto di pollo prosciut mozzarel patat sale olio evo origan k.m",
+    "description": "Petto di pollo, prosciutto, mozzarella, patatine, sale, olio extravergine di oliva, origano, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "432",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Rustico",
+    "name": "Rustico",
+    "oldDescription": "Petto di pollo spek  mozzar lattug patat k.m sale olio evo aromi natural",
+    "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, K, M, sale, olio extravergine di oliva e aromi naturali.",
+    "price": "8.50"
+  },
+  {
+    "id": "152",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "SALSICCIA",
+    "name": "Salsiccia",
+    "oldDescription": "Salsicc,patat,sale,olio,orig,K,M.",
+    "description": "Salsiccia, patatine, sale, olio, origano, K, M.",
+    "price": "6.00"
+  },
+  {
+    "id": "160",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "SPIZICAGNOLO",
+    "name": "Spizzicagnolo",
+    "oldDescription": "Speck,mozz,lattuga,pom,sale,olio,orig.",
+    "description": "Speck, mozzarella, lattuga, pomodoro, sale, olio, origano.",
+    "price": "6.00"
+  },
+  {
+    "id": "441",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Spizicagn della casa",
+    "name": "Spizzicagnolo della casa",
+    "oldDescription": "Prosciutt lattug mozzar pomod olive sale olio evo origano",
+    "description": "Prosciutto, lattuga, mozzarella, pomodoro, olive, sale, olio extravergine di oliva e origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "448",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Stracotto",
+    "name": "Stracotto",
+    "oldDescription": "Carne di angus vitello pomod cheddar o mozzar lattug salsa bbq. m.carota cipoll sedano patat sale olio evo  origano  ",
+    "description": "Carne di Angus, vitello, pomodoro, cheddar o mozzarella, lattuga, salsa barbecue, M, carota, cipolla, sedano, patatine, sale, olio extravergine di oliva e origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "427",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Super bomber",
+    "name": "Superbomber",
+    "oldDescription": "Braciol di pollo hamburg porchett mozzar pom latt olive patat k.m olio evo aromi natur ",
+    "description": "Braciola di pollo, hamburger, porchetta, mozzarella, pomodoro, lattuga, olive, patatine, K, M, olio extravergine di oliva e aromi naturali.",
+    "price": "12.00"
+  },
+  {
+    "id": "423",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Superbig",
+    "name": "Superbig",
+    "oldDescription": "Braciola d pollo porchettata mozz pomodoro olive lattuga patatine sale olio evo aromi nat k m",
+    "description": "Braciola di pollo, porchetta, mozzarella, pomodoro, olive, lattuga, patatine, sale, olio extravergine di oliva, aromi naturali, K, M.",
+    "price": "10.00"
+  },
+  {
+    "id": "425",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Talia",
+    "name": "Talia",
+    "oldDescription": "Prosciutt cotto  wustel mozz emmental  patatin k.m ",
+    "description": "Prosciutto cotto, würstel, mozzarella, emmental, patatine, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "417",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Tornado",
+    "name": "Tornado",
+    "oldDescription": "Cavallo* ventricina pic. mozzarella emmenta cipolla pat k m",
+    "description": "Cavallo*, ventricina piccante, mozzarella, emmental, cipolla, patatine, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "438",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "Tsunamy",
+    "name": "Tsunami",
+    "oldDescription": "Porchetta prosciutt ventricin picc.mozzar funghi patat sale olio evo k.m",
+    "description": "Porchetta, prosciutto, ventricina piccante, mozzarella, funghi, patatine, sale, olio extravergine di oliva, K, M.",
+    "price": "8.50"
+  },
+  {
+    "id": "418",
+    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
+    "category": "baby",
+    "oldName": "ruspante",
+    "name": "Ruspante",
+    "oldDescription": "Braciola di pollo mozzarella pomodoro olive lattuga patatine k m ",
+    "description": "Braciola di pollo, mozzarella, pomodoro, olive, lattuga, patatine, K, M.",
+    "price": "8.00"
+  },
+  {
+    "id": "176",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "4 FORMAGGI",
+    "name": "Quattro formaggi",
+    "oldDescription": "Mozz,gorgonzola,emmenthal,grana,olio,origano",
+    "description": "Mozzarella, gorgonzola, emmental, grana, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "179",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "4 STAGIONI",
+    "name": "Quattro stagioni",
+    "oldDescription": "Pom,mozz,prosc.cotto,funghi,piselli,olive,carciofini,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, funghi, piselli, olive, carciofini, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "171",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "AL CRUDO",
+    "name": "Al crudo",
+    "oldDescription": "Pom,mozz,prosc.crudo,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto crudo, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "194",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "AL SALMONE",
+    "name": "Al salmone",
+    "oldDescription": "Mozz,panna,salmone,olio",
+    "description": "Mozzarella, panna, salmone, olio.",
+    "price": "9.00"
+  },
+  {
+    "id": "169",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "AL TONNO",
+    "name": "Al tonno",
+    "oldDescription": "Pom,mozz,tonno,cipolla,olio,origano",
+    "description": "Pomodoro, mozzarella, tonno, cipolla, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "472",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "extra",
+    "oldName": "Aggiunta di patat",
+    "name": "Aggiunta di patatine — pizza al piatto",
+    "oldDescription": "Aggiunta di patatin nelle pizze a piatto",
+    "description": "Aggiunta di patatine nelle pizze al piatto.",
+    "price": "2.50"
+  },
+  {
+    "id": "163",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "BIANCANEVE",
+    "name": "Biancaneve",
+    "oldDescription": "Mozzarella,olio,origano",
+    "description": "Mozzarella, olio, origano.",
+    "price": "4.50"
+  },
+  {
+    "id": "180",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "BRESAOLA E RUCOLA",
+    "name": "Bresaola e rucola",
+    "oldDescription": "Rucola,pom,mozz,bresaola,grana,olio,origano",
+    "description": "Rucola, pomodoro, mozzarella, bresaola, grana, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "183",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "BUFALA",
+    "name": "Bufala",
+    "oldDescription": "Pom,mozz.bufala,basilico,olio,origano",
+    "description": "Pomodoro, mozzarella di bufala, basilico, olio, origano.",
+    "price": "9.00"
+  },
+  {
+    "id": "568",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "Burratina",
+    "name": "Burratina",
+    "oldDescription": "Mozzarella pistacchio mortadella burrata  aromi naturali olio evo ",
+    "description": "Mozzarella, pistacchio, mortadella, burrata, aromi naturali e olio extravergine di oliva.",
+    "price": "8.00"
+  },
+  {
+    "id": "175",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "CALZONE",
+    "name": "Calzone",
+    "oldDescription": "Pom,mozz,prosc.cotto,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "188",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "CALZONE VERDE",
+    "name": "Calzone verde",
+    "oldDescription": "Spinaci,salsa,olive verdi,scamorza aff,olio,origano",
+    "description": "Spinaci, salsa, olive verdi, scamorza affumicata, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "168",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "CAPRICCIOSA",
+    "name": "Capricciosa",
+    "oldDescription": "Pom,mozz,funghi,prosc.cotto,uovo,olio,origano",
+    "description": "Pomodoro, mozzarella, funghi, prosciutto cotto, uovo, olio, origano.",
+    "price": "7.50"
+  },
+  {
+    "id": "195",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "CARCIOSPECK",
+    "name": "Carciospeck",
+    "oldDescription": "Mozz,crema di carciofi speko oli evo origano",
+    "description": "Mozzarella, crema di carciofi, speck, olio extravergine di oliva e origano.",
+    "price": "8.50"
+  },
+  {
+    "id": "196",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "CAVALLINA",
+    "name": "Cavallina",
+    "oldDescription": "Carne cavallo,pom,mozz,patatine,olio,origano",
+    "description": "Carne di cavallo, pomodoro, mozzarella, patatine, olio, origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "174",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "DIAVOLA",
+    "name": "Diavola",
+    "oldDescription": "Pom,mozz,ventricina picc,olio,origano",
+    "description": "Pomodoro, mozzarella, ventricina piccante, olio, origano.",
+    "price": "6.00"
+  },
+  {
+    "id": "162",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "FACCIA DI VECCIA",
+    "name": "Faccia di vecchia",
+    "oldDescription": "Olio,sale,origano",
+    "description": "Olio, sale, origano.",
+    "price": "2.50"
+  },
+  {
+    "id": "192",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "FANTASIA BRUNO",
+    "name": "Fantasia Bruno",
+    "oldDescription": "Pom,mozz,funghi champ,funghi porcini,funghi muschio,olio,origano",
+    "description": "Pomodoro, mozzarella, funghi champignon, funghi porcini, funghi muschio, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "193",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "FRUTTI DI MARE",
+    "name": "Frutti di mare",
+    "oldDescription": "Pom,mozz,misto mare,olio,sale,origano",
+    "description": "Pomodoro, mozzarella, misto mare, olio, sale, origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "557",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "Kiko",
+    "name": "Kiko",
+    "oldDescription": "Base bianca,mozz,chedar,puled porch,maionese barbeque",
+    "description": "Base bianca, mozzarella, cheddar, pulled pork, maionese e salsa barbecue.",
+    "price": "9.00"
+  },
+  {
+    "id": "164",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "MARGHERITA",
+    "name": "Margherita",
+    "oldDescription": "Pom,mozz,olio,origano",
+    "description": "Pomodoro, mozzarella, olio, origano.",
+    "price": "5.00"
+  },
+  {
+    "id": "181",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "MASSAIA",
+    "name": "Massaia",
+    "oldDescription": "Pom,mozz,ricotta,salsiccia fresca,olio,origano",
+    "description": "Pomodoro, mozzarella, ricotta, salsiccia fresca, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "182",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "MORTADELLA",
+    "name": "Mortadella",
+    "oldDescription": "Mozz,mortadella,philadelphia,pesto pistacchio,petali grana,olio,origano",
+    "description": "Mozzarella, mortadella, Philadelphia, pesto di pistacchio, petali di grana, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "167",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "NORMA",
+    "name": "Norma",
+    "oldDescription": "Pom,mozz,melanz.fritta,ricotta salata,olio,origano",
+    "description": "Pomodoro, mozzarella, melanzana fritta, ricotta salata, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "178",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "OO7",
+    "name": "007",
+    "oldDescription": "Pom,mozz,prosc.cotto,funghi,piselli,uovo,wurstel,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, funghi, piselli, uovo, würstel, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "177",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PARMIGIANA",
+    "name": "Parmigiana",
+    "oldDescription": "Pom,mozz,prosc.cotto,melanz.fritta,uovo,grana,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, melanzana fritta, uovo, grana, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "166",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PATATOSA",
+    "name": "Patatosa",
+    "oldDescription": "Pom,mozz,patat,olio,origano",
+    "description": "Pomodoro, mozzarella, patatine, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "187",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PIZZA COCKTAIL GAMBE",
+    "name": "Cocktail di gamberi",
+    "oldDescription": "Mozz,lattuga,gamberi,salsa rosa,olio,origano",
+    "description": "Mozzarella, lattuga, gamberi, salsa rosa, olio, origano.",
+    "price": "9.00"
+  },
+  {
+    "id": "191",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PIZZA POLPETTA",
+    "name": "Pizza polpetta",
+    "oldDescription": "Mozz,cheddar,cipolla,pol.cavallo,olio,origano,aromi naturali",
+    "description": "Mozzarella, cheddar, cipolla, polpetta di cavallo, olio, origano, aromi naturali.",
+    "price": "9.00"
+  },
+  {
+    "id": "190",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PIZZA RUSPANTE",
+    "name": "Pizza ruspante",
+    "oldDescription": "Ciliegino,mozz,olive,coscia pollo,patatine,olio,origano",
+    "description": "Ciliegino, mozzarella, olive, coscia di pollo, patatine, olio, origano.",
+    "price": "9.00"
+  },
+  {
+    "id": "172",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PORCHETTATA",
+    "name": "Porchettata",
+    "oldDescription": "Pom,mozz,porchetta,patat,olio,origano",
+    "description": "Pomodoro, mozzarella, porchetta, patatine, olio, origano.",
+    "price": "9.00"
+  },
+  {
+    "id": "173",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "PORCINI",
+    "name": "Porcini",
+    "oldDescription": "Pom,mozz,funghi porcini,olio,origano",
+    "description": "Pomodoro, mozzarella, funghi porcini, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "558",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze-dolci",
+    "oldName": "Piza nutela e nociol",
+    "name": "Nutella e noccioline",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "571",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "Pizza kebab",
+    "name": "Pizza kebab",
+    "oldDescription": "Salsa  mozzar salsa yugurt hariss  pat*",
+    "description": "Salsa, mozzarella, salsa yogurt, harissa e patatine*.",
+    "price": "9.00"
+  },
+  {
+    "id": "567",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze-dolci",
+    "oldName": "Pizza kinder cereali",
+    "name": "Kinder Cereali",
+    "oldDescription": "Nutella nocciola crema bianca nocciola cereali soffiati",
+    "description": "Nutella alla nocciola, crema bianca alla nocciola e cereali soffiati.",
+    "price": "7.50"
+  },
+  {
+    "id": "573",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze-dolci",
+    "oldName": "Pizza nutela e ricot",
+    "name": "Nutella e ricotta",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "282",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze-dolci",
+    "oldName": "Pizza nutella ",
+    "name": "Nutella",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "574",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze-dolci",
+    "oldName": "Pizza ricota pistach",
+    "name": "Ricotta e pistacchio",
+    "oldDescription": "",
+    "description": "",
+    "price": "8.00"
+  },
+  {
+    "id": "165",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "RUSTICA",
+    "name": "Rustica",
+    "oldDescription": "Pom,mozz,acciughe,olive,olio,origano",
+    "description": "Pomodoro, mozzarella, acciughe, olive, olio, origano.",
+    "price": "5.00"
+  },
+  {
+    "id": "186",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "SPINACINA",
+    "name": "Spinacina",
+    "oldDescription": "Mozz,pom,ricotta spinaci,salsiccia,olio,origano",
+    "description": "Mozzarella, pomodoro, ricotta, spinaci, salsiccia, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "566",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "Sapori gurme",
+    "name": "Sapori gourmet",
+    "oldDescription": "Mozzarella porcini filetto di vitello pesto di mandorle",
+    "description": "Mozzarella, porcini, filetto di vitello e pesto di mandorle.",
+    "price": "10.00"
+  },
+  {
+    "id": "170",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "VEGETARIANA",
+    "name": "Vegetariana",
+    "oldDescription": "Pom,mozz,verdure grigliate,olio,origano",
+    "description": "Pomodoro, mozzarella, verdure grigliate, olio, origano.",
+    "price": "6.50"
+  },
+  {
+    "id": "184",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "ZIU GIUVANNI",
+    "name": "Ziu Giuvanni",
+    "oldDescription": "Mozz,capuliato,zucchine,grana,olio,origano",
+    "description": "Mozzarella, capuliato, zucchine, grana, olio, origano.",
+    "price": "5.00"
+  },
+  {
+    "id": "185",
+    "sourceCategory": "PIZZE PIATTO - PIZZE",
+    "category": "pizze",
+    "oldName": "ZUCCA",
+    "name": "Zucca",
+    "oldDescription": "Crema zucca,mozz,salsiccia,rucola,grana,olio,origano",
+    "description": "Crema di zucca, mozzarella, salsiccia, rucola, grana, olio, origano.",
+    "price": "8.00"
+  },
+  {
+    "id": "202",
+    "sourceCategory": "PIZZE PIATTO - PIZZE DOLCI",
+    "category": "pizze-dolci",
+    "oldName": "CASSATA SICILIANA",
+    "name": "Cassata siciliana",
+    "oldDescription": "Ricotta,canditi,scaglie di cioccolato,granella di pistacchio,zucchero a velo",
+    "description": "Ricotta, canditi, scaglie di cioccolato, granella di pistacchio, zucchero a velo.",
+    "price": "9.00"
+  },
+  {
+    "id": "201",
+    "sourceCategory": "PIZZE PIATTO - PIZZE DOLCI",
+    "category": "pizze-dolci",
+    "oldName": "CIOCCOLATO BIANCO",
+    "name": "Cioccolato bianco",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "197",
+    "sourceCategory": "PIZZE PIATTO - PIZZE DOLCI",
+    "category": "pizze-dolci",
+    "oldName": "NUTELLA",
+    "name": "Nutella",
+    "oldDescription": "Nutella",
+    "description": "Nutella.",
+    "price": "6.00"
+  },
+  {
+    "id": "198",
+    "sourceCategory": "PIZZE PIATTO - PIZZE DOLCI",
+    "category": "pizze-dolci",
+    "oldName": "NUTELLA E NOCCIOLINE",
+    "name": "Nutella e noccioline",
+    "oldDescription": "Nutella e noccioline",
+    "description": "Nutella e noccioline.",
+    "price": "7.00"
+  },
+  {
+    "id": "199",
+    "sourceCategory": "PIZZE PIATTO - PIZZE DOLCI",
+    "category": "pizze-dolci",
+    "oldName": "NUTELLA,RICOT. E CAN",
+    "name": "Nutella, ricotta e cannella",
+    "oldDescription": "Nutella,ricotta e cannella",
+    "description": "Nutella, ricotta e cannella.",
+    "price": "7.50"
+  },
+  {
+    "id": "200",
+    "sourceCategory": "PIZZE PIATTO - PIZZE DOLCI",
+    "category": "pizze-dolci",
+    "oldName": "RICOTTA E PISTACCHIO",
+    "name": "Ricotta e pistacchio",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "217",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "4 FORMAGGI",
+    "name": "Quattro formaggi",
+    "oldDescription": "Mozz,gorgonzola,emmenthal,grana,olio,origano",
+    "description": "Mozzarella, gorgonzola, emmental, grana, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "220",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "4 STAGIONI",
+    "name": "Quattro stagioni",
+    "oldDescription": "Pom,mozz,prosc.cotto,funghi,piselli,olive,carciofini,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, funghi, piselli, olive, carciofini, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "212",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "AL CRUDO",
+    "name": "Al crudo",
+    "oldDescription": "Pom,mozz,prosc.crudo,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto crudo, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "235",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "AL SALMONE",
+    "name": "Al salmone",
+    "oldDescription": "Mozz,panna,salmone,olio",
+    "description": "Mozzarella, panna, salmone, olio.",
+    "price": "20.00"
+  },
+  {
+    "id": "210",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "AL TONNO",
+    "name": "Al tonno",
+    "oldDescription": "Pom,mozz,tonno,cipolla,olio,origano",
+    "description": "Pomodoro, mozzarella, tonno, cipolla, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "471",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "extra",
+    "oldName": "Aggiunt di patatine",
+    "name": "Aggiunta di patatine — pizza maxi",
+    "oldDescription": "Aggiunta di patatin nelle max",
+    "description": "Aggiunta di patatine nelle pizze maxi.",
+    "price": "5.00"
+  },
+  {
+    "id": "204",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "BIANCANEVE MAX",
+    "name": "Biancaneve maxi",
+    "oldDescription": "Mozzarella,olio,origano",
+    "description": "Mozzarella, olio, origano.",
+    "price": "9.00"
+  },
+  {
+    "id": "221",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "BRESAOLA E RUCOLA",
+    "name": "Bresaola e rucola",
+    "oldDescription": "Rucola,pom,mozz,bresaola,grana,olio,origano",
+    "description": "Rucola, pomodoro, mozzarella, bresaola, grana, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "224",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "BUFALA",
+    "name": "Bufala",
+    "oldDescription": "Pom,mozz.bufala,basilico,olio,origano",
+    "description": "Pomodoro, mozzarella di bufala, basilico, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "572",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "Burratina",
+    "name": "Burratina",
+    "oldDescription": "Mozzarella pistacchio mortadella burrata aromi naturali crema pistacchio origano olio evo",
+    "description": "Mozzarella, pistacchio, mortadella, burrata, aromi naturali, crema di pistacchio, origano e olio extravergine di oliva.",
+    "price": "18.00"
+  },
+  {
+    "id": "216",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "CALZONE",
+    "name": "Calzone",
+    "oldDescription": "Pom,mozz,prosc.cotto,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, olio, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "209",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "CAPRICCIOSA",
+    "name": "Capricciosa",
+    "oldDescription": "Pom,mozz,funghi,prosc.cotto,uovo,olio,origano",
+    "description": "Pomodoro, mozzarella, funghi, prosciutto cotto, uovo, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "236",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "CARCIOSPECK",
+    "name": "Carciospeck",
+    "oldDescription": "Mozz,carciofi,speck",
+    "description": "Mozzarella, carciofi, speck.",
+    "price": "18.00"
+  },
+  {
+    "id": "237",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "CAVALLINA",
+    "name": "Cavallina",
+    "oldDescription": "Carne cavallo,pom,mozz,patatine,olio,origano",
+    "description": "Carne di cavallo, pomodoro, mozzarella, patatine, olio, origano.",
+    "price": "20.00"
+  },
+  {
+    "id": "215",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "DIAVOLA",
+    "name": "Diavola",
+    "oldDescription": "Pom,mozz,ventricina picc,olio,origano",
+    "description": "Pomodoro, mozzarella, ventricina piccante, olio, origano.",
+    "price": "13.00"
+  },
+  {
+    "id": "203",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "FACCIA DI VECCIA MAX",
+    "name": "Faccia di vecchia maxi",
+    "oldDescription": "Olio,sale,origano",
+    "description": "Olio, sale, origano.",
+    "price": "7.00"
+  },
+  {
+    "id": "233",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "FANTASIA BRUNO",
+    "name": "Fantasia Bruno",
+    "oldDescription": "Pom,mozz,funghi champ,funghi porcini,funghi muschio,olio,origano",
+    "description": "Pomodoro, mozzarella, funghi champignon, funghi porcini, funghi muschio, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "234",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "FRUTTI DI MARE",
+    "name": "Frutti di mare",
+    "oldDescription": "Pom,mozz,misto mare,olio,sale,origano",
+    "description": "Pomodoro, mozzarella, misto mare, olio, sale, origano.",
+    "price": "20.00"
+  },
+  {
+    "id": "415",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "Kebab",
+    "name": "Kebab",
+    "oldDescription": "Kebab moz  salsa di pomodoro yogurt harissa",
+    "description": "Kebab, mozzarella, salsa di pomodoro, yogurt e harissa.",
+    "price": "19.00"
+  },
+  {
+    "id": "205",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "MARGHERITA MAX",
+    "name": "Margherita maxi",
+    "oldDescription": "Pom,mozz,olio,origano",
+    "description": "Pomodoro, mozzarella, olio, origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "222",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "MASSAIA",
+    "name": "Massaia",
+    "oldDescription": "Pom,mozz,ricotta,salsiccia fresca,olio,origano",
+    "description": "Pomodoro, mozzarella, ricotta, salsiccia fresca, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "223",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "MORTADELLA",
+    "name": "Mortadella",
+    "oldDescription": "Mozz,mortadella,philadelphia,pesto pistacchio,petali grana,olio,origano",
+    "description": "Mozzarella, mortadella, Philadelphia, pesto di pistacchio, petali di grana, olio, origano.",
+    "price": "17.00"
+  },
+  {
+    "id": "593",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "Max kiko",
+    "name": "Kiko maxi",
+    "oldDescription": "Base bianca, moz, chedar, puled pork, cipolla crocante, barbebue maionese",
+    "description": "Base bianca, mozzarella, cheddar, pulled pork, cipolla croccante, salsa barbecue e maionese.",
+    "price": "18.00"
+  },
+  {
+    "id": "352",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "pizze-dolci",
+    "oldName": "Max nutella",
+    "name": "Nutella maxi",
+    "oldDescription": "Pizza nutella ferrero",
+    "description": "Pizza alla Nutella Ferrero.",
+    "price": "13.00"
+  },
+  {
+    "id": "208",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "NORMA",
+    "name": "Norma",
+    "oldDescription": "Pom,mozz,melanz.fritta,ricotta salata,olio,origano",
+    "description": "Pomodoro, mozzarella, melanzana fritta, ricotta salata, olio, origano.",
+    "price": "16.00"
+  },
+  {
+    "id": "219",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "OO7",
+    "name": "007",
+    "oldDescription": "Pom,mozz,prosc.cotto,funghi,piselli,uovo,wurstel,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, funghi, piselli, uovo, würstel, olio, origano.",
+    "price": "19.00"
+  },
+  {
+    "id": "218",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PARMIGIANA",
+    "name": "Parmigiana",
+    "oldDescription": "Pom,mozz,prosc.cotto,melanz.fritta,uovo,grana,olio,origano",
+    "description": "Pomodoro, mozzarella, prosciutto cotto, melanzana fritta, uovo, grana, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "207",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PATATOSA",
+    "name": "Patatosa",
+    "oldDescription": "Pom,mozz,patat,olio,origano",
+    "description": "Pomodoro, mozzarella, patatine, olio, origano.",
+    "price": "14.00"
+  },
+  {
+    "id": "228",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PIZZA COCKTAIL GAMBE",
+    "name": "Cocktail di gamberi",
+    "oldDescription": "Mozz,lattuga,gamberi,salsa rosa,olio,origano",
+    "description": "Mozzarella, lattuga, gamberi, salsa rosa, olio, origano.",
+    "price": "20.00"
+  },
+  {
+    "id": "232",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PIZZA POLPETTA",
+    "name": "Pizza polpetta",
+    "oldDescription": "Mozz,cheddar,cipolla,pol.cavallo,olio,origano,aromi naturali",
+    "description": "Mozzarella, cheddar, cipolla, polpetta di cavallo, olio, origano, aromi naturali.",
+    "price": "20.00"
+  },
+  {
+    "id": "231",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PIZZA RUSPANTE",
+    "name": "Pizza ruspante",
+    "oldDescription": "Ciliegino,mozz,olive,coscia pollo,patatine,olio,origano",
+    "description": "Ciliegino, mozzarella, olive, coscia di pollo, patatine, olio, origano.",
+    "price": "20.00"
+  },
+  {
+    "id": "213",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PORCHETTATA",
+    "name": "Porchettata",
+    "oldDescription": "Pom,mozz,porchetta,patat,olio,origano",
+    "description": "Pomodoro, mozzarella, porchetta, patatine, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "214",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "PORCINI",
+    "name": "Porcini",
+    "oldDescription": "Pom,mozz,funghi porcini,olio,origano",
+    "description": "Pomodoro, mozzarella, funghi porcini, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "206",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "RUSTICA",
+    "name": "Rustica",
+    "oldDescription": "Pom,mozz,acciughe,olive,olio,origano",
+    "description": "Pomodoro, mozzarella, acciughe, olive, olio, origano.",
+    "price": "10.00"
+  },
+  {
+    "id": "227",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "SPINACINA",
+    "name": "Spinacina",
+    "oldDescription": "Mozz,pom,ricotta spinaci,salsiccia,olio,origano",
+    "description": "Mozzarella, pomodoro, ricotta, spinaci, salsiccia, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "211",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "VEGETARIANA",
+    "name": "Vegetariana",
+    "oldDescription": "Pom,mozz,verdure grigliate,olio,origano",
+    "description": "Pomodoro, mozzarella, verdure grigliate, olio, origano.",
+    "price": "15.00"
+  },
+  {
+    "id": "226",
+    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
+    "category": "maxi",
+    "oldName": "ZUCCA",
+    "name": "Zucca",
+    "oldDescription": "Crema zucca,mozz,salsiccia,rucola,grana,olio,origano",
+    "description": "Crema di zucca, mozzarella, salsiccia, rucola, grana, olio, origano.",
+    "price": "18.00"
+  },
+  {
+    "id": "258",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "ANELLI CIP.PASTELLA",
+    "name": "Anelli di cipolla in pastella",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "442",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Bastoncini pollo",
+    "name": "Bastoncini di pollo",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "264",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "CROCCHETTE PATATE",
+    "name": "Crocchette di patate",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "437",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Cambember",
+    "name": "Camembert",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "447",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Cheese weddegs ",
+    "name": "Cheese wedges",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "452",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Cryspi",
+    "name": "Crispy",
+    "oldDescription": "",
+    "description": "",
+    "price": "3.00"
+  },
+  {
+    "id": "434",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Jalapeneos",
+    "name": "Jalapeños",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "263",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "MINI FAGOTT. AL FORM",
+    "name": "Mini fagottini al formaggio",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "261",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Mozz impanate ",
+    "name": "Mozzarelle impanate",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "260",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "NACHOS AL FORM",
+    "name": "Nachos al formaggio",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "446",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Nuggest ",
+    "name": "Nuggets",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "265",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "PATATINE FRITTE",
+    "name": "Patatine fritte",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "453",
+    "sourceCategory": "FRIGGITORIA - FRIGGITORIA",
+    "category": "fritti",
+    "oldName": "Panelle",
+    "name": "Panelle",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "278",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "ACQUA GRANDE",
+    "name": "Acqua grande",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.00"
+  },
+  {
+    "id": "279",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "ACQUA PICCOLA",
+    "name": "Acqua piccola",
+    "oldDescription": "",
+    "description": "",
+    "price": "1.00"
+  },
+  {
+    "id": "274",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "BECK'S",
+    "name": "Beck's",
+    "oldDescription": "",
+    "description": "",
+    "price": "3.00"
+  },
+  {
+    "id": "462",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Bad dog ",
+    "name": "Bad dog",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "466",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Bott  coca ",
+    "name": "Coca-Cola in bottiglia",
+    "oldDescription": "",
+    "description": "",
+    "price": "3.50"
+  },
+  {
+    "id": "268",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "CERES",
+    "name": "Ceres",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "277",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "COCA GRANDE",
+    "name": "Coca-Cola grande",
+    "oldDescription": "",
+    "description": "",
+    "price": "3.50"
+  },
+  {
+    "id": "273",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "CORONA",
+    "name": "Corona",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "463",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Chinotto",
+    "name": "Chinotto",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "269",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "DREHER LIMONE",
+    "name": "Dreher limone",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "458",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Esta  the' pesca ",
+    "name": "Estathé alla pesca",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "459",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Esta the' limone  ",
+    "name": "Estathé al limone",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "275",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "HEINEKEN",
+    "name": "Heineken",
+    "oldDescription": "",
+    "description": "",
+    "price": "3.00"
+  },
+  {
+    "id": "267",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "LATTINA",
+    "name": "Bevanda in lattina",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "454",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Latt coca",
+    "name": "Coca-Cola in lattina",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "455",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Latt coca zero",
+    "name": "Coca-Cola Zero in lattina",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "456",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Latt pepsi ",
+    "name": "Pepsi in lattina",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "465",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Lemon soda ",
+    "name": "Lemonsoda",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "276",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "MESSINA",
+    "name": "Messina",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "270",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "MORETTI",
+    "name": "Moretti",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "451",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Peps grande",
+    "name": "Pepsi grande",
+    "oldDescription": "Peps bottiglia ",
+    "description": "Pepsi in bottiglia.",
+    "price": "3.00"
+  },
+  {
+    "id": "461",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Red bull ",
+    "name": "Red Bull",
+    "oldDescription": "",
+    "description": "",
+    "price": "3.00"
+  },
+  {
+    "id": "457",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "bevande",
+    "oldName": "Sprite",
+    "name": "Sprite",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.50"
+  },
+  {
+    "id": "272",
+    "sourceCategory": "BEVANDE - BEVANDE",
+    "category": "birre",
+    "oldName": "TENNENT'S",
+    "name": "Tennent's",
+    "oldDescription": "",
+    "description": "",
+    "price": "4.00"
+  },
+  {
+    "id": "343",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ammodomio",
+    "name": "A modo mio",
+    "oldDescription": "Cavallo porchetta moz cipolla lattuga k .m pata*aromi misti olio sale .k.m",
+    "description": "Cavallo, porchetta, mozzarella, cipolla, lattuga, K, M, patatine*, aromi misti, olio e sale.",
+    "price": "15.00"
+  },
+  {
+    "id": "336",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Cotolett dell casa",
+    "name": "Cotoletta della casa",
+    "oldDescription": "",
+    "description": "",
+    "price": "12.00"
+  },
+  {
+    "id": "410",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFIC. CORDON BLEU",
+    "name": "Cordon bleu",
+    "oldDescription": "",
+    "description": "",
+    "price": "10.00"
+  },
+  {
+    "id": "405",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFIC. POLP. CAVALLO",
+    "name": "Polpetta di cavallo",
+    "oldDescription": "",
+    "description": "",
+    "price": "12.00"
+  },
+  {
+    "id": "385",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICCIALE PATA",
+    "name": "Pata",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "408",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE BOMBER",
+    "name": "Bomber",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "388",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE BUFALO",
+    "name": "Bufalo",
+    "oldDescription": "",
+    "description": "",
+    "price": "15.00"
+  },
+  {
+    "id": "407",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE CAPRESE",
+    "name": "Caprese",
+    "oldDescription": "",
+    "description": "",
+    "price": "9.00"
+  },
+  {
+    "id": "387",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE CARTOCCIO",
+    "name": "Cartoccio",
+    "oldDescription": "",
+    "description": "",
+    "price": "9.00"
+  },
+  {
+    "id": "402",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE CAVALLO",
+    "name": "Cavallo",
+    "oldDescription": "",
+    "description": "",
+    "price": "12.00"
+  },
+  {
+    "id": "406",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE COTOLETTA",
+    "name": "Cotoletta",
+    "oldDescription": "",
+    "description": "",
+    "price": "9.00"
+  },
+  {
+    "id": "389",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE EXTRA",
+    "name": "Extra",
+    "oldDescription": "",
+    "description": "",
+    "price": "15.00"
+  },
+  {
+    "id": "390",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE FABRIZIO",
+    "name": "Fabrizio",
+    "oldDescription": "",
+    "description": "",
+    "price": "15.00"
+  },
+  {
+    "id": "392",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE FANTASIA",
+    "name": "Fantasia",
+    "oldDescription": "",
+    "description": "",
+    "price": "17.00"
+  },
+  {
+    "id": "391",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE FIORENTINA",
+    "name": "Fiorentina",
+    "oldDescription": "",
+    "description": "",
+    "price": "20.00"
+  },
+  {
+    "id": "400",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE GINO",
+    "name": "Gino",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "393",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE GIOVANNI",
+    "name": "Giovanni",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "401",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE HAMBURGER",
+    "name": "Hamburger",
+    "oldDescription": "",
+    "description": "",
+    "price": "10.00"
+  },
+  {
+    "id": "386",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE HOT DOG",
+    "name": "Hot dog",
+    "oldDescription": "",
+    "description": "",
+    "price": "9.00"
+  },
+  {
+    "id": "394",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE IVANO",
+    "name": "Ivano",
+    "oldDescription": "",
+    "description": "",
+    "price": "15.00"
+  },
+  {
+    "id": "395",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE MARIO",
+    "name": "Mario",
+    "oldDescription": "",
+    "description": "",
+    "price": "15.00"
+  },
+  {
+    "id": "409",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE PANCETTATA",
+    "name": "Pancettata",
+    "oldDescription": "",
+    "description": "",
+    "price": "12.00"
+  },
+  {
+    "id": "396",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE PAOLO",
+    "name": "Paolo",
+    "oldDescription": "",
+    "description": "",
+    "price": "13.00"
+  },
+  {
+    "id": "404",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE POLLO",
+    "name": "Pollo",
+    "oldDescription": "",
+    "description": "",
+    "price": "10.00"
+  },
+  {
+    "id": "403",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE PORCHETTA",
+    "name": "Porchetta",
+    "oldDescription": "Porch moz pat*k m",
+    "description": "Porchetta, mozzarella, patatine*, K, M.",
+    "price": "10.50"
+  },
+  {
+    "id": "399",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE ROVAGNATI",
+    "name": "Rovagnati",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "411",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE RUSPANTE",
+    "name": "Ruspante",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "398",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "UFFICIALE VITELLO",
+    "name": "Vitello",
+    "oldDescription": "",
+    "description": "",
+    "price": "12.00"
+  },
+  {
+    "id": "367",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uff  vuoto",
+    "name": "Vuoto",
+    "oldDescription": "",
+    "description": "",
+    "price": "1.00"
+  },
+  {
+    "id": "607",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uff bocconcini cav",
+    "name": "Bocconcini di cavallo",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "610",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uff corndblue casa",
+    "name": "Cordon bleu della casa",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "611",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uff cotoletta casa",
+    "name": "Cotoletta della casa",
+    "oldDescription": "",
+    "description": "",
+    "price": "12.00"
+  },
+  {
+    "id": "602",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uff mizzica",
+    "name": "Mizzica",
+    "oldDescription": "Ventricina ,ement,moz,pat*,k,m,harissa,funghi",
+    "description": "Ventricina, emmental, mozzarella, patatine*, K, M, harissa e funghi.",
+    "price": "13.00"
+  },
+  {
+    "id": "562",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uff pink",
+    "name": "Pink",
+    "oldDescription": "Porchet wustel cip mozz patat*  k.m",
+    "description": "Porchetta, würstel, cipolla, mozzarella, patatine*, K, M.",
+    "price": "14.00"
+  },
+  {
+    "id": "605",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Uffic ciuzzo ",
+    "name": "Cicciuzzo",
+    "oldDescription": "Carne di asina,cipolla,mozzarella,lattuga,pat*,k,m,aromi naturali,olio,origano",
+    "description": "Carne di asina, cipolla, mozzarella, lattuga, patatine*, K, M, aromi naturali, olio e origano.",
+    "price": "14.00"
+  },
+  {
+    "id": "354",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficial  Deer",
+    "name": "Deer",
+    "oldDescription": "Hamburg di cervo cipoll patat sale origan k.m",
+    "description": "Hamburger di cervo, cipolla, patatine, sale, origano, K, M.",
+    "price": "20.00"
+  },
+  {
+    "id": "598",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale Diavola",
+    "name": "Diavola",
+    "oldDescription": "Ventricina piccante,mozzarella,pat*,k,m",
+    "description": "Ventricina piccante, mozzarella, patatine*, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "377",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale Romana",
+    "name": "Romana",
+    "oldDescription": "Porchetta artiggianale mozzarella pat*k m sale aromi misti ",
+    "description": "Porchetta artigianale, mozzarella, patatine*, K, M, sale e aromi misti.",
+    "price": "12.00"
+  },
+  {
+    "id": "375",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale Tusunami",
+    "name": "Tsunami",
+    "oldDescription": "Porchetta ventricina prosciutto mozzarella funghi  pat*K M sale olio origano ",
+    "description": "Porchetta, ventricina, prosciutto, mozzarella, funghi, patatine*, K, M, sale, olio e origano.",
+    "price": "15.00"
+  },
+  {
+    "id": "397",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale di marco",
+    "name": "Di Marco",
+    "oldDescription": "",
+    "description": "",
+    "price": "14.00"
+  },
+  {
+    "id": "284",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale salsiccia",
+    "name": "Salsiccia",
+    "oldDescription": "Salssicia,pat*,k,m,sale ",
+    "description": "Salsiccia, patatine*, K, M, sale.",
+    "price": "9.00"
+  },
+  {
+    "id": "382",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale super big ",
+    "name": "Superbig",
+    "oldDescription": "Braciola di pollo porchetta mozzarella pomodoro lattuga olive pata*k m origano sale aromi misti olio",
+    "description": "Braciola di pollo, porchetta, mozzarella, pomodoro, lattuga, olive, patatine*, K, M, origano, sale, aromi misti e olio.",
+    "price": "20.00"
+  },
+  {
+    "id": "383",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale superbombe",
+    "name": "Superbomber",
+    "oldDescription": "Braciola di pollo haburger porchetta pomodoro lattuga olive mozzarella pata*k m olio sale origano aromi misto derivati del latte",
+    "description": "Braciola di pollo, hamburger, porchetta, pomodoro, lattuga, olive, mozzarella, patatine*, K, M, olio, sale, origano, aromi misti e derivati del latte.",
+    "price": "25.00"
+  },
+  {
+    "id": "376",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale talia",
+    "name": "Talia",
+    "oldDescription": "Prosciutto wster mozzarella emmental pat* k m sale",
+    "description": "Prosciutto, würstel, mozzarella, emmental, patatine*, K, M, sale.",
+    "price": "14.00"
+  },
+  {
+    "id": "372",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale top",
+    "name": "Top",
+    "oldDescription": "Angus lattuga pomodoro patatine*k m aromi misto sale olio origano",
+    "description": "Angus, lattuga, pomodoro, patatine*, K, M, aromi misti, sale, olio e origano.",
+    "price": "15.00"
+  },
+  {
+    "id": "373",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "Ufficiale tornado ",
+    "name": "Tornado",
+    "oldDescription": "Cavallo ventricina pic cipolla mozz emmental pat*k m sale olio aromi misti origano",
+    "description": "Cavallo, ventricina piccante, cipolla, mozzarella, emmental, patatine*, K, M, sale, olio, aromi misti e origano.",
+    "price": "15.00"
+  },
+  {
+    "id": "368",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "ufficiale Kebab",
+    "name": "Kebab",
+    "oldDescription": "Kebab* pomodoro lattuga mozz sal haris yogurt olio sale origano pat*",
+    "description": "Kebab*, pomodoro, lattuga, mozzarella, salsa harissa, yogurt, olio, sale, origano e patatine*.",
+    "price": "12.00"
+  },
+  {
+    "id": "365",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "ufficiale Kiko",
+    "name": "Kiko",
+    "oldDescription": "Puled di suino chedar pat*cipolla croccante barbequ maio",
+    "description": "Pulled pork di suino, cheddar, patatine*, cipolla croccante, salsa barbecue e maionese.",
+    "price": "13.00"
+  },
+  {
+    "id": "266",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "ufficiale Polpetta",
+    "name": "Polpetta",
+    "oldDescription": "Polpetta cavallo, mollica pane,cipolla,mozza,derivati dell'atte,pata*k,m,",
+    "description": "Polpetta di cavallo, mollica di pane, cipolla, mozzarella, derivati del latte, patatine*, K, M.",
+    "price": "12.00"
+  },
+  {
+    "id": "378",
+    "sourceCategory": "Uff  - UFFICIALI",
+    "category": "ufficiali",
+    "oldName": "ufficiale Rustico",
+    "name": "Rustico",
+    "oldDescription": "Pollo speak mozzarella lattuga pat* sale olio origano aromi misti",
+    "description": "Pollo, speck, mozzarella, lattuga, patatine*, sale, olio, origano e aromi misti.",
+    "price": "15.00"
+  },
+  {
+    "id": "551",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "CAPRESE",
+    "name": "Caprese",
+    "oldDescription": "Menu E 8 caprese vaschetta pat * k m, lattina",
+    "description": "Caprese, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "547",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "CARTOCCIO",
+    "name": "Cartoccio",
+    "oldDescription": "Menu E 8 cartoccio vaschet pat* k.m  ,lattina",
+    "description": "Cartoccio, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "552",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "COTOLETTA",
+    "name": "Cotoletta",
+    "oldDescription": "Menu E 8 cotoletta vaschetta pat* k m ,lattina ",
+    "description": "Cotoletta, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "549",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "HAMBURGER",
+    "name": "Hamburger",
+    "oldDescription": "Menu E 8 hamburg ,vascetta pat* k m ,lattina",
+    "description": "Hamburger, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "546",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "HOT DOG",
+    "name": "Hot dog",
+    "oldDescription": "hot dog, vaschet pat *, k.m , lattina  ",
+    "description": "Hot dog, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "548",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "PORCHETTATA",
+    "name": "Porchettata",
+    "oldDescription": "menu E 8 porchetta  vaschett pat * k.m lattina",
+    "description": "Porchettata, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "550",
+    "sourceCategory": "Menu da 8 euro - MENU' 8",
+    "category": "menu8",
+    "oldName": "SALSICCIA",
+    "name": "Salsiccia",
+    "oldDescription": "Menu E 8 salsiccia vascetta pat* k m ,lattina ",
+    "description": "Salsiccia, vaschetta di patatine*, K, M e bevanda in lattina.",
+    "price": "8.00"
+  },
+  {
+    "id": "615",
+    "sourceCategory": "COPERTO - Pagina 1",
+    "category": "extra",
+    "oldName": "Coperto",
+    "name": "Coperto",
+    "oldDescription": "",
+    "description": "",
+    "price": "0.50"
+  },
+  {
+    "id": "616",
+    "sourceCategory": "COPERTO - Pagina 1",
+    "category": "extra",
+    "oldName": "Posate",
+    "name": "Posate",
+    "oldDescription": "",
+    "description": "",
+    "price": "0.50"
+  },
+  {
+    "id": "262",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREP BANANA",
+    "name": "Banana",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "358",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREP BANATELLA DOC",
+    "name": "Banatella DOC",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "357",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES BIANCA E NERA",
+    "name": "Bianca e nera",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "362",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES COLORATA ",
+    "name": "Colorata",
+    "oldDescription": "Nutella ,panna ,smartis",
+    "description": "Nutella, panna e Smarties.",
+    "price": "7.50"
+  },
+  {
+    "id": "359",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES CROCCANTE",
+    "name": "Croccante",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "360",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES DELIZIOSA",
+    "name": "Deliziosa",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "364",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES FANT. CHEF",
+    "name": "Fantasia dello chef",
+    "oldDescription": "",
+    "description": "",
+    "price": "8.00"
+  },
+  {
+    "id": "361",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES NUT. BISS",
+    "name": "Nutella bis",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "363",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "CREPES RAFFAELLO",
+    "name": "Raffaello",
+    "oldDescription": "",
+    "description": "",
+    "price": "8.00"
+  },
+  {
+    "id": "587",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "dessert",
+    "oldName": "Ciambella",
+    "name": "Ciambella",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.00"
+  },
+  {
+    "id": "371",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "dessert",
+    "oldName": "Cornetti ",
+    "name": "Cornetti",
+    "oldDescription": "",
+    "description": "",
+    "price": "2.00"
+  },
+  {
+    "id": "588",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep  cioccol bianco",
+    "name": "Cioccolato bianco",
+    "oldDescription": "",
+    "description": "",
+    "price": "5.00"
+  },
+  {
+    "id": "591",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep crema di fragol",
+    "name": "Crema di fragola",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.50"
+  },
+  {
+    "id": "589",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep crema pasticcer",
+    "name": "Crema pasticcera",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.50"
+  },
+  {
+    "id": "590",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep crema vaniglia",
+    "name": "Crema di vaniglia",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "584",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep kider cereal",
+    "name": "Kinder Cereali",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.50"
+  },
+  {
+    "id": "583",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep nut e mascarp",
+    "name": "Nutella e mascarpone",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "577",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep nut e noccioli",
+    "name": "Nutella e noccioline",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.50"
+  },
+  {
+    "id": "578",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep nutel di Pistac",
+    "name": "Crema al pistacchio",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "585",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep nutel e ricotta",
+    "name": "Nutella e ricotta",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "582",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crep ricot pistacch",
+    "name": "Ricotta e pistacchio",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "366",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crepes nut e panna",
+    "name": "Nutella e panna",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "576",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "Crepes nutella",
+    "name": "Nutella",
+    "oldDescription": "",
+    "description": "",
+    "price": "6.00"
+  },
+  {
+    "id": "586",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "dessert",
+    "oldName": "Donuts*",
+    "name": "Donuts*",
+    "oldDescription": "",
+    "description": "",
+    "price": "1.50"
+  },
+  {
+    "id": "575",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "dessert",
+    "oldName": "Krapfen farcito*",
+    "name": "Krapfen farcito*",
+    "oldDescription": "Farcito crema ",
+    "description": "Farcito con crema.",
+    "price": "2.00"
+  },
+  {
+    "id": "579",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "dessert",
+    "oldName": "Waffle nutell",
+    "name": "Waffle alla Nutella",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "580",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "dessert",
+    "oldName": "Waffle pistacch*",
+    "name": "Waffle al pistacchio*",
+    "oldDescription": "",
+    "description": "",
+    "price": "7.00"
+  },
+  {
+    "id": "596",
+    "sourceCategory": "Waffle e krapfen don - Dessert",
+    "category": "crepes-dolci",
+    "oldName": "crep Pistacchiosa",
+    "name": "Pistacchiosa",
+    "oldDescription": "Nutella di pistacchio,crema bianco,granella di pistacchio",
+    "description": "Crema al pistacchio, crema bianca e granella di pistacchio.",
+    "price": "8.00"
+  }
+]

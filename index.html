@@ -1,37 +1,78 @@
 <!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f7f5ed"><meta name="description" content="Oliva, cucina di stagione. Scopri il nostro menu, i piatti e le informazioni del locale.">
-  <title>Oliva — Il nostro menu</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="menu.css"><script src="app.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111110">
+  <meta name="description" content="Panineria da Andrea BBQ. Panini, Ufficiali, pizze, wrap, crêpes e sfizi: scopri il menu completo con tutti i prezzi.">
+  <title>Da Andrea BBQ — Il menu</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="menu-data.js" defer></script>
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <header class="topbar"><a class="wordmark" href="#" aria-label="Oliva, inizio pagina">oliva<span class="logo-leaf">◒</span></a><a class="info-link" href="#informazioni">Il locale <span>↗</span></a></header>
+  <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-flame" viewBox="0 0 24 24"><path d="M13 2c1 6-5 6-3 11 2-1 3-3 3-5 4 3 6 6 5 9-1 3-3 5-6 5-5 0-8-4-7-8 0-3 2-5 3-7 0 3 1 4 2 4-1-4 2-6 3-9Z"/></symbol>
+    <symbol id="icon-burger" viewBox="0 0 24 24"><path d="M4 10a8 7 0 0 1 16 0H4Zm-1 4h18M4 18h16l-1 3H5l-1-3Zm4-13h.01M12 4h.01M16 5h.01M3 13l5 2 4-2 4 2 5-2"/></symbol>
+    <symbol id="icon-pizza" viewBox="0 0 24 24"><path d="m4 3 17 17L1 22 4 3Zm0 4c6 0 11 5 13 10M8 12h.01M6 18h.01M12 18h.01"/></symbol>
+    <symbol id="icon-wrap" viewBox="0 0 24 24"><path d="m5 9 6 13 8-13M5 9c-4-5 0-9 4-6 3-4 7-1 6 2 5-1 7 3 4 4L5 9Zm3 6 9-2M9 18l7-2"/></symbol>
+    <symbol id="icon-fries" viewBox="0 0 24 24"><path d="m4 11 2 11h12l2-11H4Zm2 0V4h3v7m2 0V1h3v10m2 0V5h3v6M9 15l1 3h4l1-3"/></symbol>
+    <symbol id="icon-drink" viewBox="0 0 24 24"><path d="M5 7h14l-2 15H7L5 7Zm7 0 2-5h6M6 12h12"/></symbol>
+    <symbol id="icon-sweet" viewBox="0 0 24 24"><path d="M3 10h18v11H3V10Zm0 5h18M5 10V7h14v3M12 7V3m-1-1h2M8 15v3m8-3v3"/></symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="m5 3 4 4-3 3c2 4 4 6 8 8l3-3 4 4c-1 4-5 4-9 2C6 18 2 13 2 7l3-4Z"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Panineria da Andrea BBQ, inizio pagina"><span class="brand-icon"><svg class="icon"><use href="#icon-flame"/></svg></span><span><span class="brand-small">PANINERIA DA</span><strong>ANDREA<span class="brand-bbq">BBQ</span></strong></span></a>
+    <nav class="header-links" aria-label="Navigazione principale"><a href="#menu">IL MENU</a><a href="#informazioni">IL LOCALE</a></nav>
+    <a class="header-call" href="tel:+393667460906"><svg class="icon"><use href="#icon-phone"/></svg><span>CHIAMACI</span></a>
+  </header>
+
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-copy"><span class="eyebrow"><span class="little-line"></span> A TAVOLA, CON CALMA</span><h1 id="hero-title">Le cose buone.<br>Quelle <em>semplici.</em></h1><p>Ingredienti di stagione, ricette di casa.<br>Il piacere di stare insieme, un piatto alla volta.</p><a class="hero-cta" href="#menu">Scopri il menu <span>↓</span></a><div class="hero-foot">CUCINA ITALIANA <span>·</span> FATTA CON AMORE</div></div>
-      <div class="hero-image"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1300&q=85" alt="Pasta fresca con pomodoro e basilico" fetchpriority="high"><div class="image-shade"></div><span class="photo-caption">Un po’ di casa, in ogni piatto.</span><div class="season-stamp">FRESCO OGNI GIORNO<span>✳</span>SECONDO NATURA</div></div>
+      <div class="hero-copy"><span class="eyebrow"><span class="live-dot"></span> IRON STYLE AND MEAT</span><h1 id="hero-title">FAME VERA.<br><span>GUSTO</span><br>ESAGERATO<span class="title-dot">.</span></h1><p>Dal primo morso all’ultima patatina.<br>Benvenuto da Andrea.</p><a class="button button-orange" href="#menu">FATTI UN GIRO NEL MENU <svg class="icon"><use href="#icon-arrow"/></svg></a><div class="hero-caption">PANINI <span>✳</span> PIZZE <span>✳</span> BBQ</div></div>
+      <div class="hero-visual"><img src="assets/andrea-bbq-banner.png" width="1804" height="872" alt="Panineria da Andrea BBQ — Iron Style and Meat, King of BBQ" fetchpriority="high"><div class="hero-sticker"><span>QUI LA FAME</span><strong>FA SUL SERIO.</strong><svg class="icon"><use href="#icon-flame"/></svg></div><span class="visual-coordinate">DA ANDREA / KING OF BBQ</span></div>
     </section>
-    <div class="welcome-strip"><span>Benvenuti da Oliva</span><span class="strip-star">✳</span><p>Prenditi il tuo tempo. Al resto pensiamo noi.</p><span class="edition">IL MENU · EDIZIONE DI STAGIONE</span></div>
-    <section id="menu" class="menu-area" aria-labelledby="menu-title">
-      <div class="section-heading"><div><span class="eyebrow">FATTO IN CASA, CON CURA</span><h2 id="menu-title">La nostra <em>carta.</em></h2></div><p>Segui l’appetito.<br>Al resto pensiamo noi.</p></div>
+
+    <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>BIG BITES. BIG MOOD. <b>✳</b> PANINI & PIZZE <b>✳</b> KING OF BBQ <b>✳</b> DA ANDREA <b>✳</b> </span><span>BIG BITES. BIG MOOD. <b>✳</b> PANINI & PIZZE <b>✳</b> KING OF BBQ <b>✳</b> DA ANDREA <b>✳</b> </span></div></div>
+
+    <section id="menu" class="menu-section" aria-labelledby="menu-title">
+      <div class="menu-intro"><div><span class="eyebrow">SCEGLI. SCOPRI. AFFONDA IL MORSO.</span><h2 id="menu-title">CHE <span>FAME HAI?</span></h2></div><p>Panini, pizze e tutto quello che ci sta in mezzo.<br>Il tuo prossimo preferito è qui.</p></div>
+      <div class="quick-categories" id="quick-categories" aria-label="Categorie in evidenza"></div>
+      <div class="menu-toolbar">
+        <label class="search-field" for="menu-search"><svg class="icon" aria-hidden="true"><use href="#icon-search"/></svg><span class="sr-only">Cerca in tutto il menu per nome o ingrediente</span><input id="menu-search" type="search" placeholder="Cosa ti va? Cerca qui…" autocomplete="off"></label>
+        <button class="browse-button" type="button" data-open-categories><svg class="icon"><use href="#icon-grid"/></svg><span>TUTTE LE CATEGORIE</span><span class="browse-count">16</span></button>
+      </div>
+      <p id="search-status" class="sr-only" role="status" aria-live="polite"></p>
+      <noscript><p class="no-script">Attiva JavaScript per consultare il menu completo, oppure <a href="#informazioni">contatta il locale</a>.</p></noscript>
       <div class="menu-layout">
-      <nav class="category-bar" aria-label="Categorie del menu"><div id="categories"></div><span class="season-note">✳ Seguiamo le stagioni</span></nav>
-      <div class="menu-page">
-      <div class="menu-description"><div><span class="eyebrow" id="category-number">01 / LA CARTA</span><h3 id="category-title">Per cominciare</h3></div><span id="dish-count"></span></div>
-      <p class="menu-hint">Scegli un piatto per ingredienti e allergeni <span aria-hidden="true">↗</span></p>
-      <div id="dishes" class="dish-grid" aria-live="polite"></div>
-      <div class="menu-page-end"><span>oliva</span><span>BUON APPETITO.</span><span aria-hidden="true">✳</span></div>
-      </div></div>
-      <div class="kitchen-note"><span>✳</span><p><strong>A ognuno il suo piatto.</strong> Scopri le nostre proposte vegetariane e vegane. Per allergie o intolleranze, chiedi sempre al nostro staff.</p></div>
+        <aside class="menu-sidebar"><span class="eyebrow">ESPLORA IL MENU</span><nav id="categories" aria-label="Categorie del menu"></nav><div class="sidebar-note"><svg class="icon"><use href="#icon-flame"/></svg><p>La fame non è<br>tutta uguale.</p><strong>TROVA LA TUA.</strong></div></aside>
+        <div class="menu-content">
+          <div class="category-heading"><div><span class="eyebrow" id="category-number"></span><h3 id="category-title">PANINI</h3><p id="category-subtitle"></p></div><span id="dish-count"></span></div>
+          <div class="list-guide"><span>TOCCA UN PIATTO PER SCOPRIRE I DETTAGLI</span><span>PREZZI IN €</span></div>
+          <div id="dishes" class="dish-grid"></div>
+          <div class="menu-end"><span>HAI TROVATO IL TUO?</span><button type="button" data-open-categories>ESPLORA ALTRE CATEGORIE <svg class="icon"><use href="#icon-arrow"/></svg></button></div>
+          <details class="ingredient-note"><summary>Ingredienti, allergeni e simboli del menu <span>+</span></summary><p>Per allergie e intolleranze, rivolgiti al personale prima di ordinare. Gli asterischi e le sigle K/M sono riportati dal menu originale: chiedi al locale che cosa indicano.</p></details>
+        </div>
+      </div>
     </section>
-    <section class="manifesto"><span class="eyebrow">LA NOSTRA FILOSOFIA</span><h2>Non serve molto.<br>Serve che sia <em>buono.</em></h2><p>Scegliamo ingredienti che conosciamo, rispettiamo il ritmo delle stagioni e lasciamo che siano i sapori a parlare.</p><span class="manifesto-signature">Con amore, Oliva.</span><div class="olive-art" aria-hidden="true">❧</div></section>
-    <section id="informazioni" class="info-section"><div class="section-heading"><div><span class="eyebrow">TI ASPETTIAMO QUI</span><h2>Un posto dove <em>stare bene.</em></h2></div></div><div class="info-grid"><article><span class="info-icon">⌁</span><h3>Dove siamo</h3><p>Via degli Ulivi, 12<br>00100 Roma, Italia</p><span class="muted">Indirizzo dimostrativo</span></article><article><span class="info-icon">◷</span><h3>Quando vuoi</h3><dl><div><dt>Mar — Dom</dt><dd>12:00 — 14:30<br>19:00 — 22:30</dd></div><div><dt>Lunedì</dt><dd>Ci riposiamo</dd></div></dl></article><article><span class="info-icon">♡</span><h3>Due cose da sapere</h3><p>Coperto € 2,50 a persona.<br>I piccoli ospiti sono benvenuti.<br>Chiedici il piatto del giorno.</p></article></div></section>
+
+    <section class="officials-promo"><div class="promo-mark" aria-hidden="true">XXL</div><div><span class="eyebrow">HAI FAME? ALZA IL LIVELLO.</span><h2>GLI <span>UFFICIALI.</span></h2><p>Panini più grandi, preparati con impasto della pizza.<br>Qui si fa sul serio.</p><button class="button button-dark" data-go-category="ufficiali">SCOPRI GLI UFFICIALI <svg class="icon"><use href="#icon-arrow"/></svg></button></div><svg class="promo-flame icon" aria-hidden="true"><use href="#icon-flame"/></svg></section>
+
+    <section id="informazioni" class="info-section"><div class="info-heading"><span class="eyebrow">CI TROVI QUI</span><h2>DA ANDREA.<br><span>COME A CASA,</span><br>MA CON PIÙ FAME.</h2><a class="button button-outline" href="tel:+393667460906">FACCI UNO SQUILLO <svg class="icon"><use href="#icon-phone"/></svg></a></div><div class="info-cards"><article><span class="info-number">01</span><div><h3>PARLIAMONE.</h3><a href="tel:+393667460906">366 746 0906 ↗</a><a href="tel:+393386937565">338 693 7565 ↗</a></div></article><article><span class="info-number">02</span><div><h3>PASSI DA NOI?</h3><p>Chiamaci per gli orari di apertura e le indicazioni per raggiungerci.</p></div></article><article><span class="info-number">03</span><div><h3>AL TAVOLO.</h3><dl><div><dt>Coperto</dt><dd>0,50 €</dd></div><div><dt>Posate</dt><dd>0,50 €</dd></div></dl></div></article></div></section>
   </main>
-  <footer><a class="wordmark" href="#">oliva<span class="logo-leaf">◒</span></a><p>La felicità è una tavola condivisa.</p><span>LOCALE E MENU DIMOSTRATIVI · PREZZI IN EURO</span><a class="back-top" href="#">Torna su ↑</a></footer>
-  <dialog id="dish-dialog"><button class="close-dialog" aria-label="Chiudi dettagli">×</button><img id="detail-image" alt=""><div class="detail-copy"><span class="eyebrow" id="detail-label"></span><div class="detail-heading"><h2 id="detail-title"></h2><span id="detail-price"></span></div><p id="detail-description"></p><div id="detail-tags" class="tags"></div><div class="allergen-box"><strong>Allergeni</strong><p id="detail-allergens"></p><small>In cucina vengono lavorati tutti i principali allergeni. Segnala eventuali allergie al personale prima di ordinare.</small></div></div></dialog>
+
+  <footer><a class="footer-brand" href="#">ANDREA<span>BBQ</span></a><p>IRON STYLE AND MEAT. KING OF BBQ.</p><a href="#">TORNA SU ↑</a></footer>
+  <nav class="mobile-nav" aria-label="Navigazione rapida"><a href="#menu"><svg class="icon"><use href="#icon-burger"/></svg>MENU</a><button type="button" data-open-categories><svg class="icon"><use href="#icon-grid"/></svg>CATEGORIE</button><a href="tel:+393667460906"><svg class="icon"><use href="#icon-phone"/></svg>CHIAMA</a></nav>
+
+  <dialog id="category-dialog" aria-labelledby="category-dialog-title"><div class="drawer-header"><div><span class="eyebrow">TROVA IL TUO PROSSIMO MORSO</span><h2 id="category-dialog-title">SCEGLI LA TUA <span>FAME.</span></h2></div><button type="button" class="close-categories close-button" aria-label="Chiudi categorie">×</button></div><div id="drawer-categories"></div></dialog>
+  <dialog id="dish-dialog" aria-labelledby="detail-title"><div class="detail-banner"><svg class="icon" aria-hidden="true"><use href="#icon-flame"/></svg><span>DA ANDREA / IL MENU</span><button class="close-dialog close-button" aria-label="Chiudi dettagli">×</button></div><div class="detail-copy"><span class="eyebrow" id="detail-label"></span><div class="detail-heading"><h2 id="detail-title"></h2><span id="detail-price"></span></div><div class="detail-divider"></div><span class="detail-section-label">DENTRO C’È</span><p id="detail-description"></p><div id="detail-tags" class="tags"></div><p id="detail-notes" class="detail-notes" hidden></p><div class="allergen-box"><strong>ALLERGENI</strong><p id="detail-allergens"></p></div><details id="source-details"><summary>Consulta la descrizione originale</summary><p id="source-text"></p></details><button type="button" class="button button-orange detail-back">TORNA AL MENU <svg class="icon"><use href="#icon-arrow"/></svg></button></div></dialog>
 </body>
 </html>
