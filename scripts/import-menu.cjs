@@ -8,7 +8,6 @@ const definitions = [
   ['baby','Panini baby','Tutto il gusto, in formato baby'],
   ['piadine','Piadine','Le farciture dei Panini baby, in versione piadina.'],
   ['ufficiali','Ufficiali','Panini più grandi, preparati con impasto della pizza.'],
-  ['menu8','Menu da 8 €','Panino, vaschetta di patatine e bevanda in lattina.'],
   ['crepes','Crêpes salate','Le nostre farciture in una crêpe'],
   ['wrap','Wrap','Le nostre proposte in versione wrap'],
   ['pizze','Pizze','Le pizze al piatto'],
@@ -23,9 +22,10 @@ const definitions = [
   ['extra','Supplementi e coperto','Aggiunte, coperto e posate']
 ];
 // Voci rimosse su richiesta del locale: non vengono pubblicate nel menu.
-const excludedItemIds = new Set([428]);
+const excludedCategoryIds = new Set([2517]);
+const excludedItemIds = new Set([428,471,472,575,586,587]);
 const menu = definitions.map(([id,name,subtitle])=>({id,name,title:name,subtitle,dishes:[]}));
-const categoryMap={2500:'panini',2501:'crepes',2502:'wrap',2503:'baby',2504:'pizze',2505:'pizze-dolci',2506:'maxi',2508:'fritti',2509:'bevande',2516:'ufficiali',2517:'menu8',609:'extra',2520:'dessert'};
+const categoryMap={2500:'panini',2501:'crepes',2502:'wrap',2503:'baby',2504:'pizze',2505:'pizze-dolci',2506:'maxi',2508:'fritti',2509:'bevande',2516:'ufficiali',609:'extra',2520:'dessert'};
 const sweetCrepes=new Set([473,468,535,467,469,470,570,262,358,357,362,359,360,364,361,363,588,591,589,590,584,583,577,578,585,582,366,576,596]);
 const sweetPizzas=new Set([558,567,573,282,574,352]);
 const beers=new Set([274,268,273,269,275,276,270,272]);
@@ -38,7 +38,7 @@ const nameOverrides={
   15:'Petto di pollo',16:'Rustico',63:'Petto di pollo',64:'Rustico',
   421:'Bufalo Billy',431:'Extra Large',440:'Marco',
   162:'Faccia di vecchia',203:'Faccia di vecchia maxi',178:'007',219:'007',187:'Cocktail di gamberi',228:'Cocktail di gamberi',
-  566:'Sapori gourmet',472:'Aggiunta di patatine — pizza al piatto',471:'Aggiunta di patatine — pizza maxi',
+  566:'Sapori gourmet',
   258:'Anelli di cipolla in pastella',442:'Bastoncini di pollo',264:'Crocchette di patate',437:'Camembert',447:'Cheese wedges',452:'Crispy',434:'Jalapeños',263:'Mini fagottini al formaggio',261:'Mozzarelle impanate',260:'Nachos al formaggio',446:'Nuggets',
   466:'Coca-Cola in bottiglia',277:'Coca-Cola grande',458:'Estathé alla pesca',459:'Estathé al limone',454:'Coca-Cola in lattina',455:'Coca-Cola Zero in lattina',456:'Pepsi in lattina',465:'Lemonsoda',451:'Pepsi grande',461:'Red Bull',267:'Bevanda in lattina',
   343:'A modo mio',336:'Cotoletta della casa',410:'Cordon bleu',405:'Polpetta di cavallo',385:'Pata',367:'Vuoto',607:'Bocconcini di cavallo',610:'Cordon bleu della casa',611:'Cotoletta della casa',605:'Cicciuzzo',354:'Deer',375:'Tsunami',383:'Superbomber',
@@ -114,7 +114,6 @@ const descriptionOverrides={
   417:'Cavallo*, ventricina piccante, mozzarella, emmental, cipolla, patatine, K, M.',
   438:'Porchetta, prosciutto, ventricina piccante, mozzarella, funghi, patatine, sale, olio extravergine di oliva, K, M.',
   418:'Braciola di pollo, mozzarella, pomodoro, olive, lattuga, patatine, K, M.',
-  472:'Aggiunta di patatine nelle pizze al piatto.',471:'Aggiunta di patatine nelle pizze maxi.',
   568:'Mozzarella, pistacchio, mortadella, burrata, aromi naturali e olio extravergine di oliva.',
   195:'Mozzarella, crema di carciofi, speck, olio extravergine di oliva e origano.',
   557:'Base bianca, mozzarella, cheddar, pulled pork, maionese e salsa barbecue.',
@@ -167,7 +166,6 @@ const rules=[
   [/ricotta spinaci/g,'ricotta, spinaci'],[/sale aromi/g,'sale, aromi'],[/\btabasco\b/gi,'Tabasco'],
 ];
 function cleanDescription(raw,id,category){
-  if(category===2517)return `${cleanName(source.menu.categories.find(c=>c.id===2517).plus.find(p=>p.id===id).name,id)}, vaschetta di patatine*, K, M e bevanda in lattina.`;
   if(descriptionOverrides[id])return descriptionOverrides[id];
   let s=(raw||'').trim();if(!s)return '';
   for(const [pattern,replacement] of rules)s=s.replace(pattern,replacement);
@@ -176,6 +174,7 @@ function cleanDescription(raw,id,category){
 }
 const changes=[];
 for(const category of source.menu.categories){
+  if(excludedCategoryIds.has(category.id)) continue;
   for(const p of category.plus){
     if(excludedItemIds.has(p.id)) continue;
     let target=categoryMap[category.id];
@@ -183,7 +182,6 @@ for(const category of source.menu.categories){
     if(sweetCrepes.has(p.id))target='crepes-dolci';
     if(sweetPizzas.has(p.id))target='pizze-dolci';
     if(beers.has(p.id))target='birre';
-    if([471,472].includes(p.id))target='extra';
     const dish={id:String(p.id),name:cleanName(p.name,p.id),price:Number(p.price),description:cleanDescription(p.description,p.id,category.id),tags:[],image:null,sourceCategory:category.name,sourceName:p.name,sourceDescription:p.description||'',sourcePrice:p.price};
     if(category.id===2501&&target==='crepes-dolci')dish.variant='Carta crêpes';
     if(category.id===2520&&target==='crepes-dolci')dish.variant='Carta dessert';

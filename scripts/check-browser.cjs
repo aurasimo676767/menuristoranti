@@ -11,11 +11,12 @@ const os = require('node:os');
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href,{waitUntil:'load',timeout:30000});
     assert.equal(await page.locator('.dish-card').count(),53);
-    assert.equal(await page.locator('#drawer-categories button').count(),17);
+    assert.equal(await page.locator('#drawer-categories button').count(),16);
     assert.equal(await page.locator('#quick-categories button').count(),6);
     assert.equal(await page.locator('.quick-category > span').count(),0);
     assert.equal(await page.locator('.category-button small').count(),0);
     assert.equal(await page.locator('.drawer-category small').count(),0);
+    assert.equal(await page.locator('[data-dish-id="471"], [data-dish-id="472"], [data-dish-id="575"], [data-dish-id="586"], [data-dish-id="587"]').count(),0);
     for(const category of await page.evaluate(()=>window.MENU_DATA.categories.map(c=>({id:c.id,count:c.dishes.length})))){
       await page.locator('.mobile-nav [data-open-categories]').click();
       await page.locator(`#drawer-categories [data-category="${category.id}"]`).click();

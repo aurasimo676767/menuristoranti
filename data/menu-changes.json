@@ -2110,16 +2110,6 @@
     "price": "7.00"
   },
   {
-    "id": "472",
-    "sourceCategory": "PIZZE PIATTO - PIZZE",
-    "category": "extra",
-    "oldName": "Aggiunta di patat",
-    "name": "Aggiunta di patatine — pizza al piatto",
-    "oldDescription": "Aggiunta di patatin nelle pizze a piatto",
-    "description": "Aggiunta di patatine nelle pizze al piatto.",
-    "price": "2.50"
-  },
-  {
     "id": "163",
     "sourceCategory": "PIZZE PIATTO - PIZZE",
     "category": "pizze",
@@ -2608,16 +2598,6 @@
     "oldDescription": "Pom,mozz,tonno,cipolla,olio,origano",
     "description": "Pomodoro, mozzarella, tonno, cipolla, olio, origano.",
     "price": "17.00"
-  },
-  {
-    "id": "471",
-    "sourceCategory": "PIZZE MAXI - PIZZE MAXI",
-    "category": "extra",
-    "oldName": "Aggiunt di patatine",
-    "name": "Aggiunta di patatine — pizza maxi",
-    "oldDescription": "Aggiunta di patatin nelle max",
-    "description": "Aggiunta di patatine nelle pizze maxi.",
-    "price": "5.00"
   },
   {
     "id": "204",
@@ -3800,76 +3780,6 @@
     "price": "15.00"
   },
   {
-    "id": "551",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "CAPRESE",
-    "name": "Caprese",
-    "oldDescription": "Menu E 8 caprese vaschetta pat * k m, lattina",
-    "description": "Caprese, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
-    "id": "547",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "CARTOCCIO",
-    "name": "Cartoccio",
-    "oldDescription": "Menu E 8 cartoccio vaschet pat* k.m  ,lattina",
-    "description": "Cartoccio, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
-    "id": "552",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "COTOLETTA",
-    "name": "Cotoletta",
-    "oldDescription": "Menu E 8 cotoletta vaschetta pat* k m ,lattina ",
-    "description": "Cotoletta, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
-    "id": "549",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "HAMBURGER",
-    "name": "Hamburger",
-    "oldDescription": "Menu E 8 hamburg ,vascetta pat* k m ,lattina",
-    "description": "Hamburger, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
-    "id": "546",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "HOT DOG",
-    "name": "Hot dog",
-    "oldDescription": "hot dog, vaschet pat *, k.m , lattina  ",
-    "description": "Hot dog, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
-    "id": "548",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "PORCHETTATA",
-    "name": "Porchettata",
-    "oldDescription": "menu E 8 porchetta  vaschett pat * k.m lattina",
-    "description": "Porchettata, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
-    "id": "550",
-    "sourceCategory": "Menu da 8 euro - MENU' 8",
-    "category": "menu8",
-    "oldName": "SALSICCIA",
-    "name": "Salsiccia",
-    "oldDescription": "Menu E 8 salsiccia vascetta pat* k m ,lattina ",
-    "description": "Salsiccia, vaschetta di patatine*, K, M e bevanda in lattina.",
-    "price": "8.00"
-  },
-  {
     "id": "615",
     "sourceCategory": "COPERTO - Pagina 1",
     "category": "extra",
@@ -3978,16 +3888,6 @@
     "oldDescription": "",
     "description": "",
     "price": "8.00"
-  },
-  {
-    "id": "587",
-    "sourceCategory": "Waffle e krapfen don - Dessert",
-    "category": "dessert",
-    "oldName": "Ciambella",
-    "name": "Ciambella",
-    "oldDescription": "",
-    "description": "",
-    "price": "2.00"
   },
   {
     "id": "371",
@@ -4118,26 +4018,6 @@
     "oldDescription": "",
     "description": "",
     "price": "6.00"
-  },
-  {
-    "id": "586",
-    "sourceCategory": "Waffle e krapfen don - Dessert",
-    "category": "dessert",
-    "oldName": "Donuts*",
-    "name": "Donuts*",
-    "oldDescription": "",
-    "description": "",
-    "price": "1.50"
-  },
-  {
-    "id": "575",
-    "sourceCategory": "Waffle e krapfen don - Dessert",
-    "category": "dessert",
-    "oldName": "Krapfen farcito*",
-    "name": "Krapfen farcito*",
-    "oldDescription": "Farcito crema ",
-    "description": "Farcito con crema.",
-    "price": "2.00"
   },
   {
     "id": "579",
