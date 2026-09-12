@@ -22,7 +22,7 @@ const definitions = [
 ];
 // Voci rimosse su richiesta del locale: non vengono pubblicate nel menu.
 const excludedCategoryIds = new Set([2517]);
-const excludedItemIds = new Set([428,471,472,569,575,586,587,594]);
+const excludedItemIds = new Set([278,428,471,472,569,575,586,587,594]);
 const menu = definitions.map(([id,name,subtitle])=>({id,name,title:name,subtitle,dishes:[]}));
 const categoryMap={2500:'panini',2501:'crepes',2502:'wrap',2503:'baby',2504:'pizze',2505:'pizze-dolci',2506:'maxi',2508:'fritti',2509:'bevande',2516:'ufficiali',609:'extra',2520:'dessert'};
 const sweetCrepes=new Set([473,468,535,467,469,470,570,262,358,357,362,359,360,364,361,363,588,591,589,590,584,583,577,578,585,582,366,576,596]);
@@ -39,7 +39,7 @@ const nameOverrides={
   162:'Faccia di vecchia',203:'Faccia di vecchia maxi',178:'007',219:'007',187:'Cocktail di gamberi',228:'Cocktail di gamberi',
   566:'Sapori gourmet',
   258:'Anelli di cipolla in pastella',442:'Bastoncini di pollo',264:'Crocchette di patate',437:'Camembert',447:'Cheese wedges',452:'Crispy',434:'Jalapeños',263:'Mini fagottini al formaggio',261:'Mozzarelle impanate',260:'Nachos al formaggio',446:'Nuggets',
-  466:'Coca-Cola in bottiglia',277:'Coca-Cola grande',458:'Estathé alla pesca',459:'Estathé al limone',454:'Coca-Cola in lattina',455:'Coca-Cola Zero in lattina',456:'Pepsi in lattina',465:'Lemonsoda',451:'Pepsi grande',461:'Red Bull',267:'Bevanda in lattina',
+  279:'Acqua naturale',466:'Coca-Cola in bottiglia',277:'Coca-Cola grande',458:'Estathé alla pesca',459:'Estathé al limone',454:'Coca-Cola in lattina',455:'Coca-Cola Zero in lattina',456:'Pepsi in lattina',465:'Lemonsoda',451:'Pepsi grande',461:'Red Bull',267:'Fanta in lattina',
   343:'A modo mio',336:'Cotoletta della casa',410:'Cordon bleu',405:'Polpetta di cavallo',385:'Pata',367:'Vuoto',607:'Bocconcini di cavallo',610:'Cordon bleu della casa',611:'Cotoletta della casa',605:'Cicciuzzo',354:'Deer',375:'Tsunami',383:'Superbomber',
   262:'Banana',358:'Banatella DOC',357:'Bianca e nera',362:'Colorata',359:'Croccante',360:'Deliziosa',364:'Fantasia dello chef',361:'Nutella bis',363:'Raffaello',
   473:'Cioccolato bianco',588:'Cioccolato bianco',591:'Crema di fragola',589:'Crema pasticcera',590:'Crema di vaniglia',584:'Kinder Cereali',
@@ -196,6 +196,14 @@ for(const category of source.menu.categories){
 const baby = menu.find(category=>category.id==='baby');
 const piadine = menu.find(category=>category.id==='piadine');
 piadine.dishes = baby.dishes.map(dish=>({...dish,id:`piadina-${dish.id}`}));
+const drinks = menu.find(category=>category.id==='bevande');
+const naturalWater = drinks.dishes.find(dish=>dish.id==='279');
+drinks.dishes.push({...naturalWater,id:'acqua-frizzante',name:'Acqua frizzante'});
+const drinkOrder=['279','acqua-frizzante','277','466','454','455','267','457','461'];
+drinks.dishes.sort((a,b)=>{
+  const left=drinkOrder.indexOf(a.id),right=drinkOrder.indexOf(b.id);
+  return (left===-1?drinkOrder.length:left)-(right===-1?drinkOrder.length:right);
+});
 const output={restaurantName:'Panineria Andrea',currency:source.currency,categories:menu};
 fs.writeFileSync(path.join(root,'menu-data.js'),'// Menu importato: modificare i dati sorgente o lo script di importazione.\nwindow.MENU_DATA = '+JSON.stringify(output,null,2)+';\n');
 fs.writeFileSync(path.join(root,'data/menu-changes.json'),JSON.stringify(changes,null,2)+'\n');

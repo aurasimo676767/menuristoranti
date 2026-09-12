@@ -8,9 +8,9 @@ const context = {window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(root, 'menu-data.js'), 'utf8'), context);
 const categories = context.window.MENU_DATA.categories;
 const imported = categories.flatMap(category => category.dishes);
-const sourceItems = imported.filter(dish=>!dish.id.startsWith('piadina-'));
+const sourceItems = imported.filter(dish=>!dish.id.startsWith('piadina-')&&dish.id!=='acqua-frizzante');
 const excludedCategoryIds = new Set([2517]);
-const excludedItemIds = new Set([428,471,472,569,575,586,587,594]);
+const excludedItemIds = new Set([278,428,471,472,569,575,586,587,594]);
 const originals = source.menu.categories
   .filter(category=>!excludedCategoryIds.has(category.id))
   .flatMap(category => category.plus)
@@ -20,6 +20,11 @@ assert.equal(new Set(sourceItems.map(dish=>dish.id)).size, originals.length);
 for(const id of excludedItemIds) assert.equal(imported.some(dish=>dish.id===String(id)), false, `Voce rimossa ancora pubblicata: ${id}`);
 assert.equal(categories.some(category=>category.id==='menu8'), false, 'Menu da 8 € ancora pubblicato');
 assert.equal(categories.some(category=>category.id==='panini-dolci'), false, 'Panini dolci ancora pubblicato');
+const drinks = categories.find(category=>category.id==='bevande');
+assert.equal(JSON.stringify(drinks.dishes.slice(0,9).map(dish=>dish.id)), JSON.stringify(['279','acqua-frizzante','277','466','454','455','267','457','461']));
+assert.equal(drinks.dishes.find(dish=>dish.id==='279').name, 'Acqua naturale');
+assert.equal(drinks.dishes.find(dish=>dish.id==='acqua-frizzante').name, 'Acqua frizzante');
+assert.equal(drinks.dishes.find(dish=>dish.id==='267').name, 'Fanta in lattina');
 for(const original of originals){
   const dish = sourceItems.find(item=>item.id === String(original.id));
   assert.ok(dish, `Voce mancante: ${original.id}`);

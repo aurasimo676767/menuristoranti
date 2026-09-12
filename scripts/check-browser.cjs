@@ -16,7 +16,7 @@ const os = require('node:os');
     assert.equal(await page.locator('.quick-category > span').count(),0);
     assert.equal(await page.locator('.category-button small').count(),0);
     assert.equal(await page.locator('.drawer-category small').count(),0);
-    assert.equal(await page.locator('[data-dish-id="471"], [data-dish-id="472"], [data-dish-id="569"], [data-dish-id="575"], [data-dish-id="586"], [data-dish-id="587"], [data-dish-id="594"]').count(),0);
+    assert.equal(await page.locator('[data-dish-id="278"], [data-dish-id="471"], [data-dish-id="472"], [data-dish-id="569"], [data-dish-id="575"], [data-dish-id="586"], [data-dish-id="587"], [data-dish-id="594"]').count(),0);
     for(const category of await page.evaluate(()=>window.MENU_DATA.categories.map(c=>({id:c.id,count:c.dishes.length})))){
       await page.locator('.mobile-nav [data-open-categories]').click();
       await page.locator(`#drawer-categories [data-category="${category.id}"]`).click();

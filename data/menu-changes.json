@@ -3020,21 +3020,11 @@
     "price": "4.00"
   },
   {
-    "id": "278",
-    "sourceCategory": "BEVANDE - BEVANDE",
-    "category": "bevande",
-    "oldName": "ACQUA GRANDE",
-    "name": "Acqua grande",
-    "oldDescription": "",
-    "description": "",
-    "price": "2.00"
-  },
-  {
     "id": "279",
     "sourceCategory": "BEVANDE - BEVANDE",
     "category": "bevande",
     "oldName": "ACQUA PICCOLA",
-    "name": "Acqua piccola",
+    "name": "Acqua naturale",
     "oldDescription": "",
     "description": "",
     "price": "1.00"
@@ -3154,7 +3144,7 @@
     "sourceCategory": "BEVANDE - BEVANDE",
     "category": "bevande",
     "oldName": "LATTINA",
-    "name": "Bevanda in lattina",
+    "name": "Fanta in lattina",
     "oldDescription": "",
     "description": "",
     "price": "2.50"
