@@ -26,4 +26,4 @@ assert.ok(categories.find(c=>c.id==='ufficiali').subtitle.includes('impasto dell
 assert.equal(imported.find(d=>d.id==='615').price, 0.5);
 assert.equal(imported.find(d=>d.id==='8').price, 6.5);
 const originalMissing = originals.filter(d=>!d.description.trim()).length;
-console.log(`PASS: tutte le ${originals.length} voci presenti una volta, prezzi identici, ${originalMissing} descrizioni mancanti non inventate, asterischi conservati; ${categories.length} categorie.`);
+console.log(`PASS: tutte le ${originals.length} voci presenti una volta, prezzi identici, ${originalMissing} descrizioni mancanti non inventate e asterischi originali conservati; ${categories.length} categorie.`);

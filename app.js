@@ -122,11 +122,6 @@ function openDish(dish, category, trigger) {
   document.querySelector('#detail-allergens').textContent = 'L’elenco completo degli allergeni non è indicato nel menu originale. Rivolgiti al personale per informazioni su ingredienti e allergeni.';
   const tags = document.querySelector('#detail-tags'); tags.replaceChildren();
   if (dish.variant) tags.append(element('span', 'tag', dish.variant));
-  const notes = [];
-  if (dish.hasSourceAsterisk) notes.push('L’asterisco (*) è riportato dal menu originale: chiedi al personale che cosa indica.');
-  if (dish.hasSourceAbbreviations) notes.push('K e M sono sigle del menu originale: verifica con il personale le salse incluse.');
-  if (dish.needsReview) notes.push('Alcuni termini della descrizione originale richiedono conferma del locale.');
-  const note = document.querySelector('#detail-notes'); note.textContent = notes.join(' '); note.hidden = !notes.length;
   document.querySelector('#source-text').textContent = `${dish.sourceName}${dish.sourceDescription ? ' — ' + dish.sourceDescription : ''}`;
   document.querySelector('#source-details').open = false;
   dialog.showModal(); dialog.scrollTop = 0; document.body.style.overflow = 'hidden';

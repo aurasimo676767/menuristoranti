@@ -57,8 +57,7 @@ function cleanName(raw,id){
     .replace(/\b(andrea|marco|bruno|giuvanni|bill)\b/g,word=>word[0].toUpperCase()+word.slice(1));
   return s.charAt(0).toUpperCase()+s.slice(1);
 }
-// Correzioni puntuali delle descrizioni meno strutturate. Le sigle K/M e gli
-// asterischi restano visibili finché il locale non ne conferma il significato.
+// Correzioni puntuali delle descrizioni meno strutturate.
 const descriptionOverrides={
   15:'Petto di pollo, lattuga, patatine, sale, olio, origano, K, M. *',
   271:'Porchetta, mozzarella, patatine*, K, M.',
