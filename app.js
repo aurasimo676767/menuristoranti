@@ -122,7 +122,7 @@ function openDish(dish, category, trigger) {
   description.textContent = dish.description;
   description.hidden = !dish.description;
   ingredientLabel.hidden = !dish.description;
-  document.querySelector('#detail-allergens').textContent = 'L’elenco completo degli allergeni non è indicato nel menu originale. Rivolgiti al personale per informazioni su ingredienti e allergeni.';
+  document.querySelector('#detail-allergens').textContent = 'Per conoscere gli allergeni presenti in questo prodotto, consulta il registro allergeni disponibile presso il personale.';
   const tags = document.querySelector('#detail-tags'); tags.replaceChildren();
   if (dish.variant) tags.append(element('span', 'tag', dish.variant));
   document.querySelector('#source-text').textContent = `${dish.sourceName}${dish.sourceDescription ? ' — ' + dish.sourceDescription : ''}`;

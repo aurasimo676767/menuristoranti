@@ -30,6 +30,7 @@ const os = require('node:os');
     assert.equal(await page.locator('#detail-description').isHidden(),true);
     assert.equal(await page.locator('#detail-ingredients-label').isHidden(),true);
     assert.equal(await page.locator('#dish-dialog').innerText().then(text=>text.includes('Gli ingredienti non sono indicati nel menu originale')),false);
+    assert.ok((await page.locator('#detail-allergens').innerText()).includes('registro allergeni disponibile presso il personale'));
     await page.keyboard.press('Escape');
     assert.equal(await page.locator('#dish-dialog').evaluate(el=>el.open),false);
     assert.equal(await page.evaluate(()=>document.activeElement.dataset.dishId),'615');
