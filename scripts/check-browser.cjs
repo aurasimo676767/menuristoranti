@@ -51,7 +51,7 @@ const os = require('node:os');
       }
       selectCategory(window.MENU_DATA.categories[0]);return count;
     });
-    assert.equal(checked,418);
+    assert.equal(checked, await page.evaluate(()=>window.MENU_DATA.categories.reduce((total, category)=>total+category.dishes.length,0)));
     for(const width of [320,390,768,1366]){
       await page.setViewportSize({width,height:900});
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow a ${width}px`);
@@ -76,7 +76,7 @@ const os = require('node:os');
     await page.setViewportSize({width:390,height:900});
     await page.screenshot({path:path.join(os.tmpdir(),'andrea-home-mobile.png')});
     assert.deepEqual(errors,[]);
-    console.log('PASS browser: 16 categorie, 418 dettagli, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.');
+    console.log(`PASS browser: 16 categorie, ${checked} dettagli, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.`);
     console.log('Screenshot in '+os.tmpdir()+'/andrea-menu-{mobile,detail,desktop}.png');
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});

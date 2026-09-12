@@ -21,6 +21,8 @@ const definitions = [
   ['birre','Birre','La selezione di birre'],
   ['extra','Supplementi e coperto','Aggiunte, coperto e posate']
 ];
+// Voci rimosse su richiesta del locale: non vengono pubblicate nel menu.
+const excludedItemIds = new Set([428]);
 const menu = definitions.map(([id,name,subtitle])=>({id,name,title:name,subtitle,dishes:[]}));
 const categoryMap={2500:'panini',2501:'crepes',2502:'wrap',2503:'baby',2504:'pizze',2505:'pizze-dolci',2506:'maxi',2508:'fritti',2509:'bevande',2516:'ufficiali',2517:'menu8',609:'extra',2520:'dessert'};
 const sweetCrepes=new Set([473,468,535,467,469,470,570,262,358,357,362,359,360,364,361,363,588,591,589,590,584,583,577,578,585,582,366,576,596]);
@@ -32,7 +34,8 @@ const nameOverrides={
   79:'Bocconcini di cavallo',78:'Carne di cavallo',80:'Polpetta di cavallo',127:'Bocconcini di cavallo',128:'Polpetta di cavallo',
   2:'Spizzicagnolo della casa',50:'Spizzicagnolo della casa',51:'Spizzicagnolo',98:'Spizzicagnolo della casa',160:'Spizzicagnolo',441:'Spizzicagnolo della casa',
   96:'Fantasia di Andrea',144:'Fantasia di Andrea',137:'Porchetta della casa',443:'Cordon bleu della casa',
-  421:'Bufalo Billy',431:'Extra Large',428:'Pata Negra',440:'Marco',
+  15:'Petto di pollo',16:'Rustico',63:'Petto di pollo',64:'Rustico',
+  421:'Bufalo Billy',431:'Extra Large',440:'Marco',
   162:'Faccia di vecchia',203:'Faccia di vecchia maxi',178:'007',219:'007',187:'Cocktail di gamberi',228:'Cocktail di gamberi',
   566:'Sapori gourmet',472:'Aggiunta di patatine — pizza al piatto',471:'Aggiunta di patatine — pizza maxi',
   258:'Anelli di cipolla in pastella',442:'Bastoncini di pollo',264:'Crocchette di patate',437:'Camembert',447:'Cheese wedges',452:'Crispy',434:'Jalapeños',263:'Mini fagottini al formaggio',261:'Mozzarelle impanate',260:'Nachos al formaggio',446:'Nuggets',
@@ -59,7 +62,7 @@ function cleanName(raw,id){
 }
 // Correzioni puntuali delle descrizioni meno strutturate.
 const descriptionOverrides={
-  15:'Petto di pollo, lattuga, patatine, sale, olio, origano, K, M. *',
+  15:'Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.',
   271:'Porchetta, mozzarella, patatine*, K, M.',
   11:'Hamburger, derivati del latte, «por***tch» (voce da confermare), lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.',
   321:'Pollo, uova, pangrattato, aromi naturali, patatine*, K, M.',
@@ -99,7 +102,6 @@ const descriptionOverrides={
   440:'Polpetta di cavallo*, porchetta artigianale, cipolla, mozzarella, aglio, aromi naturali, patatine, origano, K, M.',
   413:'Polpetta di cavallo*, ventricina piccante, mozzarella, olive, patatine, K e M.',
   412:'Polpetta, mozzarella, olive, funghi, patatine, K e M, aglio e aromi naturali.',
-  428:'Hamburger di Pata Negra, cheddar, cipolla di Tropea cruda, rucola, M e salsa barbecue.',
   561:'Porchetta, würstel, mozzarella, cipolla, patatine*, K, M.',
   435:'Petto di pollo, prosciutto, mozzarella, patatine, sale, olio extravergine di oliva, origano, K, M.',
   432:'Petto di pollo, speck, mozzarella, lattuga, patatine, K, M, sale, olio extravergine di oliva e aromi naturali.',
@@ -174,6 +176,7 @@ function cleanDescription(raw,id,category){
 const changes=[];
 for(const category of source.menu.categories){
   for(const p of category.plus){
+    if(excludedItemIds.has(p.id)) continue;
     let target=categoryMap[category.id];
     if([594,569].includes(p.id))target='panini-dolci';
     if(sweetCrepes.has(p.id))target='crepes-dolci';

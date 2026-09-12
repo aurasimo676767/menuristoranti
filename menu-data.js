@@ -521,9 +521,9 @@ window.MENU_DATA = {
         },
         {
           "id": "15",
-          "name": "Petto di pollo*",
+          "name": "Petto di pollo",
           "price": 8,
-          "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M. *",
+          "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
           "tags": [],
           "image": null,
           "sourceCategory": "PANINI - PANINI",
@@ -611,7 +611,7 @@ window.MENU_DATA = {
         },
         {
           "id": "16",
-          "name": "Rustico*",
+          "name": "Rustico",
           "price": 12,
           "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
           "tags": [],
@@ -1318,21 +1318,6 @@ window.MENU_DATA = {
           "sourceName": "Paolo",
           "sourceDescription": "Paolo polpetta mozzarella olive funghi patatine k e m aglio aromi naturali",
           "sourcePrice": "8.00",
-          "hasSourceAsterisk": false,
-          "hasSourceAbbreviations": true,
-          "needsReview": false
-        },
-        {
-          "id": "428",
-          "name": "Pata Negra",
-          "price": 9,
-          "description": "Hamburger di Pata Negra, cheddar, cipolla di Tropea cruda, rucola, M e salsa barbecue.",
-          "tags": [],
-          "image": null,
-          "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
-          "sourceName": "Patanegra",
-          "sourceDescription": "Hamburg di patanegra chedar cipol di tropea cruda rucola m.bbq ",
-          "sourcePrice": "9.00",
           "hasSourceAsterisk": false,
           "hasSourceAbbreviations": true,
           "needsReview": false
@@ -2863,7 +2848,7 @@ window.MENU_DATA = {
         },
         {
           "id": "63",
-          "name": "Petto di pollo*",
+          "name": "Petto di pollo",
           "price": 8,
           "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
           "tags": [],
@@ -2953,7 +2938,7 @@ window.MENU_DATA = {
         },
         {
           "id": "64",
-          "name": "Rustico*",
+          "name": "Rustico",
           "price": 12,
           "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
           "tags": [],

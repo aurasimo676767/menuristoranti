@@ -364,9 +364,9 @@
     "sourceCategory": "PANINI - PANINI",
     "category": "panini",
     "oldName": "PETTO DI POLLO*",
-    "name": "Petto di pollo*",
+    "name": "Petto di pollo",
     "oldDescription": "Petto pollo,latt,patat,sale,olio,orig,K,M.*",
-    "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M. *",
+    "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
     "price": "8.00"
   },
   {
@@ -424,7 +424,7 @@
     "sourceCategory": "PANINI - PANINI",
     "category": "panini",
     "oldName": "RUSTICO*",
-    "name": "Rustico*",
+    "name": "Rustico",
     "oldDescription": "Petto pollo,speck,mozz,lattuga,patat,sale,olio,orig,K,M.",
     "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
     "price": "12.00"
@@ -834,7 +834,7 @@
     "sourceCategory": "CREPES - CREPES",
     "category": "crepes",
     "oldName": "CREP PETTO DI POLLO*",
-    "name": "Petto di pollo*",
+    "name": "Petto di pollo",
     "oldDescription": "Petto pollo,latt,patat,sale,olio,orig,K,M.",
     "description": "Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.",
     "price": "8.00"
@@ -894,7 +894,7 @@
     "sourceCategory": "CREPES - CREPES",
     "category": "crepes",
     "oldName": "CREP RUSTICO*",
-    "name": "Rustico*",
+    "name": "Rustico",
     "oldDescription": "Petto pollo,speck,mozz,lattuga,patat,sale,olio,orig,K,M.",
     "description": "Petto di pollo, speck, mozzarella, lattuga, patatine, sale, olio, origano, K, M.",
     "price": "12.00"
@@ -1908,16 +1908,6 @@
     "oldDescription": "Paolo polpetta mozzarella olive funghi patatine k e m aglio aromi naturali",
     "description": "Polpetta, mozzarella, olive, funghi, patatine, K e M, aglio e aromi naturali.",
     "price": "8.00"
-  },
-  {
-    "id": "428",
-    "sourceCategory": "Menu da E 6.00 - Menu da 6.00Euro",
-    "category": "baby",
-    "oldName": "Patanegra",
-    "name": "Pata Negra",
-    "oldDescription": "Hamburg di patanegra chedar cipol di tropea cruda rucola m.bbq ",
-    "description": "Hamburger di Pata Negra, cheddar, cipolla di Tropea cruda, rucola, M e salsa barbecue.",
-    "price": "9.00"
   },
   {
     "id": "561",

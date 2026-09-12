@@ -8,9 +8,11 @@ const context = {window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(root, 'menu-data.js'), 'utf8'), context);
 const categories = context.window.MENU_DATA.categories;
 const imported = categories.flatMap(category => category.dishes);
-const originals = source.menu.categories.flatMap(category => category.plus);
+const excludedItemIds = new Set([428]);
+const originals = source.menu.categories.flatMap(category => category.plus).filter(dish=>!excludedItemIds.has(dish.id));
 assert.equal(imported.length, originals.length);
 assert.equal(new Set(imported.map(dish=>dish.id)).size, originals.length);
+assert.equal(imported.some(dish=>dish.id==='428'), false, 'Pata Negra è ancora nel menu pubblicato');
 for(const original of originals){
   const dish = imported.find(item=>item.id === String(original.id));
   assert.ok(dish, `Voce mancante: ${original.id}`);
