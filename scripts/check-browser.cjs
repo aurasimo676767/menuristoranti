@@ -38,6 +38,7 @@ const os = require('node:os');
     await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='panini')));
     await page.locator('[data-dish-id="1"]').click();
     assert.equal(await page.locator('#supplements').isVisible(),true);
+    assert.ok((await page.locator('.supplement-spotlight').innerText()).includes('PATATINE A PARTE'));
     assert.equal(await page.locator('.supplement-group').count(),5);
     await page.locator('.supplement-group').first().locator('summary').click();
     assert.ok(await page.locator('.supplement-item').count()>0);
