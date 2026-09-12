@@ -95,6 +95,25 @@ const os = require('node:os');
     await page.screenshot({path:path.join(os.tmpdir(),'andrea-home-desktop.png')});
     await page.setViewportSize({width:390,height:900});
     await page.screenshot({path:path.join(os.tmpdir(),'andrea-home-mobile.png')});
+    await page.emulateMedia({reducedMotion:'no-preference'});
+    await page.locator('.banner-motion').click();
+    assert.equal(await page.locator('.banner-motion').getAttribute('aria-pressed'),'true');
+    assert.equal(await page.locator('.banner-float').evaluate(el=>getComputedStyle(el).animationPlayState),'paused');
+    await page.locator('.banner-motion').click();
+    assert.equal(await page.locator('.banner-float').evaluate(el=>getComputedStyle(el).animationPlayState),'running');
+    for(const width of [320,390,1366]){
+      await page.setViewportSize({width,height:950});
+      await page.locator('.hero-visual').scrollIntoViewIfNeeded();
+      assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow banner animato a ${width}px`);
+    }
+    const bannerBounds=await page.locator('.hero-visual').boundingBox();
+    await page.mouse.move(bannerBounds.x+bannerBounds.width*.8,bannerBounds.y+bannerBounds.height*.4);
+    assert.notEqual(await page.locator('.banner-frame').evaluate(el=>el.style.getPropertyValue('--ry')),'');
+    await page.screenshot({path:path.join(os.tmpdir(),'andrea-banner-animated.png')});
+    await page.emulateMedia({reducedMotion:'reduce'});
+    await page.locator('.banner-motion').waitFor({state:'hidden'});
+    assert.equal(await page.locator('.banner-motion').isHidden(),true);
+    assert.equal(await page.locator('.banner-float').evaluate(el=>getComputedStyle(el).animationName),'none');
     assert.deepEqual(errors,[]);
     const categoryCount = await page.evaluate(()=>window.MENU_DATA.categories.length);
     console.log(`PASS browser: ${categoryCount} categorie, ${checked} dettagli campionati, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.`);

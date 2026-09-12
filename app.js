@@ -167,3 +167,58 @@ dialog.addEventListener('click', event => {
 });
 dialog.addEventListener('close', () => { document.body.style.overflow = ''; lastTrigger?.focus({preventScroll:true}); });
 updateMenu();
+
+// Banner: layers keep the photograph readable while the embers move independently.
+const banner = document.querySelector('.hero-visual');
+const bannerImage = banner.querySelector('img');
+const bannerFrame = element('div', 'banner-frame');
+const bannerFloat = element('div', 'banner-float');
+bannerImage.before(bannerFrame);
+bannerFrame.append(bannerFloat);
+bannerFloat.append(bannerImage);
+const embers = element('div', 'banner-embers');
+embers.setAttribute('aria-hidden', 'true');
+for (let i = 0; i < 12; i++) {
+  const ember = element('i');
+  ember.style.setProperty('--x', `${8 + (i * 19) % 85}%`);
+  ember.style.setProperty('--delay', `${-i * 0.63}s`);
+  ember.style.setProperty('--duration', `${3.5 + (i % 4) * 0.7}s`);
+  embers.append(ember);
+}
+bannerFloat.append(embers);
+const motionButton = element('button', 'banner-motion', 'Pausa animazione');
+motionButton.type = 'button';
+motionButton.setAttribute('aria-pressed', 'false');
+banner.append(motionButton);
+let bannerPaused = false;
+let bannerVisible = true;
+const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
+function resetBannerTilt() {
+  bannerFrame.style.removeProperty('--rx');
+  bannerFrame.style.removeProperty('--ry');
+}
+function syncBannerMotion() {
+  banner.classList.toggle('motion-paused', bannerPaused || !bannerVisible || document.hidden || reduceMotion.matches);
+  motionButton.hidden = reduceMotion.matches;
+  resetBannerTilt();
+}
+motionButton.addEventListener('click', () => {
+  bannerPaused = !bannerPaused;
+  motionButton.textContent = bannerPaused ? 'Riprendi animazione' : 'Pausa animazione';
+  motionButton.setAttribute('aria-pressed', String(bannerPaused));
+  syncBannerMotion();
+});
+banner.addEventListener('pointermove', event => {
+  if (!finePointer.matches || bannerPaused || reduceMotion.matches) return;
+  const bounds = banner.getBoundingClientRect();
+  bannerFrame.style.setProperty('--rx', `${(0.5 - (event.clientY - bounds.top) / bounds.height) * 5}deg`);
+  bannerFrame.style.setProperty('--ry', `${((event.clientX - bounds.left) / bounds.width - 0.5) * 6}deg`);
+});
+banner.addEventListener('pointerleave', resetBannerTilt);
+reduceMotion.addEventListener('change', syncBannerMotion);
+document.addEventListener('visibilitychange', syncBannerMotion);
+new IntersectionObserver(([entry]) => {
+  bannerVisible = entry.isIntersecting;
+  syncBannerMotion();
+}).observe(banner);
+syncBannerMotion();
