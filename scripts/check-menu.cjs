@@ -8,13 +8,14 @@ const context = {window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(root, 'menu-data.js'), 'utf8'), context);
 const categories = context.window.MENU_DATA.categories;
 const imported = categories.flatMap(category => category.dishes);
+const sourceItems = imported.filter(dish=>!dish.id.startsWith('piadina-'));
 const excludedItemIds = new Set([428]);
 const originals = source.menu.categories.flatMap(category => category.plus).filter(dish=>!excludedItemIds.has(dish.id));
-assert.equal(imported.length, originals.length);
-assert.equal(new Set(imported.map(dish=>dish.id)).size, originals.length);
+assert.equal(sourceItems.length, originals.length);
+assert.equal(new Set(sourceItems.map(dish=>dish.id)).size, originals.length);
 assert.equal(imported.some(dish=>dish.id==='428'), false, 'Pata Negra è ancora nel menu pubblicato');
 for(const original of originals){
-  const dish = imported.find(item=>item.id === String(original.id));
+  const dish = sourceItems.find(item=>item.id === String(original.id));
   assert.ok(dish, `Voce mancante: ${original.id}`);
   assert.equal(dish.price, Number(original.price), `Prezzo modificato: ${original.id}`);
   assert.equal(dish.sourceDescription, original.description || '');
@@ -23,9 +24,20 @@ for(const original of originals){
   if (!original.description.trim()) assert.equal(dish.description, '', `Descrizione inventata: ${original.id}`);
 }
 assert.equal(categories.find(c=>c.id==='baby').name, 'Panini baby');
+const baby = categories.find(c=>c.id==='baby');
+const piadine = categories.find(c=>c.id==='piadine');
+assert.equal(piadine.name, 'Piadine');
+assert.equal(piadine.dishes.length, baby.dishes.length);
+for(const babyDish of baby.dishes){
+  const piadina = piadine.dishes.find(dish=>dish.id===`piadina-${babyDish.id}`);
+  assert.ok(piadina, `Piadina mancante: ${babyDish.name}`);
+  assert.equal(piadina.price, babyDish.price, `Prezzo piadina errato: ${babyDish.name}`);
+  assert.equal(piadina.name, babyDish.name, `Nome piadina errato: ${babyDish.name}`);
+  assert.equal(piadina.description, babyDish.description, `Descrizione piadina errata: ${babyDish.name}`);
+}
 assert.equal(categories.find(c=>c.id==='ufficiali').name, 'Ufficiali');
 assert.ok(categories.find(c=>c.id==='ufficiali').subtitle.includes('impasto della pizza'));
 assert.equal(imported.find(d=>d.id==='615').price, 0.5);
 assert.equal(imported.find(d=>d.id==='8').price, 6.5);
 const originalMissing = originals.filter(d=>!d.description.trim()).length;
-console.log(`PASS: tutte le ${originals.length} voci presenti una volta, prezzi identici, ${originalMissing} descrizioni mancanti non inventate e asterischi originali conservati; ${categories.length} categorie.`);
+console.log(`PASS: tutte le ${originals.length} voci sorgente presenti una volta, ${piadine.dishes.length} piadine con gli stessi prezzi dei Panini baby, ${originalMissing} descrizioni mancanti non inventate e asterischi originali conservati; ${categories.length} categorie.`);

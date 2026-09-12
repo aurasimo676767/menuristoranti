@@ -11,8 +11,11 @@ const os = require('node:os');
     const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(pathToFileURL(path.resolve(__dirname,'../index.html')).href,{waitUntil:'load',timeout:30000});
     assert.equal(await page.locator('.dish-card').count(),53);
-    assert.equal(await page.locator('#drawer-categories button').count(),16);
+    assert.equal(await page.locator('#drawer-categories button').count(),17);
     assert.equal(await page.locator('#quick-categories button').count(),6);
+    assert.equal(await page.locator('.quick-category > span').count(),0);
+    assert.equal(await page.locator('.category-button small').count(),0);
+    assert.equal(await page.locator('.drawer-category small').count(),0);
     for(const category of await page.evaluate(()=>window.MENU_DATA.categories.map(c=>({id:c.id,count:c.dishes.length})))){
       await page.locator('.mobile-nav [data-open-categories]').click();
       await page.locator(`#drawer-categories [data-category="${category.id}"]`).click();
@@ -76,7 +79,8 @@ const os = require('node:os');
     await page.setViewportSize({width:390,height:900});
     await page.screenshot({path:path.join(os.tmpdir(),'andrea-home-mobile.png')});
     assert.deepEqual(errors,[]);
-    console.log(`PASS browser: 16 categorie, ${checked} dettagli, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.`);
+    const categoryCount = await page.evaluate(()=>window.MENU_DATA.categories.length);
+    console.log(`PASS browser: ${categoryCount} categorie, ${checked} dettagli, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.`);
     console.log('Screenshot in '+os.tmpdir()+'/andrea-menu-{mobile,detail,desktop}.png');
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});

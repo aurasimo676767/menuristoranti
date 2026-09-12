@@ -28,7 +28,7 @@ function categoryIcon(id) {
   if (['panini','baby','menu8','panini-dolci'].includes(id)) return 'burger';
   if (id === 'ufficiali') return 'flame';
   if (['pizze','maxi','pizze-dolci'].includes(id)) return 'pizza';
-  if (['crepes','wrap'].includes(id)) return 'wrap';
+  if (['crepes','wrap','piadine'].includes(id)) return 'wrap';
   if (['crepes-dolci','dessert'].includes(id)) return 'sweet';
   if (['bevande','birre'].includes(id)) return 'drink';
   if (id === 'fritti') return 'fries';
@@ -76,7 +76,6 @@ function updateMenu() {
   document.querySelector('#category-title').textContent = query ? 'La tua ricerca' : selectedCategory.title;
   document.querySelector('#category-number').textContent = query ? 'IN TUTTO IL MENU' : `${String(menu.indexOf(selectedCategory)+1).padStart(2, '0')} / SCEGLI IL TUO PREFERITO`;
   document.querySelector('#category-subtitle').textContent = query ? `Risultati per “${search.value.trim()}”` : selectedCategory.subtitle;
-  document.querySelector('#dish-count').textContent = `${entries.length} ${entries.length === 1 ? 'proposta' : 'proposte'}`;
   document.querySelector('#search-status').textContent = `${entries.length} ${entries.length === 1 ? 'proposta trovata' : 'proposte trovate'}`;
   renderDishes(entries);
 }
@@ -86,17 +85,17 @@ function selectCategory(category, navigate = false) {
 }
 menu.forEach(category => {
   const button = element('button', 'category-button'); button.type = 'button'; button.dataset.category = category.id;
-  button.append(icon(categoryIcon(category.id)),element('span','',category.name),element('small','',String(category.dishes.length)));
+  button.append(icon(categoryIcon(category.id)),element('span','',category.name));
   button.addEventListener('click', () => selectCategory(category, true)); categories.append(button);
   const tile = element('button', 'drawer-category'); tile.type='button'; tile.dataset.category=category.id;
-  tile.append(icon(categoryIcon(category.id)),element('strong','',category.name),element('small','',`${category.dishes.length} proposte`));
+  tile.append(icon(categoryIcon(category.id)),element('strong','',category.name));
   tile.addEventListener('click',()=>{categoryDialog.close();selectCategory(category,true);});
   document.querySelector('#drawer-categories').append(tile);
 });
-for(const id of ['panini','baby','ufficiali','pizze','fritti','crepes-dolci']) {
+for(const id of ['panini','baby','piadine','ufficiali','pizze','fritti']) {
   const category=menu.find(item=>item.id===id);
   const tile=element('button','quick-category'); tile.type='button';tile.dataset.category=id;
-  tile.append(icon(categoryIcon(id)),element('strong','',id==='crepes-dolci'?'Crêpes dolci':category.name),element('span','',String(category.dishes.length)));
+  tile.append(icon(categoryIcon(id)),element('strong','',category.name));
   tile.addEventListener('click',()=>selectCategory(category,true));document.querySelector('#quick-categories').append(tile);
 }
 document.querySelectorAll('[data-open-categories]').forEach(button=>button.addEventListener('click',()=>{

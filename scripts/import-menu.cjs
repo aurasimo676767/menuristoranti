@@ -6,6 +6,7 @@ const source = JSON.parse(fs.readFileSync(path.join(root, 'data/menu-source.json
 const definitions = [
   ['panini','Panini','I nostri panini'],
   ['baby','Panini baby','Tutto il gusto, in formato baby'],
+  ['piadine','Piadine','Le farciture dei Panini baby, in versione piadina.'],
   ['ufficiali','Ufficiali','Panini più grandi, preparati con impasto della pizza.'],
   ['menu8','Menu da 8 €','Panino, vaschetta di patatine e bevanda in lattina.'],
   ['crepes','Crêpes salate','Le nostre farciture in una crêpe'],
@@ -196,8 +197,11 @@ for(const category of source.menu.categories){
     changes.push({id:dish.id,sourceCategory:category.name,category:target,oldName:p.name,name:dish.name,oldDescription:p.description||'',description:dish.description,price:p.price});
   }
 }
+const baby = menu.find(category=>category.id==='baby');
+const piadine = menu.find(category=>category.id==='piadine');
+piadine.dishes = baby.dishes.map(dish=>({...dish,id:`piadina-${dish.id}`}));
 const output={restaurantName:'Panineria Andrea',currency:source.currency,categories:menu};
 fs.writeFileSync(path.join(root,'menu-data.js'),'// Menu importato: modificare i dati sorgente o lo script di importazione.\nwindow.MENU_DATA = '+JSON.stringify(output,null,2)+';\n');
 fs.writeFileSync(path.join(root,'data/menu-changes.json'),JSON.stringify(changes,null,2)+'\n');
-console.log(`${changes.length} voci importate in ${menu.length} categorie.`);
+console.log(`${changes.length} voci importate più ${piadine.dishes.length} piadine in ${menu.length} categorie.`);
 console.log(menu.map(c=>`${c.name}: ${c.dishes.length}`).join('\n'));
