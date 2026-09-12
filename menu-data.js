@@ -5806,44 +5806,6 @@ window.MENU_DATA = {
       ]
     },
     {
-      "id": "panini-dolci",
-      "name": "Panini dolci",
-      "title": "Panini dolci",
-      "subtitle": "Le proposte dolci della panineria",
-      "dishes": [
-        {
-          "id": "594",
-          "name": "Fragolosa",
-          "price": 8,
-          "description": "Crema di fragola, panna e zucchero a velo.",
-          "tags": [],
-          "image": null,
-          "sourceCategory": "PANINI - PANINI",
-          "sourceName": "Fragolosa",
-          "sourceDescription": "Crema di fragola ,panna,zucchero avvelo",
-          "sourcePrice": "8.00",
-          "hasSourceAsterisk": false,
-          "hasSourceAbbreviations": false,
-          "needsReview": false
-        },
-        {
-          "id": "569",
-          "name": "Kinder Cereali",
-          "price": 7,
-          "description": "Nutella alla nocciola, crema bianca e cereali soffiati.",
-          "tags": [],
-          "image": null,
-          "sourceCategory": "PANINI - PANINI",
-          "sourceName": "Kiner cereali",
-          "sourceDescription": "Nutella nocciola nutella bianca cereali soffiati",
-          "sourcePrice": "7.00",
-          "hasSourceAsterisk": false,
-          "hasSourceAbbreviations": false,
-          "needsReview": true
-        }
-      ]
-    },
-    {
       "id": "crepes-dolci",
       "name": "Crêpes dolci",
       "title": "Crêpes dolci",

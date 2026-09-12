@@ -10,7 +10,7 @@ const categories = context.window.MENU_DATA.categories;
 const imported = categories.flatMap(category => category.dishes);
 const sourceItems = imported.filter(dish=>!dish.id.startsWith('piadina-'));
 const excludedCategoryIds = new Set([2517]);
-const excludedItemIds = new Set([428,471,472,575,586,587]);
+const excludedItemIds = new Set([428,471,472,569,575,586,587,594]);
 const originals = source.menu.categories
   .filter(category=>!excludedCategoryIds.has(category.id))
   .flatMap(category => category.plus)
@@ -19,6 +19,7 @@ assert.equal(sourceItems.length, originals.length);
 assert.equal(new Set(sourceItems.map(dish=>dish.id)).size, originals.length);
 for(const id of excludedItemIds) assert.equal(imported.some(dish=>dish.id===String(id)), false, `Voce rimossa ancora pubblicata: ${id}`);
 assert.equal(categories.some(category=>category.id==='menu8'), false, 'Menu da 8 € ancora pubblicato');
+assert.equal(categories.some(category=>category.id==='panini-dolci'), false, 'Panini dolci ancora pubblicato');
 for(const original of originals){
   const dish = sourceItems.find(item=>item.id === String(original.id));
   assert.ok(dish, `Voce mancante: ${original.id}`);

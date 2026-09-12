@@ -13,7 +13,6 @@ const definitions = [
   ['pizze','Pizze','Le pizze al piatto'],
   ['maxi','Pizze maxi','Le pizze in formato maxi'],
   ['fritti','Friggitoria','Uno sfizio da aggiungere'],
-  ['panini-dolci','Panini dolci','Le proposte dolci della panineria'],
   ['crepes-dolci','Crêpes dolci','Per chiudere in dolcezza'],
   ['pizze-dolci','Pizze dolci','Le nostre pizze da dessert'],
   ['dessert','Waffle e dolci','Waffle, krapfen e altri dolci'],
@@ -23,14 +22,14 @@ const definitions = [
 ];
 // Voci rimosse su richiesta del locale: non vengono pubblicate nel menu.
 const excludedCategoryIds = new Set([2517]);
-const excludedItemIds = new Set([428,471,472,575,586,587]);
+const excludedItemIds = new Set([428,471,472,569,575,586,587,594]);
 const menu = definitions.map(([id,name,subtitle])=>({id,name,title:name,subtitle,dishes:[]}));
 const categoryMap={2500:'panini',2501:'crepes',2502:'wrap',2503:'baby',2504:'pizze',2505:'pizze-dolci',2506:'maxi',2508:'fritti',2509:'bevande',2516:'ufficiali',609:'extra',2520:'dessert'};
 const sweetCrepes=new Set([473,468,535,467,469,470,570,262,358,357,362,359,360,364,361,363,588,591,589,590,584,583,577,578,585,582,366,576,596]);
 const sweetPizzas=new Set([558,567,573,282,574,352]);
 const beers=new Set([274,268,273,269,275,276,270,272]);
 const nameOverrides={
-  31:'Bocconcini di cavallo',422:'Bocconcini di cavallo',321:'Cotoletta della casa',460:'Hamburger di Chianina',569:'Kinder Cereali',570:'Kinder Cereali',594:'Fragolosa',
+  31:'Bocconcini di cavallo',422:'Bocconcini di cavallo',321:'Cotoletta della casa',460:'Hamburger di Chianina',570:'Kinder Cereali',
   20:'Cordon bleu della casa*',68:'Cordon bleu della casa*',116:'Cordon bleu della casa*',
   79:'Bocconcini di cavallo',78:'Carne di cavallo',80:'Polpetta di cavallo',127:'Bocconcini di cavallo',128:'Polpetta di cavallo',
   2:'Spizzicagnolo della casa',50:'Spizzicagnolo della casa',51:'Spizzicagnolo',98:'Spizzicagnolo della casa',160:'Spizzicagnolo',441:'Spizzicagnolo della casa',
@@ -69,11 +68,11 @@ const descriptionOverrides={
   321:'Pollo, uova, pangrattato, aromi naturali, patatine*, K, M.',
   6033:'Scottona, polpetta di cavallo, bacon, pollo, pomodoro, funghi dolci, cheddar, fontina, mozzarella, lattuga, patatine*, K, M.',
   46:'Hamburger di scottona polacca, pomodoro, cheddar, rucola, aceto balsamico, patatine, K, M, olio, sale, aromi, derivati del latte.',
-  48:'Condimenti a fantasia, patatine* e salse varie.',594:'Crema di fragola, panna e zucchero a velo.',
+  48:'Condimenti a fantasia, patatine* e salse varie.',
   460:'Hamburger* di Chianina, pomodoro, lattuga, mozzarella, patatine*, ketchup, maionese, olio extravergine di oliva, origano e aromi misti contenenti paprika.',
   1:'Polpetta di cavallo, porchetta artigianale, cipolla, mozzarella, aglio, aromi, patatine*, K, M, aromi naturali.',
   47:'Pulled pork di suino, cipolla croccante, salsa barbecue, M, aromi naturali, origano, olio extravergine di oliva, sale, patatine fritte e cheddar.',
-  569:'Nutella alla nocciola, crema bianca e cereali soffiati.',570:'Nutella alla nocciola, crema bianca e cereali soffiati.',
+  570:'Nutella alla nocciola, crema bianca e cereali soffiati.',
   414:'Ventricina piccante, mozzarella, emmental, funghi dolci, patatine, Tabasco, K, M, harissa, olio e origano.',
   21:'Coscia di pollo disossata, derivati del latte, hamburger, «porchde» e «mozzom» (voci da confermare), olive, lattuga, patatine, sale, olio, origano, K, M.',
   426:'Prosciutto cotto, würstel, mozzarella, emmental, patatine, K, M.',
@@ -178,7 +177,6 @@ for(const category of source.menu.categories){
   for(const p of category.plus){
     if(excludedItemIds.has(p.id)) continue;
     let target=categoryMap[category.id];
-    if([594,569].includes(p.id))target='panini-dolci';
     if(sweetCrepes.has(p.id))target='crepes-dolci';
     if(sweetPizzas.has(p.id))target='pizze-dolci';
     if(beers.has(p.id))target='birre';

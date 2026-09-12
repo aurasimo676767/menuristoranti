@@ -190,16 +190,6 @@
     "price": "15.00"
   },
   {
-    "id": "594",
-    "sourceCategory": "PANINI - PANINI",
-    "category": "panini-dolci",
-    "oldName": "Fragolosa",
-    "name": "Fragolosa",
-    "oldDescription": "Crema di fragola ,panna,zucchero avvelo",
-    "description": "Crema di fragola, panna e zucchero a velo.",
-    "price": "8.00"
-  },
-  {
     "id": "29",
     "sourceCategory": "PANINI - PANINI",
     "category": "panini",
@@ -288,16 +278,6 @@
     "oldDescription": "Carne suino pulled  cipolla croccante salsa bbq. M.  aromi naturale origano olio evo sale pat f cedar",
     "description": "Pulled pork di suino, cipolla croccante, salsa barbecue, M, aromi naturali, origano, olio extravergine di oliva, sale, patatine fritte e cheddar.",
     "price": "9.00"
-  },
-  {
-    "id": "569",
-    "sourceCategory": "PANINI - PANINI",
-    "category": "panini-dolci",
-    "oldName": "Kiner cereali",
-    "name": "Kinder Cereali",
-    "oldDescription": "Nutella nocciola nutella bianca cereali soffiati",
-    "description": "Nutella alla nocciola, crema bianca e cereali soffiati.",
-    "price": "7.00"
   },
   {
     "id": "28",
