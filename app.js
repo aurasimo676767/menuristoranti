@@ -8,6 +8,14 @@ const dialog = document.querySelector('#dish-dialog');
 const search = document.querySelector('#menu-search');
 const categoryDialog = document.querySelector('#category-dialog');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const supplementCategoryIds = new Set(['panini','piadine','ufficiali','crepes','wrap']);
+const supplementGroups = [
+  {name:'Carni e salumi',items:[['Asino',7],['Bacon',3],['Braciola',6],['Bresaola',3],['Carne di cavallo',6],['Cotoletta',6],['Cotoletta della casa',6.5],['Filetto di scottona',8.5],['Filetto di suino',7],['Hamburger',6],['Hamburger di cervo',10],['Hamburger di Chianina',10],['Hamburger di scottona',7.5],['Kebab',6],['Pancetta di suino',5],['Pollo',6],['Polpetta di cavallo',7],['Porchetta',2.5],['Porchetta artigianale',4],['Prosciutto',2],['Prosciutto crudo',3],['Pulled pork',6],['Salsiccia',5],['Speck',3],['Tonno',3],['Ventricina piccante',2.5],['Vitello',6],['Würstel',2]]},
+  {name:'Formaggi e uova',items:[['Cheddar',2.5],['Emmental',2.5],['Gorgonzola',2.5],['Grana',2.5],['Mozzarella',2],['Mozzarella di bufala',3],['Mozzarella senza lattosio',3],['Philadelphia',3],['Ricotta',2.5],['Uovo fritto piccante',1],['Uovo sodo',1]]},
+  {name:'Verdure e extra',items:[['Acciughe',2],['Cipolla agrodolce',0.5],['Cipolla croccante',3],['Cipolla cruda',0.5],['Crocchette di patate',3],['Funghi',0.5],['Funghi piccanti',0.5],['Funghi porcini',3],['Lattuga',0.5],['Mais',1],['Melanzane',1],['Olive',0.5],['Patatine',2.5],['Patatine a parte',1],['Patatine crispy',3],['Peperoncino piccante',0.5],['Peperoni',1],['Pomodoro',0.5],['Rucola',0.5],['Zucchine',1]]},
+  {name:'Salse',items:[['Salsa algerina',0.5],['Salsa bacon',0.5],['Salsa barbecue',0.5],['Salsa boscaiola',0.5],['Salsa burger',0.5],['Salsa hamburger',0.5],['Salsa harissa',0.5],['Ketchup',0.5],['Maionese',0.5],['Salsa sweet chili',0.5],['Salsa tartara',0.5],['Salsa yogurt',0.5],['Tabasco',0.5]]},
+  {name:'Impasti e condimenti',items:[['Panino senza glutine',3],['Crêpe senza glutine',1],['Schiacciatina',1],['Aceto',0],['Aromi misti',0],['Olio',0],['Sale',0]]}
+];
 let selectedCategory = menu[0];
 let lastTrigger;
 let lastCategoryTrigger;
@@ -23,6 +31,26 @@ function icon(name) {
   svg.setAttribute('class', 'icon'); svg.setAttribute('aria-hidden', 'true');
   const use = document.createElementNS('http://www.w3.org/2000/svg', 'use');
   use.setAttribute('href', `#icon-${name}`); svg.append(use); return svg;
+}
+function renderSupplements(category) {
+  const section = document.querySelector('#supplements');
+  const groups = document.querySelector('#supplement-groups');
+  const available = supplementCategoryIds.has(category.id);
+  section.hidden = !available;
+  groups.replaceChildren();
+  if (!available) return;
+  for (const group of supplementGroups) {
+    const block = element('details', 'supplement-group');
+    const summary = element('summary');
+    summary.append(element('strong', '', group.name), element('span', '', `${group.items.length} AGGIUNTE`));
+    const list = element('div', 'supplement-list');
+    for (const [name, price] of group.items) {
+      const item = element('div', 'supplement-item');
+      item.append(element('span', '', name), element('b', '', price ? money(price) : 'INCLUSO'));
+      list.append(item);
+    }
+    block.append(summary, list); groups.append(block);
+  }
 }
 function categoryIcon(id) {
   if (['panini','baby','menu8','panini-dolci'].includes(id)) return 'burger';
@@ -125,6 +153,7 @@ function openDish(dish, category, trigger) {
   document.querySelector('#detail-allergens').textContent = 'Per conoscere gli allergeni presenti in questo prodotto, consulta il registro allergeni disponibile presso il personale.';
   const tags = document.querySelector('#detail-tags'); tags.replaceChildren();
   if (dish.variant) tags.append(element('span', 'tag', dish.variant));
+  renderSupplements(category);
   document.querySelector('#source-text').textContent = `${dish.sourceName}${dish.sourceDescription ? ' — ' + dish.sourceDescription : ''}`;
   document.querySelector('#source-details').open = false;
   dialog.showModal(); dialog.scrollTop = 0; document.body.style.overflow = 'hidden';

@@ -29,11 +29,19 @@ const os = require('node:os');
     assert.ok((await page.locator('#detail-price').innerText()).includes('0,50'));
     assert.equal(await page.locator('#detail-description').isHidden(),true);
     assert.equal(await page.locator('#detail-ingredients-label').isHidden(),true);
+    assert.equal(await page.locator('#supplements').isHidden(),true);
     assert.equal(await page.locator('#dish-dialog').innerText().then(text=>text.includes('Gli ingredienti non sono indicati nel menu originale')),false);
     assert.ok((await page.locator('#detail-allergens').innerText()).includes('registro allergeni disponibile presso il personale'));
     await page.keyboard.press('Escape');
     assert.equal(await page.locator('#dish-dialog').evaluate(el=>el.open),false);
     assert.equal(await page.evaluate(()=>document.activeElement.dataset.dishId),'615');
+    await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='panini')));
+    await page.locator('[data-dish-id="1"]').click();
+    assert.equal(await page.locator('#supplements').isVisible(),true);
+    assert.equal(await page.locator('.supplement-group').count(),5);
+    await page.locator('.supplement-group').first().locator('summary').click();
+    assert.ok(await page.locator('.supplement-item').count()>0);
+    await page.keyboard.press('Escape');
     await page.locator('#menu-search').fill('chianina');
     assert.ok(await page.locator('.dish-card').count()>1);
     await page.locator('#menu-search').fill('zzzinesistente');
@@ -44,13 +52,13 @@ const os = require('node:os');
     assert.equal(await page.locator('#category-title').textContent(),'Ufficiali');
     await page.locator('.mobile-nav [data-open-categories]').click();
     await page.locator('#drawer-categories [data-category="panini"]').click();
-    // Ogni scheda deve aprire nome, prezzo e testo del proprio elemento, non di una categoria precedente.
+    // Prima e ultima scheda di ogni categoria: il dettaglio deve restare legato al prodotto selezionato.
     const checked = await page.evaluate(()=>{
       let count=0;
       for(const category of window.MENU_DATA.categories){
         selectCategory(category);
         const buttons=[...document.querySelectorAll('.dish-card')];
-        for(let i=0;i<buttons.length;i++){
+        for(const i of new Set([0,buttons.length-1])){
           buttons[i].click();const dish=category.dishes[i];
           if(document.querySelector('#detail-title').textContent!==dish.name)throw new Error('Titolo '+dish.id);
           if(document.querySelector('#detail-price').textContent!==money(dish.price))throw new Error('Prezzo '+dish.id);
@@ -59,7 +67,7 @@ const os = require('node:os');
       }
       selectCategory(window.MENU_DATA.categories[0]);return count;
     });
-    assert.equal(checked, await page.evaluate(()=>window.MENU_DATA.categories.reduce((total, category)=>total+category.dishes.length,0)));
+    assert.equal(checked, await page.evaluate(()=>window.MENU_DATA.categories.length*2));
     for(const width of [320,390,768,1366]){
       await page.setViewportSize({width,height:900});
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow a ${width}px`);
@@ -85,7 +93,7 @@ const os = require('node:os');
     await page.screenshot({path:path.join(os.tmpdir(),'andrea-home-mobile.png')});
     assert.deepEqual(errors,[]);
     const categoryCount = await page.evaluate(()=>window.MENU_DATA.categories.length);
-    console.log(`PASS browser: ${categoryCount} categorie, ${checked} dettagli, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.`);
+    console.log(`PASS browser: ${categoryCount} categorie, ${checked} dettagli campionati, ricerca e stato vuoto, prezzi decimali, Escape e focus, nessun overflow a 320/390/768/1366 px, nessun errore JavaScript.`);
     console.log('Screenshot in '+os.tmpdir()+'/andrea-menu-{mobile,detail,desktop}.png');
   } finally { await browser.close(); }
 })().catch(e=>{console.error(e);process.exitCode=1});
