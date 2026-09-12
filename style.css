@@ -20,10 +20,14 @@ dialog{color:var(--cream);background:#1b1b18;border:1px solid #494236;border-rad
 .hero-visual .banner-float img,.hero-visual:hover .banner-float img{transform:none}
 .banner-float::before{content:'';position:absolute;inset:4%;z-index:-1;border-radius:12px;box-shadow:0 12px 45px 14px #ff72104d;animation:banner-glow 4s ease-in-out infinite;pointer-events:none}
 .banner-embers{position:absolute;inset:0;overflow:hidden;border-radius:5px;pointer-events:none}
+.banner-embers::before{content:'';position:absolute;left:-25%;bottom:-12%;width:75%;height:55%;background:radial-gradient(ellipse at center,#ff9a3060,transparent 68%);mix-blend-mode:screen;animation:banner-heat 5.5s ease-in-out infinite}
 .banner-embers i{position:absolute;left:var(--x);bottom:1%;width:3px;height:5px;border-radius:50%;background:#ffc16b;box-shadow:0 0 7px #ff7300;opacity:0;animation:banner-ember var(--duration) var(--delay) ease-out infinite}
 .banner-motion{display:block;margin-top:9px;padding:7px 0;background:transparent;color:#a79b87;font-size:9px;text-decoration:underline;text-underline-offset:3px}
 .banner-motion[hidden]{display:none}
-.hero-visual.motion-paused .banner-float,.hero-visual.motion-paused .banner-float::before,.hero-visual.motion-paused .banner-embers i{animation-play-state:paused}
+.hero-visual.motion-paused .banner-float,.hero-visual.motion-paused .banner-float::before,.hero-visual.motion-paused .banner-embers i,.hero-visual.motion-paused .banner-embers::before{animation-play-state:paused}
+@keyframes banner-heat{0%,100%{opacity:.25;transform:translateX(0) scale(.9)}50%{opacity:.8;transform:translateX(95%) scale(1.15)}}
+@keyframes banner-mobile-drift{0%,100%{transform:translateY(2px) rotate(-1.2deg) scale(.99)}50%{transform:translateY(-8px) rotate(.7deg) scale(1.015)}}
+@media(max-width:760px){.banner-float{animation:banner-mobile-drift 5s ease-in-out infinite}.banner-float::before{box-shadow:0 10px 28px 10px #ff721070}.banner-embers i{width:4px;height:6px;box-shadow:0 0 9px #ff9a30}.banner-embers i:nth-child(3n){width:2px;height:9px}}
 @keyframes banner-drift{0%,100%{transform:translateY(0) rotate(-1deg)}50%{transform:translateY(-6px) rotate(.3deg)}}
 @keyframes banner-glow{0%,100%{opacity:.35}50%{opacity:.85}}
 @keyframes banner-ember{0%{opacity:0;transform:translate(0,0) scale(.6)}15%{opacity:.8}80%{opacity:.25}100%{opacity:0;transform:translate(12px,-125px) scale(.2)}}
