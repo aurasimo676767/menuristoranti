@@ -117,7 +117,11 @@ function openDish(dish, category, trigger) {
   document.querySelector('#detail-label').textContent = category.name;
   document.querySelector('#detail-title').textContent = dish.name;
   document.querySelector('#detail-price').textContent = money(dish.price);
-  document.querySelector('#detail-description').textContent = dish.description || 'Gli ingredienti non sono indicati nel menu originale. Chiedi al personale prima di ordinare.';
+  const description = document.querySelector('#detail-description');
+  const ingredientLabel = document.querySelector('#detail-ingredients-label');
+  description.textContent = dish.description;
+  description.hidden = !dish.description;
+  ingredientLabel.hidden = !dish.description;
   document.querySelector('#detail-allergens').textContent = 'L’elenco completo degli allergeni non è indicato nel menu originale. Rivolgiti al personale per informazioni su ingredienti e allergeni.';
   const tags = document.querySelector('#detail-tags'); tags.replaceChildren();
   if (dish.variant) tags.append(element('span', 'tag', dish.variant));
