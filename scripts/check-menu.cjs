@@ -11,6 +11,7 @@ const imported = categories.flatMap(category => category.dishes);
 const sourceItems = imported.filter(dish=>!dish.id.startsWith('piadina-')&&dish.id!=='acqua-frizzante');
 const excludedCategoryIds = new Set([2517]);
 const excludedItemIds = new Set([278,428,471,472,569,575,586,587,594]);
+const friedItemsAtSixEuro = new Set([258,442,264,437,447,452,434,263,261,260,446,453]);
 const originals = source.menu.categories
   .filter(category=>!excludedCategoryIds.has(category.id))
   .flatMap(category => category.plus)
@@ -28,7 +29,7 @@ assert.equal(drinks.dishes.find(dish=>dish.id==='267').name, 'Fanta in lattina')
 for(const original of originals){
   const dish = sourceItems.find(item=>item.id === String(original.id));
   assert.ok(dish, `Voce mancante: ${original.id}`);
-  assert.equal(dish.price, Number(original.price), `Prezzo modificato: ${original.id}`);
+  assert.equal(dish.price, friedItemsAtSixEuro.has(original.id)?6:Number(original.price), `Prezzo errato: ${original.id}`);
   assert.equal(dish.sourceDescription, original.description || '');
   assert.ok(dish.name.trim());
   assert.equal(dish.hasSourceAsterisk, (original.name+(original.description||'')).includes('*'));
@@ -50,5 +51,6 @@ assert.equal(categories.find(c=>c.id==='ufficiali').name, 'Ufficiali');
 assert.ok(categories.find(c=>c.id==='ufficiali').subtitle.includes('impasto della pizza'));
 assert.equal(imported.find(d=>d.id==='615').price, 0.5);
 assert.equal(imported.find(d=>d.id==='8').price, 6.5);
+assert.equal(imported.find(d=>d.id==='265').price, 2.5, 'Prezzo patatine fritte modificato');
 const originalMissing = originals.filter(d=>!d.description.trim()).length;
 console.log(`PASS: tutte le ${originals.length} voci sorgente presenti una volta, ${piadine.dishes.length} piadine con gli stessi prezzi dei Panini baby, ${originalMissing} descrizioni mancanti non inventate e asterischi originali conservati; ${categories.length} categorie.`);

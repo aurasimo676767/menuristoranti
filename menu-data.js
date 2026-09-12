@@ -5611,7 +5611,7 @@ window.MENU_DATA = {
         {
           "id": "258",
           "name": "Anelli di cipolla in pastella",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5626,7 +5626,7 @@ window.MENU_DATA = {
         {
           "id": "442",
           "name": "Bastoncini di pollo",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5641,7 +5641,7 @@ window.MENU_DATA = {
         {
           "id": "264",
           "name": "Crocchette di patate",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5656,7 +5656,7 @@ window.MENU_DATA = {
         {
           "id": "437",
           "name": "Camembert",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5671,7 +5671,7 @@ window.MENU_DATA = {
         {
           "id": "447",
           "name": "Cheese wedges",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5686,7 +5686,7 @@ window.MENU_DATA = {
         {
           "id": "452",
           "name": "Crispy",
-          "price": 3,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5701,7 +5701,7 @@ window.MENU_DATA = {
         {
           "id": "434",
           "name": "Jalapeños",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5716,7 +5716,7 @@ window.MENU_DATA = {
         {
           "id": "263",
           "name": "Mini fagottini al formaggio",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5731,7 +5731,7 @@ window.MENU_DATA = {
         {
           "id": "261",
           "name": "Mozzarelle impanate",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5746,7 +5746,7 @@ window.MENU_DATA = {
         {
           "id": "260",
           "name": "Nachos al formaggio",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5761,7 +5761,7 @@ window.MENU_DATA = {
         {
           "id": "446",
           "name": "Nuggets",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,
@@ -5791,7 +5791,7 @@ window.MENU_DATA = {
         {
           "id": "453",
           "name": "Panelle",
-          "price": 4,
+          "price": 6,
           "description": "",
           "tags": [],
           "image": null,

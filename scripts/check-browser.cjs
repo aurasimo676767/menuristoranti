@@ -23,6 +23,9 @@ const os = require('node:os');
       assert.equal(await page.locator('.dish-card').count(), category.count);
       assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`Overflow nella categoria ${category.id}`);
     }
+    await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='fritti')));
+    assert.ok((await page.locator('[data-dish-id="258"] .dish-price').innerText()).includes('6,00'));
+    await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='extra')));
     assert.ok((await page.locator('[data-dish-id="615"] .dish-price').innerText()).includes('0,50'));
     await page.locator('[data-dish-id="615"]').click();
     assert.equal(await page.locator('#dish-dialog').evaluate(el=>el.open),true);

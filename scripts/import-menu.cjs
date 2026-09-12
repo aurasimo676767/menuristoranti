@@ -28,6 +28,7 @@ const categoryMap={2500:'panini',2501:'crepes',2502:'wrap',2503:'baby',2504:'piz
 const sweetCrepes=new Set([473,468,535,467,469,470,570,262,358,357,362,359,360,364,361,363,588,591,589,590,584,583,577,578,585,582,366,576,596]);
 const sweetPizzas=new Set([558,567,573,282,574,352]);
 const beers=new Set([274,268,273,269,275,276,270,272]);
+const friedItemsAtSixEuro = new Set([258,442,264,437,447,452,434,263,261,260,446,453]);
 const nameOverrides={
   31:'Bocconcini di cavallo',422:'Bocconcini di cavallo',321:'Cotoletta della casa',460:'Hamburger di Chianina',570:'Kinder Cereali',
   20:'Cordon bleu della casa*',68:'Cordon bleu della casa*',116:'Cordon bleu della casa*',
@@ -180,7 +181,7 @@ for(const category of source.menu.categories){
     if(sweetCrepes.has(p.id))target='crepes-dolci';
     if(sweetPizzas.has(p.id))target='pizze-dolci';
     if(beers.has(p.id))target='birre';
-    const dish={id:String(p.id),name:cleanName(p.name,p.id),price:Number(p.price),description:cleanDescription(p.description,p.id,category.id),tags:[],image:null,sourceCategory:category.name,sourceName:p.name,sourceDescription:p.description||'',sourcePrice:p.price};
+    const dish={id:String(p.id),name:cleanName(p.name,p.id),price:friedItemsAtSixEuro.has(p.id)?6:Number(p.price),description:cleanDescription(p.description,p.id,category.id),tags:[],image:null,sourceCategory:category.name,sourceName:p.name,sourceDescription:p.description||'',sourcePrice:p.price};
     if(category.id===2501&&target==='crepes-dolci')dish.variant='Carta crêpes';
     if(category.id===2520&&target==='crepes-dolci')dish.variant='Carta dessert';
     if(category.id===2504&&target==='pizze-dolci')dish.variant='Carta pizze';
