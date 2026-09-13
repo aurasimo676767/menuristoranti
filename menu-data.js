@@ -43,7 +43,7 @@ const initialMenuData = {
           "id": "11",
           "name": "Bomber",
           "price": 12,
-          "description": "Hamburger, derivati del latte, «por***tch» (voce da confermare), lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.",
+          "description": "Hamburger, derivati del latte, porchetta, lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.",
           "tags": [],
           "image": null,
           "sourceCategory": "PANINI - PANINI",
@@ -52,7 +52,7 @@ const initialMenuData = {
           "sourcePrice": "12.00",
           "hasSourceAsterisk": true,
           "hasSourceAbbreviations": true,
-          "needsReview": true
+          "needsReview": false
         },
         {
           "id": "36",
@@ -703,7 +703,7 @@ const initialMenuData = {
           "id": "21",
           "name": "Superbomber",
           "price": 16,
-          "description": "Coscia di pollo disossata, derivati del latte, hamburger, «porchde» e «mozzom» (voci da confermare), olive, lattuga, patatine, sale, olio, origano, K, M.",
+          "description": "Coscia di pollo disossata, derivati del latte, hamburger, porchetta, mozzarella, olive, lattuga, patatine, sale, olio, origano, K, M.",
           "tags": [],
           "image": null,
           "sourceCategory": "PANINI - PANINI",
@@ -712,7 +712,7 @@ const initialMenuData = {
           "sourcePrice": "16.00",
           "hasSourceAsterisk": false,
           "hasSourceAbbreviations": true,
-          "needsReview": true
+          "needsReview": false
         },
         {
           "id": "281",

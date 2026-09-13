@@ -40,10 +40,18 @@ const os = require('node:os');
     assert.equal(await page.evaluate(()=>document.activeElement.dataset.dishId),'615');
     await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='panini')));
     await page.locator('[data-dish-id="11"]').click();
-    assert.ok((await page.locator('#detail-description').innerText()).includes('chiedi al personale'));
+    assert.ok((await page.locator('#detail-description').innerText()).includes('porchetta, lattuga, mozzarella'));
     assert.equal(await page.locator('#source-details').count(),0);
     assert.equal((await page.locator('#dish-dialog').innerText()).includes('da confermare'),false);
     await page.keyboard.press('Escape');
+    await page.locator('[data-dish-id="21"]').click();
+    assert.ok((await page.locator('#detail-description').innerText()).includes('hamburger, porchetta, mozzarella, olive'));
+    assert.equal((await page.locator('#detail-description').innerText()).includes('chiedi al personale'),false);
+    await page.keyboard.press('Escape');
+    assert.deepEqual(await page.evaluate(()=>[
+      dishDescription({id:'11',description:'Hamburger, «por***tch» (voce da confermare), lattuga.'}),
+      dishDescription({id:'21',description:'Hamburger, «porchde» e «mozzom» (voci da confermare), olive.'})
+    ]),['Hamburger, porchetta, lattuga.','Hamburger, porchetta, mozzarella, olive.']);
     await page.locator('[data-dish-id="1"]').click();
     assert.equal(await page.locator('#supplements').isVisible(),true);
     assert.deepEqual(await page.locator('.supplement-spotlight strong').allTextContents(),[
@@ -150,6 +158,7 @@ const os = require('node:os');
     assert.notEqual(await page.locator('.banner-frame').evaluate(el=>el.style.getPropertyValue('--ry')),'');
     await page.screenshot({path:path.join(os.tmpdir(),'andrea-banner-animated.png')});
     await page.emulateMedia({reducedMotion:'reduce'});
+    await page.waitForFunction(()=>document.querySelectorAll('.scroll-pending').length===0);
     assert.equal(await page.locator('.banner-motion').count(),0);
     assert.equal(await page.locator('.scroll-pending').count(),0);
     assert.equal(await page.locator('.banner-float').evaluate(el=>getComputedStyle(el).animationName),'none');

@@ -63,10 +63,14 @@ function categoryIcon(id) {
   return 'grid';
 }
 function dishDescription(dish) {
-  if (/da confermare|por\*\*\*tch|porchde|mozzom/i.test(dish.description)) {
+  // Apply the owner's confirmed corrections to older online publications too.
+  let description = dish.description;
+  if (dish.id === '11') description = description.replace('«por***tch» (voce da confermare)', 'porchetta');
+  if (dish.id === '21') description = description.replace('«porchde» e «mozzom» (voci da confermare)', 'porchetta, mozzarella');
+  if (/da confermare|por\*\*\*tch|porchde|mozzom/i.test(description)) {
     return 'Per conoscere gli ingredienti di questo prodotto, chiedi al personale.';
   }
-  return dish.description;
+  return description;
 }
 function renderDishes(entries) {
   dishReveals.disconnect();

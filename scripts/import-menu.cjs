@@ -65,7 +65,7 @@ function cleanName(raw,id){
 const descriptionOverrides={
   15:'Petto di pollo, lattuga, patatine, sale, olio, origano, K, M.',
   271:'Porchetta, mozzarella, patatine*, K, M.',
-  11:'Hamburger, derivati del latte, «por***tch» (voce da confermare), lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.',
+  11:'Hamburger, derivati del latte, porchetta, lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.',
   321:'Pollo, uova, pangrattato, aromi naturali, patatine*, K, M.',
   6033:'Scottona, polpetta di cavallo, bacon, pollo, pomodoro, funghi dolci, cheddar, fontina, mozzarella, lattuga, patatine*, K, M.',
   46:'Hamburger di scottona polacca, pomodoro, cheddar, rucola, aceto balsamico, patatine, K, M, olio, sale, aromi, derivati del latte.',
@@ -75,7 +75,7 @@ const descriptionOverrides={
   47:'Pulled pork di suino, cipolla croccante, salsa barbecue, M, aromi naturali, origano, olio extravergine di oliva, sale, patatine fritte e cheddar.',
   570:'Nutella alla nocciola, crema bianca e cereali soffiati.',
   414:'Ventricina piccante, mozzarella, emmental, funghi dolci, patatine, Tabasco, K, M, harissa, olio e origano.',
-  21:'Coscia di pollo disossata, derivati del latte, hamburger, «porchde» e «mozzom» (voci da confermare), olive, lattuga, patatine, sale, olio, origano, K, M.',
+  21:'Coscia di pollo disossata, derivati del latte, hamburger, porchetta, mozzarella, olive, lattuga, patatine, sale, olio, origano, K, M.',
   426:'Prosciutto cotto, würstel, mozzarella, emmental, patatine, K, M.',
   59:'Hamburger, derivati del latte, porchetta, lattuga, mozzarella, patatine, sale, olio, origano, K, M, aromi naturali.',
   49:'Polpetta di cavallo*, derivati del latte, porchetta artigianale, cipolla, mozzarella, aglio, aromi naturali, patatine, origano, K, M.',
@@ -189,7 +189,7 @@ for(const category of source.menu.categories){
     if(p.id===352)dish.variant='Formato maxi';
     dish.hasSourceAsterisk=(p.name+(p.description||'')).includes('*');
     dish.hasSourceAbbreviations=/\b[KM]\b/.test(dish.description);
-    dish.needsReview=[11,21,361,47,569,570,567,578,596].includes(p.id);
+    dish.needsReview=[361,47,569,570,567,578,596].includes(p.id);
     menu.find(c=>c.id===target).dishes.push(dish);
     changes.push({id:dish.id,sourceCategory:category.name,category:target,oldName:p.name,name:dish.name,oldDescription:p.description||'',description:dish.description,price:p.price});
   }

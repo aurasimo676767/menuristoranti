@@ -7,12 +7,12 @@
 - Nessun prezzo negativo o non numerico; nessun prodotto eliminato reintrodotto.
 - Questa verifica non sostituisce la conferma del listino attuale da parte del locale.
 
-Le descrizioni originali e gli appunti interni non sono mostrati ai clienti. Per Bomber e Superbomber compare temporaneamente l’invito a chiedere gli ingredienti al personale. I testi originali restano nei dati per la revisione.
+Le descrizioni originali e gli appunti interni non sono mostrati ai clienti. Gli ingredienti dubbi di Bomber e Superbomber sono stati confermati dal locale e corretti. I testi originali restano nei dati per la revisione.
 
-## Conferme ingredienti ancora necessarie
+## Ingredienti confermati dal locale
 
-- Panini / Bomber (ID 11): Hamburger derivati del latte,por***tch,lattuga,mozz,patat,sale,olio,origano,K,M. aromi nat
-- Panini / Superbomber (ID 21): Cosc.pollo dissos Derivati del latte,hamb,porchde,mozzom,oive,lattug,patat,sale,o lio,orig,K,M   
+- Panini / Bomber (ID 11): «por***tch» significa porchetta.
+- Panini / Superbomber (ID 21): «porchde» e «mozzom» significano porchetta e mozzarella.
 
 ## Altre voci segnalate dalla precedente importazione
 
