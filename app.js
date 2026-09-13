@@ -8,6 +8,31 @@ const dialog = document.querySelector('#dish-dialog');
 const search = document.querySelector('#menu-search');
 const categoryDialog = document.querySelector('#category-dialog');
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+function revealOnScroll(node, className) {
+  node.classList.remove('scroll-pending');
+  node.classList.add(className);
+}
+const dishReveals = new IntersectionObserver(entries => {
+  let stagger = 0;
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    entry.target.style.setProperty('--reveal-delay', `${Math.min(stagger++, 3) * 110}ms`);
+    revealOnScroll(entry.target, 'dish-arrived');
+    dishReveals.unobserve(entry.target);
+  }
+}, {threshold: 0.08, rootMargin: '0px 0px -45px 0px'});
+dishes.addEventListener('focusin', event => {
+  const card = event.target.closest('.dish-card');
+  if (card) {
+    revealOnScroll(card, 'dish-arrived');
+    dishReveals.unobserve(card);
+  }
+});
+reduceMotion.addEventListener('change', () => {
+  if (reduceMotion.matches) {
+    document.querySelectorAll('.scroll-pending').forEach(node => node.classList.remove('scroll-pending'));
+  }
+});
 let selectedCategory = menu[0];
 let lastTrigger;
 let lastCategoryTrigger;
@@ -38,6 +63,7 @@ function categoryIcon(id) {
   return 'grid';
 }
 function renderDishes(entries) {
+  dishReveals.disconnect();
   dishes.replaceChildren();
   if (!entries.length) {
     const empty = element('div', 'empty-menu');
@@ -65,6 +91,10 @@ function renderDishes(entries) {
     bottom.append(element('span', 'dish-price', money(dish.price)), action); card.append(bottom);
     card.addEventListener('click', () => openDish(dish, category, card));
     dishes.append(card);
+    if (!reduceMotion.matches) {
+      card.classList.add('scroll-pending');
+      dishReveals.observe(card);
+    }
   });
 }
 function updateMenu() {
@@ -174,11 +204,6 @@ for (let i = 0; i < 12; i++) {
   embers.append(ember);
 }
 bannerFloat.append(embers);
-const motionButton = element('button', 'banner-motion', 'Pausa animazione');
-motionButton.type = 'button';
-motionButton.setAttribute('aria-pressed', 'false');
-banner.append(motionButton);
-let bannerPaused = false;
 let bannerVisible = true;
 const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)');
 function resetBannerTilt() {
@@ -186,18 +211,11 @@ function resetBannerTilt() {
   bannerFrame.style.removeProperty('--ry');
 }
 function syncBannerMotion() {
-  banner.classList.toggle('motion-paused', bannerPaused || !bannerVisible || document.hidden || reduceMotion.matches);
-  motionButton.hidden = reduceMotion.matches;
+  banner.classList.toggle('motion-paused', !bannerVisible || document.hidden || reduceMotion.matches);
   resetBannerTilt();
 }
-motionButton.addEventListener('click', () => {
-  bannerPaused = !bannerPaused;
-  motionButton.textContent = bannerPaused ? 'Riprendi animazione' : 'Pausa animazione';
-  motionButton.setAttribute('aria-pressed', String(bannerPaused));
-  syncBannerMotion();
-});
 banner.addEventListener('pointermove', event => {
-  if (!finePointer.matches || bannerPaused || reduceMotion.matches) return;
+  if (!finePointer.matches || reduceMotion.matches) return;
   const bounds = banner.getBoundingClientRect();
   bannerFrame.style.setProperty('--rx', `${(0.5 - (event.clientY - bounds.top) / bounds.height) * 5}deg`);
   bannerFrame.style.setProperty('--ry', `${((event.clientX - bounds.left) / bounds.width - 0.5) * 6}deg`);
@@ -211,15 +229,25 @@ new IntersectionObserver(([entry]) => {
 }).observe(banner);
 syncBannerMotion();
 
-// Reveal each section once; content stays visible before JavaScript runs.
+// Arm entrances only with JavaScript and reveal them when they reach the screen.
 const sectionReveals = new IntersectionObserver(entries => {
   for (const entry of entries) {
     if (!entry.isIntersecting) continue;
-    if (!reduceMotion.matches) entry.target.classList.add('section-arrived');
+    revealOnScroll(entry.target, 'section-arrived');
     sectionReveals.unobserve(entry.target);
   }
-}, {threshold: 0.12});
+}, {threshold: 0.08, rootMargin: '0px 0px -35px 0px'});
 document.querySelectorAll('.menu-intro, .quick-categories, .officials-promo, .info-heading, .info-cards article, footer').forEach((section, index) => {
   section.style.setProperty('--reveal-delay', `${index % 3 * 65}ms`);
-  sectionReveals.observe(section);
+  if (!reduceMotion.matches) {
+    section.classList.add('scroll-pending');
+    sectionReveals.observe(section);
+  }
+});
+document.addEventListener('focusin', event => {
+  const section = event.target.closest('.scroll-pending');
+  if (section) {
+    revealOnScroll(section, 'section-arrived');
+    sectionReveals.unobserve(section);
+  }
 });

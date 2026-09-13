@@ -22,8 +22,6 @@ dialog{color:var(--cream);background:#1b1b18;border:1px solid #494236;border-rad
 .banner-embers{position:absolute;inset:0;overflow:hidden;border-radius:5px;pointer-events:none}
 .banner-embers::before{content:'';position:absolute;left:-25%;bottom:-12%;width:75%;height:55%;background:radial-gradient(ellipse at center,#ff9a3060,transparent 68%);mix-blend-mode:screen;animation:banner-heat 5.5s ease-in-out infinite}
 .banner-embers i{position:absolute;left:var(--x);bottom:1%;width:3px;height:5px;border-radius:50%;background:#ffc16b;box-shadow:0 0 7px #ff7300;opacity:0;animation:banner-ember var(--duration) var(--delay) ease-out infinite}
-.banner-motion{display:block;margin-top:9px;padding:7px 0;background:transparent;color:#a79b87;font-size:9px;text-decoration:underline;text-underline-offset:3px}
-.banner-motion[hidden]{display:none}
 .hero-visual.motion-paused .banner-float,.hero-visual.motion-paused .banner-float::before,.hero-visual.motion-paused .banner-embers i,.hero-visual.motion-paused .banner-embers::before{animation-play-state:paused}
 @keyframes banner-heat{0%,100%{opacity:.25;transform:translateX(0) scale(.9)}50%{opacity:.8;transform:translateX(95%) scale(1.15)}}
 @keyframes banner-mobile-drift{0%,100%{transform:translateY(2px) rotate(-1.2deg) scale(.99)}50%{transform:translateY(-8px) rotate(.7deg) scale(1.015)}}
@@ -37,8 +35,13 @@ dialog{color:var(--cream);background:#1b1b18;border:1px solid #494236;border-rad
 .info-section{background:radial-gradient(ellipse at 90% 60%,#ff8a2408,transparent 65%)}
 .site-header{position:relative}
 .site-header::after{content:'';position:absolute;bottom:-1px;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,#ff8a2480,transparent);transform-origin:left;animation:heat-line 1.2s .15s backwards;pointer-events:none}
-.section-arrived{animation:section-arrive .65s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms) backwards}
-.dish-card{overflow:hidden;isolation:isolate;animation:section-arrive .45s cubic-bezier(.2,.7,.2,1) calc(var(--i)*35ms) backwards;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s}
+.scroll-pending{opacity:0;transform:translateY(65px) scale(.94)}
+.section-arrived{animation:menu-rise .9s cubic-bezier(.16,1,.3,1) var(--reveal-delay,0ms) backwards}
+.dish-card{overflow:hidden;isolation:isolate;animation:none;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s}
+.dish-card.dish-arrived{animation:dish-rise .9s cubic-bezier(.16,1,.3,1) var(--reveal-delay,0ms) backwards}
+.dish-card::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 20%,#ffb56824 48%,transparent 75%);transform:translateX(-110%)}
+.dish-arrived::after{animation:card-flare 1.1s ease-out var(--reveal-delay,0ms) backwards}
+.menu-intro.section-arrived h2{animation:title-ignite 1.3s ease-out backwards}
 .dish-card::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 100% 0,#ff8a241c,transparent 65%);opacity:0;transition:opacity .3s}
 .dish-price{transition:color .25s,background .25s}
 .button{position:relative;overflow:hidden;isolation:isolate}
@@ -67,8 +70,13 @@ dialog[open] .supplement-spotlight:nth-child(5){animation-delay:.27s}
 }
 .button:active,.dish-card:active,.quick-category:active,.drawer-category:active{transform:scale(.985)}
 @keyframes section-arrive{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes menu-rise{from{opacity:0;transform:translateY(65px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes dish-rise{0%{opacity:0;transform:translateY(75px) scale(.93);border-color:#ff8a24;box-shadow:0 0 25px #ff8a2430}55%{opacity:1;border-color:#ba7439;box-shadow:0 0 20px #ff8a2418}100%{opacity:1;transform:translateY(0) scale(1);border-color:#30302b;box-shadow:0 0 0 transparent}}
+@keyframes card-flare{from{transform:translateX(-110%)}to{transform:translateX(110%)}}
+@keyframes title-ignite{0%{color:#ffb568;text-shadow:0 0 32px #ff8a2499}100%{color:var(--cream);text-shadow:0 0 0 transparent}}
 @keyframes heat-line{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
 @keyframes button-light{to{transform:translateX(110%)}}
 @keyframes backdrop-arrive{from{opacity:0}to{opacity:1}}
 @media(prefers-reduced-motion:reduce){.button:active,.dish-card:active,.quick-category:active,.drawer-category:active{transform:none}.dish-card:hover,.button:hover .icon,.quick-category:hover .icon,.drawer-category:hover .icon{transform:none}}
+@media(prefers-reduced-motion:reduce){.scroll-pending{opacity:1;transform:none}}
 [hidden]{display:none!important}
