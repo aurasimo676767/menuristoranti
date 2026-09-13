@@ -210,3 +210,16 @@ new IntersectionObserver(([entry]) => {
   syncBannerMotion();
 }).observe(banner);
 syncBannerMotion();
+
+// Reveal each section once; content stays visible before JavaScript runs.
+const sectionReveals = new IntersectionObserver(entries => {
+  for (const entry of entries) {
+    if (!entry.isIntersecting) continue;
+    if (!reduceMotion.matches) entry.target.classList.add('section-arrived');
+    sectionReveals.unobserve(entry.target);
+  }
+}, {threshold: 0.12});
+document.querySelectorAll('.menu-intro, .quick-categories, .officials-promo, .info-heading, .info-cards article, footer').forEach((section, index) => {
+  section.style.setProperty('--reveal-delay', `${index % 3 * 65}ms`);
+  sectionReveals.observe(section);
+});

@@ -32,4 +32,43 @@ dialog{color:var(--cream);background:#1b1b18;border:1px solid #494236;border-rad
 @keyframes banner-glow{0%,100%{opacity:.35}50%{opacity:.85}}
 @keyframes banner-ember{0%{opacity:0;transform:translate(0,0) scale(.6)}15%{opacity:.8}80%{opacity:.25}100%{opacity:0;transform:translate(12px,-125px) scale(.2)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.banner-embers{display:none}.banner-frame{transform:none}}
+/* Warm light and short, one-time entrances throughout the menu. */
+.menu-section{background:radial-gradient(ellipse 70% 360px at 0 0,#ff8a2409,transparent)}
+.info-section{background:radial-gradient(ellipse at 90% 60%,#ff8a2408,transparent 65%)}
+.site-header{position:relative}
+.site-header::after{content:'';position:absolute;bottom:-1px;left:5%;right:5%;height:1px;background:linear-gradient(90deg,transparent,#ff8a2480,transparent);transform-origin:left;animation:heat-line 1.2s .15s backwards;pointer-events:none}
+.section-arrived{animation:section-arrive .65s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms) backwards}
+.dish-card{overflow:hidden;isolation:isolate;animation:section-arrive .45s cubic-bezier(.2,.7,.2,1) calc(var(--i)*35ms) backwards;transition:background .25s,border-color .25s,transform .25s,box-shadow .25s}
+.dish-card::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse at 100% 0,#ff8a241c,transparent 65%);opacity:0;transition:opacity .3s}
+.dish-price{transition:color .25s,background .25s}
+.button{position:relative;overflow:hidden;isolation:isolate}
+.button::after{content:'';position:absolute;inset:-50% -30%;pointer-events:none;background:linear-gradient(110deg,transparent 35%,#ffffff38 50%,transparent 65%);transform:translateX(-110%)}
+.button .icon,.quick-category .icon,.drawer-category .icon,.mobile-nav .icon{transition:transform .25s cubic-bezier(.2,.7,.2,1)}
+.category-button,.drawer-category,.header-call,.mobile-nav>a,.mobile-nav>button{transition:background .2s,color .2s,border-color .2s,transform .2s}
+.search-field{transition:border-color .25s,box-shadow .25s}
+.search-field:focus-within{border-color:var(--orange);box-shadow:0 0 0 3px #ff8a2412}
+.dish-card:focus-visible::before{opacity:1}
+.button:focus-visible::after{animation:button-light .7s ease-out}
+dialog[open]{animation:sheet .32s cubic-bezier(.2,.7,.2,1)}
+dialog[open]::backdrop{animation:backdrop-arrive .25s ease-out}
+dialog[open] .detail-heading,dialog[open] .drawer-header{animation:section-arrive .4s .06s backwards}
+dialog[open] .supplement-spotlight{animation:section-arrive .4s .12s backwards}
+dialog[open] .supplement-spotlight:nth-child(3){animation-delay:.17s}
+dialog[open] .supplement-spotlight:nth-child(4){animation-delay:.22s}
+dialog[open] .supplement-spotlight:nth-child(5){animation-delay:.27s}
+@media(hover:hover) and (pointer:fine){
+  .dish-card:hover{transform:translateY(-4px);border-color:#b56d32;box-shadow:0 10px 25px #0003,0 0 18px #ff8a2408}
+  .dish-card:hover::before{opacity:1}
+  .button:hover::after{animation:button-light .7s ease-out}
+  .button:hover .icon{transform:translateX(4px)}
+  .quick-category:hover .icon,.drawer-category:hover .icon{transform:translateY(-2px) rotate(-7deg)}
+  .category-button:hover,.header-call:hover{background:#ff8a2412}
+  .mobile-nav a:hover .icon,.mobile-nav button:hover .icon{transform:translateY(-3px)}
+}
+.button:active,.dish-card:active,.quick-category:active,.drawer-category:active{transform:scale(.985)}
+@keyframes section-arrive{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes heat-line{from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+@keyframes button-light{to{transform:translateX(110%)}}
+@keyframes backdrop-arrive{from{opacity:0}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.button:active,.dish-card:active,.quick-category:active,.drawer-category:active{transform:none}.dish-card:hover,.button:hover .icon,.quick-category:hover .icon,.drawer-category:hover .icon{transform:none}}
 [hidden]{display:none!important}
