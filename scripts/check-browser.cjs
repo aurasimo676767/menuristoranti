@@ -66,7 +66,9 @@ const os = require('node:os');
     assert.ok((await page.locator('.opening-hours').innerText()).includes('17:00 – 06:00'));
     assert.ok((await page.locator('.opening-hours').innerText()).includes('17:00 – 03:00'));
     const maps = new URL(await page.locator('.maps-link').getAttribute('href'));
-    assert.equal(maps.searchParams.get('query'),'Via Adua 298, Vittoria RG');
+    assert.equal(maps.hostname,'www.google.com');
+    assert.ok(maps.pathname.startsWith('/maps/place/Panineria+da+Andrea/'));
+    assert.ok(maps.pathname.includes('0x1311a4fe7cee8cc1:0x4a5eee47940d04'));
     for(const width of [320,390,768,1366]){
       await page.setViewportSize({width,height:900});
       assert.ok(await page.locator('#dish-dialog').evaluate(el=>el.scrollWidth<=el.clientWidth),`Overflow dettagli a ${width}px`);
