@@ -41,10 +41,18 @@ const os = require('node:os');
     await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='panini')));
     await page.locator('[data-dish-id="1"]').click();
     assert.equal(await page.locator('#supplements').isVisible(),true);
-    assert.ok((await page.locator('.supplement-spotlight').innerText()).includes('PATATINE A PARTE'));
-    assert.equal(await page.locator('.supplement-group').count(),5);
-    await page.locator('.supplement-group').first().locator('summary').click();
-    assert.ok(await page.locator('.supplement-item').count()>0);
+    assert.deepEqual(await page.locator('.supplement-spotlight strong').allTextContents(),[
+      'PATATINE A PARTE', 'PANINI SENZA GLUTINE (S.G)', 'CREPES S.G', 'PIZZA S.G'
+    ]);
+    assert.deepEqual(await page.locator('.supplement-spotlight > b').allTextContents(),[
+      '1,00 €', '3,50 €', '2,00 €', '3,50 €'
+    ]);
+    assert.equal(await page.locator('.supplement-group, .supplement-item').count(),0);
+    for(const width of [320,390,768,1366]){
+      await page.setViewportSize({width,height:900});
+      assert.ok(await page.locator('#dish-dialog').evaluate(el=>el.scrollWidth<=el.clientWidth),`Overflow dettagli a ${width}px`);
+    }
+    await page.setViewportSize({width:390,height:844});
     await page.keyboard.press('Escape');
     await page.locator('#menu-search').fill('chianina');
     assert.ok(await page.locator('.dish-card').count()>1);
@@ -66,6 +74,7 @@ const os = require('node:os');
           buttons[i].click();const dish=category.dishes[i];
           if(document.querySelector('#detail-title').textContent!==dish.name)throw new Error('Titolo '+dish.id);
           if(document.querySelector('#detail-price').textContent!==money(dish.price))throw new Error('Prezzo '+dish.id);
+          if(document.querySelector('#supplements').hidden!==['bevande','birre','extra'].includes(category.id))throw new Error('Visibilità evidenza '+category.id);
           document.querySelector('#dish-dialog').close();count++;
         }
       }
