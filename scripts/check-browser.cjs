@@ -39,15 +39,26 @@ const os = require('node:os');
     assert.equal(await page.locator('#dish-dialog').evaluate(el=>el.open),false);
     assert.equal(await page.evaluate(()=>document.activeElement.dataset.dishId),'615');
     await page.evaluate(()=>selectCategory(window.MENU_DATA.categories.find(category=>category.id==='panini')));
+    await page.locator('[data-dish-id="11"]').click();
+    assert.ok((await page.locator('#detail-description').innerText()).includes('chiedi al personale'));
+    assert.equal(await page.locator('#source-details').count(),0);
+    assert.equal((await page.locator('#dish-dialog').innerText()).includes('da confermare'),false);
+    await page.keyboard.press('Escape');
     await page.locator('[data-dish-id="1"]').click();
     assert.equal(await page.locator('#supplements').isVisible(),true);
     assert.deepEqual(await page.locator('.supplement-spotlight strong').allTextContents(),[
-      'PATATINE A PARTE', 'PANINI SENZA GLUTINE (S.G)', 'CREPES S.G', 'PIZZA S.G'
+      'PATATINE A PARTE', 'PANINI (S.G)', 'CREPES S.G', 'PIZZA S.G'
     ]);
     assert.deepEqual(await page.locator('.supplement-spotlight > b').allTextContents(),[
       '1,00 €', '3,50 €', '2,00 €', '3,50 €'
     ]);
     assert.equal(await page.locator('.supplement-group, .supplement-item').count(),0);
+    assert.equal(await page.locator('.supplement-spotlight span').count(),3);
+    assert.ok((await page.locator('.supplement-note').innerText()).includes('si aggiungono al prezzo del piatto'));
+    assert.ok((await page.locator('.opening-hours').innerText()).includes('17:00 – 06:00'));
+    assert.ok((await page.locator('.opening-hours').innerText()).includes('17:00 – 03:00'));
+    const maps = new URL(await page.locator('.maps-link').getAttribute('href'));
+    assert.equal(maps.searchParams.get('query'),'Via Adua 298, Vittoria RG');
     for(const width of [320,390,768,1366]){
       await page.setViewportSize({width,height:900});
       assert.ok(await page.locator('#dish-dialog').evaluate(el=>el.scrollWidth<=el.clientWidth),`Overflow dettagli a ${width}px`);

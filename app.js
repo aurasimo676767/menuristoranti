@@ -62,6 +62,12 @@ function categoryIcon(id) {
   if (id === 'fritti') return 'fries';
   return 'grid';
 }
+function dishDescription(dish) {
+  if (/da confermare|por\*\*\*tch|porchde|mozzom/i.test(dish.description)) {
+    return 'Per conoscere gli ingredienti di questo prodotto, chiedi al personale.';
+  }
+  return dish.description;
+}
 function renderDishes(entries) {
   dishReveals.disconnect();
   dishes.replaceChildren();
@@ -84,7 +90,7 @@ function renderDishes(entries) {
     const heading = element('div', 'dish-heading');
     heading.append(element('h4', '', dish.name));
     card.append(top, heading);
-    if (dish.description) card.append(element('p', 'dish-description', dish.description));
+    if (dishDescription(dish)) card.append(element('p', 'dish-description', dishDescription(dish)));
     if (dish.variant) card.append(element('span', 'variant-label', dish.variant));
     const bottom = element('div', 'dish-bottom');
     const action = element('span', 'dish-action', 'SCOPRI'); action.append(icon('arrow'));
@@ -110,7 +116,7 @@ function updateMenu() {
   }
   const query = normalize(search.value.trim());
   const entries = query
-    ? menu.flatMap(category => category.dishes.filter(dish => normalize(`${dish.name} ${dish.description} ${category.name}`).includes(query)).map(dish => ({dish, category})))
+    ? menu.flatMap(category => category.dishes.filter(dish => normalize(`${dish.name} ${dishDescription(dish)} ${category.name}`).includes(query)).map(dish => ({dish, category})))
     : selectedCategory.dishes.map(dish => ({dish, category: selectedCategory}));
   document.querySelectorAll('[data-category]').forEach(button => {
     const active = !query && button.dataset.category === selectedCategory.id;
@@ -164,16 +170,13 @@ function openDish(dish, category, trigger) {
   document.querySelector('#detail-price').textContent = money(dish.price);
   const description = document.querySelector('#detail-description');
   const ingredientLabel = document.querySelector('#detail-ingredients-label');
-  description.textContent = dish.description;
+  description.textContent = dishDescription(dish);
   description.hidden = !dish.description;
   ingredientLabel.hidden = !dish.description;
   document.querySelector('#detail-allergens').textContent = 'Per conoscere gli allergeni presenti in questo prodotto, consulta il registro allergeni disponibile presso il personale.';
   const tags = document.querySelector('#detail-tags'); tags.replaceChildren();
   if (dish.variant) tags.append(element('span', 'tag', dish.variant));
   renderSupplements(category);
-  document.querySelector('#source-text').textContent = `${dish.sourceName}${dish.sourceDescription ? ' — ' + dish.sourceDescription : ''}`;
-  document.querySelector('#source-details').open = false;
-  document.querySelector('#source-details').hidden = !dish.sourceName;
   dialog.showModal(); dialog.scrollTop = 0; document.body.style.overflow = 'hidden';
 }
 document.querySelector('.close-dialog').addEventListener('click', () => dialog.close());
