@@ -206,7 +206,7 @@ drinks.dishes.sort((a,b)=>{
   return (left===-1?drinkOrder.length:left)-(right===-1?drinkOrder.length:right);
 });
 const output={restaurantName:'Panineria Andrea',currency:source.currency,categories:menu};
-fs.writeFileSync(path.join(root,'menu-data.js'),'// Menu importato: modificare i dati sorgente o lo script di importazione.\nwindow.MENU_DATA = '+JSON.stringify(output,null,2)+';\n');
+fs.writeFileSync(path.join(root,'menu-data.js'),'// Menu importato: modificare i dati sorgente o lo script di importazione.\nconst initialMenuData = '+JSON.stringify(output,null,2)+';\nif (typeof window !== \'undefined\') window.MENU_DATA = initialMenuData;\nif (typeof module !== \'undefined\' && module.exports) module.exports = initialMenuData;\n');
 fs.writeFileSync(path.join(root,'data/menu-changes.json'),JSON.stringify(changes,null,2)+'\n');
 console.log(`${changes.length} voci importate più ${piadine.dishes.length} piadine in ${menu.length} categorie.`);
 console.log(menu.map(c=>`${c.name}: ${c.dishes.length}`).join('\n'));

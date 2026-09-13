@@ -32,3 +32,4 @@ dialog{color:var(--cream);background:#1b1b18;border:1px solid #494236;border-rad
 @keyframes banner-glow{0%,100%{opacity:.35}50%{opacity:.85}}
 @keyframes banner-ember{0%{opacity:0;transform:translate(0,0) scale(.6)}15%{opacity:.8}80%{opacity:.25}100%{opacity:0;transform:translate(12px,-125px) scale(.2)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.banner-embers{display:none}.banner-frame{transform:none}}
+[hidden]{display:none!important}

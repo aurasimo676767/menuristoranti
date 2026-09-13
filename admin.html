@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#111110">
+  <title>Gestione menu · Da Andrea BBQ</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/admin.css">
+  <script src="/admin.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a href="/" class="brand">ANDREA<span>BBQ</span><small>AREA RISERVATA</small></a><a href="/" target="_blank" rel="noopener">Apri il sito ↗</a></header>
+  <main>
+    <section id="login-panel" class="login-panel">
+      <span class="eyebrow">IL TUO LOCALE, IL TUO MENU</span>
+      <h1>Benvenuto<br>dietro le quinte.</h1>
+      <p>Accedi per aggiornare piatti, prezzi e categorie.</p>
+      <form id="login-form">
+        <label for="password">Password</label>
+        <div class="password-row"><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="256"><button id="show-password" type="button" aria-pressed="false">Mostra</button></div>
+        <button type="submit" class="primary">Entra nel tuo menu →</button>
+      </form>
+    </section>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="editor" hidden>
+      <div class="editor-heading"><div><span class="eyebrow">LA CUCINA CAMBIA. IL MENU ANCHE.</span><h1>Il tuo menu<span>.</span></h1><p id="publication-info"></p></div><button id="logout" type="button">Esci</button></div>
+      <div class="savebar"><span id="save-status">Nessuna modifica</span><div><button id="preview" type="button">Anteprima</button><button id="save" type="button">Salva bozza</button><button id="publish" type="button" class="primary">Pubblica modifiche</button></div></div>
+      <p class="hint">Salva per ritrovare la bozza. Premi “Pubblica modifiche” quando vuoi mostrarla ai clienti.</p>
+      <div class="workspace">
+        <aside><div class="section-heading"><h2>Categorie</h2><button id="add-category" type="button" aria-label="Aggiungi categoria">+</button></div><nav id="admin-categories" aria-label="Categorie da modificare"></nav></aside>
+        <section class="category-content">
+          <div class="section-heading"><h2 id="active-category"></h2><button id="edit-category" type="button">Modifica categoria</button></div>
+          <div class="list-tools"><label class="search-label" for="dish-search"><span class="sr-only">Cerca nella categoria</span><input id="dish-search" type="search" placeholder="Cerca un piatto…"></label><button id="add-dish" type="button" class="primary">+ Aggiungi piatto</button></div>
+          <div id="admin-dishes"></div>
+        </section>
+      </div>
+      <section class="history-panel"><div class="section-heading"><div><h2>Versioni precedenti</h2><p>Ripristina una versione nella bozza, controllala e poi pubblicala.</p></div><button id="refresh-history" type="button">Aggiorna storico</button></div><div id="history-list"></div></section>
+      <div class="bottom-tools"><button id="export" type="button">Scarica copia della bozza</button><button id="reload" type="button">Ricarica dal server</button></div>
+    </section>
+  </main>
+  <dialog id="dish-modal" aria-labelledby="dish-modal-title">
+    <form id="dish-form"><div class="section-heading"><h2 id="dish-modal-title">Modifica piatto</h2><button type="button" data-close aria-label="Chiudi">×</button></div>
+      <label for="dish-name">Nome del piatto</label><input id="dish-name" required maxlength="150">
+      <div class="two-cols"><div><label for="dish-price">Prezzo (€)</label><input id="dish-price" type="number" required min="0" max="10000" step="0.01" inputmode="decimal"></div><div><label for="dish-category">Categoria</label><select id="dish-category"></select></div></div>
+      <label for="dish-description">Descrizione e ingredienti</label><textarea id="dish-description" rows="4" maxlength="3000"></textarea>
+      <label for="dish-variant">Variante o formato <span class="optional">(facoltativo)</span></label><input id="dish-variant" maxlength="150" placeholder="Es. 33 cl, Maxi…">
+      <label class="check"><input id="dish-available" type="checkbox" checked> Disponibile nel menu pubblico</label>
+      <p class="hint">Disattivalo per nasconderlo ai clienti senza eliminarlo.</p>
+      <div class="modal-actions"><button id="delete-dish" type="button" class="danger">Elimina piatto</button><button type="submit" class="primary">Applica alla bozza</button></div>
+    </form>
+  </dialog>
+  <dialog id="category-modal" aria-labelledby="category-modal-title">
+    <form id="category-form"><div class="section-heading"><h2 id="category-modal-title">Categoria</h2><button type="button" data-close aria-label="Chiudi">×</button></div>
+      <label for="category-name">Nome</label><input id="category-name" required maxlength="100">
+      <label for="category-subtitle">Descrizione <span class="optional">(facoltativa)</span></label><textarea id="category-subtitle" rows="3" maxlength="500"></textarea>
+      <label class="check"><input id="category-supplements" type="checkbox"> Mostra le aggiunte disponibili nei dettagli dei piatti</label>
+      <div class="modal-actions"><button id="delete-category" type="button" class="danger">Elimina categoria</button><button type="submit" class="primary">Applica alla bozza</button></div>
+    </form>
+  </dialog>
+  <dialog id="preview-modal" aria-labelledby="preview-title"><div class="section-heading"><div><span class="eyebrow">NON ANCORA PUBBLICATO</span><h2 id="preview-title">Anteprima della bozza</h2></div><button type="button" data-close aria-label="Chiudi">×</button></div><p class="hint">Controlla i contenuti che saranno visibili ai clienti. I piatti non disponibili sono esclusi.</p><div id="preview-content"></div></dialog>
+</body>
+</html>

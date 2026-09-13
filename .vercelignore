@@ -3,3 +3,7 @@ scripts/
 README.md
 MENU-REVIEW.md
 readme
+.env*
+node_modules/
+.local/
+test-results/

@@ -35,7 +35,7 @@ function icon(name) {
 function renderSupplements(category) {
   const section = document.querySelector('#supplements');
   const groups = document.querySelector('#supplement-groups');
-  const available = supplementCategoryIds.has(category.id);
+  const available = category.supplements ?? supplementCategoryIds.has(category.id);
   section.hidden = !available;
   groups.replaceChildren();
   if (!available) return;
@@ -93,6 +93,16 @@ function renderDishes(entries) {
   });
 }
 function updateMenu() {
+  if (!selectedCategory) {
+    document.querySelector('#category-title').textContent = 'Menu momentaneamente non disponibile';
+    document.querySelector('#category-subtitle').textContent = 'Riprova tra poco oppure contatta il locale.';
+    document.querySelector('#category-number').textContent = '';
+    document.querySelector('.menu-toolbar').hidden = true;
+    document.querySelector('.menu-end').hidden = true;
+    document.querySelector('.list-guide').hidden = true;
+    dishes.replaceChildren();
+    return;
+  }
   const query = normalize(search.value.trim());
   const entries = query
     ? menu.flatMap(category => category.dishes.filter(dish => normalize(`${dish.name} ${dish.description} ${category.name}`).includes(query)).map(dish => ({dish, category})))
@@ -122,6 +132,7 @@ menu.forEach(category => {
 });
 for(const id of ['panini','baby','piadine','ufficiali','pizze','fritti']) {
   const category=menu.find(item=>item.id===id);
+  if (!category) continue;
   const tile=element('button','quick-category'); tile.type='button';tile.dataset.category=id;
   tile.append(icon(categoryIcon(id)),element('strong','',category.name));
   tile.addEventListener('click',()=>selectCategory(category,true));document.querySelector('#quick-categories').append(tile);
@@ -139,6 +150,7 @@ categoryDialog.addEventListener('click',event=>{
 document.querySelectorAll('[data-go-category]').forEach(button=>button.addEventListener('click',()=>{
   const category=menu.find(item=>item.id===button.dataset.goCategory);if(category)selectCategory(category,true);
 }));
+document.querySelector('.officials-promo').hidden = !menu.some(category => category.id === 'ufficiali');
 search.addEventListener('input', updateMenu);
 function openDish(dish, category, trigger) {
   lastTrigger = trigger;
@@ -156,6 +168,7 @@ function openDish(dish, category, trigger) {
   renderSupplements(category);
   document.querySelector('#source-text').textContent = `${dish.sourceName}${dish.sourceDescription ? ' — ' + dish.sourceDescription : ''}`;
   document.querySelector('#source-details').open = false;
+  document.querySelector('#source-details').hidden = !dish.sourceName;
   dialog.showModal(); dialog.scrollTop = 0; document.body.style.overflow = 'hidden';
 }
 document.querySelector('.close-dialog').addEventListener('click', () => dialog.close());

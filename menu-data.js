@@ -1,5 +1,5 @@
 // Menu importato: modificare i dati sorgente o lo script di importazione.
-window.MENU_DATA = {
+const initialMenuData = {
   "restaurantName": "Panineria Andrea",
   "currency": "EUR",
   "categories": [
@@ -6946,3 +6946,5 @@ window.MENU_DATA = {
     }
   ]
 };
+if (typeof window !== 'undefined') window.MENU_DATA = initialMenuData;
+if (typeof module !== 'undefined' && module.exports) module.exports = initialMenuData;
