@@ -7,5 +7,10 @@
     "check:menu": "node scripts/check-menu.cjs",
     "admin:secrets": "node scripts/admin-secrets.cjs"
   },
-  "engines": { "node": "24.x" }
+  "engines": {
+    "node": "24.x"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
 }
