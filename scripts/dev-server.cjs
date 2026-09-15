@@ -4,7 +4,7 @@ const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const config = require('../vercel.json');
 const handlers = { '/api/admin': require('../api/admin'), '/api/menu': require('../api/menu') };
-const types = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg' };
+const types = { '.html': 'text/html; charset=utf-8', '.txt': 'text/plain; charset=utf-8', '.xml': 'application/xml; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.css': 'text/css; charset=utf-8', '.svg': 'image/svg+xml', '.png': 'image/png', '.webp': 'image/webp', '.jpg': 'image/jpeg' };
 function createServer() {
   return http.createServer(async (req, res) => {
     try {
@@ -24,7 +24,7 @@ function createServer() {
         await handlers[url.pathname](req, res); return;
       }
       const pathname = url.pathname === '/' ? '/index.html' : ['/admin', '/admin/'].includes(url.pathname) ? '/admin.html' : decodeURIComponent(url.pathname);
-      if (!/^\/(?:index\.html|admin\.(?:html|js|css)|app\.js|style\.css|menu-data\.js|menu-loader\.js|assets\/[a-zA-Z0-9_./-]+)$/.test(pathname)) { res.writeHead(404); res.end('Not found'); return; }
+      if (!/^\/(?:index\.html|robots\.txt|sitemap\.xml|admin\.(?:html|js|css)|app\.js|style\.css|menu-data\.js|menu-loader\.js|assets\/[a-zA-Z0-9_./-]+)$/.test(pathname)) { res.writeHead(404); res.end('Not found'); return; }
       const file = path.resolve(root, `.${pathname}`);
       if (!file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
       const data = await fs.readFile(file);
