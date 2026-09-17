@@ -38,7 +38,7 @@
     $('#offers-list').replaceChildren();
     for (const [index, offer] of draft.entries()) {
       const row = node('article', undefined, 'admin-offer-row');
-      row.append(node('span', status(offer), 'offer-state'), node('h3', offer.title), node('p', `${date(offer.start)} – ${date(offer.end)}${offer.popup ? ' · Popup attivo' : ''}`));
+      row.append(node('span', status(offer), 'offer-state'), node('h3', offer.title), node('p', `${date(offer.start)} – ${date(offer.end)}`));
       const actions = node('div', undefined, 'bottom-tools');
       actions.append(button('Modifica', () => open(offer)), button('Duplica', () => {
         if (draft.length >= 12) { message('Hai raggiunto il limite di 12 offerte. Elimina quelle che non servono più.', true); return; }
@@ -83,7 +83,9 @@
     if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type) || file.size > 15 * 1024 * 1024) throw new Error('Scegli una foto JPG, PNG o WebP fino a 15 MB.');
     const url = URL.createObjectURL(file), photo = new Image();
     try {
-      photo.src = url; await photo.decode();
+      photo.src = url;
+      try { await photo.decode(); }
+      catch { throw new Error('Non riesco a leggere questa foto. Esportala come JPG, PNG o WebP e riprova: cambiare solo l’estensione del file non basta.'); }
       let width = Math.min(960, photo.naturalWidth);
       for (let attempt = 0; attempt < 5; attempt++) {
         const canvas = document.createElement('canvas'); canvas.width = width; canvas.height = Math.max(1, Math.round(photo.naturalHeight * width / photo.naturalWidth));

@@ -50,45 +50,68 @@
     if (document.hidden) return;
     document.querySelectorAll('.offer-countdown').forEach(timer => updateTimer(timer));
   }, 1000);
-  const section = document.querySelector('#offers');
-  if (!section) return;
-  let latest = [], shown = false, signature = '';
+  const page = document.querySelector('[data-offers-page]');
   const popup = document.querySelector('#offer-popup-dialog');
-  const seen = key => { try { return sessionStorage.getItem(key) === '1'; } catch { return shown; } };
+  if (!page && !popup) return;
+  const grid = document.querySelector('#offers-grid');
+  const message = document.querySelector('#offers-message');
+  const sessionKey = 'andrea-offers-welcome';
+  let latest = [], shown = false, signature = '', loaded = false;
+  const seen = () => { try { return sessionStorage.getItem(sessionKey) === '1'; } catch { return shown; } };
   function render(offers) {
+    loaded = true;
     latest = offers;
     const active = offers.filter(offer => status(offer) === 'In corso');
+    const count = active.length;
     const next = JSON.stringify(active);
-    if (next !== signature) {
-      signature = next;
-      document.querySelector('#offers-grid').replaceChildren(...active.map(card));
+    if (grid && next !== signature) {
+      grid.replaceChildren(...active.map((offer, index) => {
+        const item = card(offer);
+        item.style.setProperty('--offer-delay', Math.min(index, 5) * 80 + 'ms');
+        return item;
+      }));
     }
-    section.hidden = !active.length;
-    document.querySelector('#offers-link').hidden = !active.length;
-    if (popup.open && !active.some(offer => offer.id === popup.dataset.offer)) popup.close();
-    const featured = active.find(offer => offer.popup);
-    if (!featured || shown || document.querySelector('dialog[open]')) return;
-    const key = `andrea-offer-${featured.id}-${featured.start}-${featured.end}`;
-    if (seen(key)) return;
-    document.querySelector('#offer-popup-content').replaceChildren(card(featured));
-    popup.dataset.offer = featured.id;
+    signature = next;
+    if (message) {
+      message.textContent = count ? (count === 1 ? '1 offerta da prendere al volo.' : count + ' offerte da prendere al volo.') : 'Stiamo preparando le prossime offerte. Intanto, scopri il menu!';
+    }
+    for (const id of ['offers-link', 'offers-fab']) {
+      const link = document.getElementById(id);
+      if (link) link.hidden = !count;
+    }
+    const badge = document.querySelector('#offers-fab-count');
+    if (badge) badge.textContent = count;
+    if (!popup) return;
+    document.querySelector('#offer-popup-title').textContent = count === 1 ? 'C’è 1 offerta per te!' : 'Ci sono ' + count + ' offerte per te!';
+    if (!count) { if (popup.open) popup.close(); return; }
+    if (shown || seen() || document.hidden || document.querySelector('dialog[open]')) return;
     popup.showModal(); shown = true;
-    try { sessionStorage.setItem(key, '1'); } catch { /* In-memory fallback for blocked storage. */ }
+    try { sessionStorage.setItem(sessionKey, '1'); } catch { /* Keep the in-memory fallback. */ }
   }
-  document.querySelector('#close-offer-popup').addEventListener('click', () => popup.close());
-  document.querySelector('#view-offers').addEventListener('click', () => { popup.close(); section.scrollIntoView({ behavior: 'smooth' }); });
+  for (const id of ['close-offer-popup', 'skip-offers']) {
+    document.getElementById(id)?.addEventListener('click', () => popup.close());
+  }
+  popup?.addEventListener('click', event => { if (event.target === popup) {
+    const rect = popup.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) popup.close();
+  } });
   window.addEventListener('offers-loaded', event => render(event.detail));
   async function refresh() {
-    if (document.hidden || location.protocol === 'file:') return;
-    render(latest);
+    if (document.hidden) return;
     try {
       const response = await fetch('/api/menu', { cache: 'no-store', signal: AbortSignal.timeout(10000) });
       if (!response.ok) throw new Error('Unavailable');
       render((await response.json()).offers || []);
-    } catch { render([]); }
+    } catch {
+      render([]);
+      if (message) message.textContent = 'Non riusciamo a caricare le offerte. Riprova tra poco oppure chiamaci al 366 746 0906.';
+    }
   }
+  if (page) refresh();
   setInterval(refresh, 60000);
-  // Remove expired promotions and close their popup at the actual deadline.
-  setInterval(() => { if (!document.hidden && latest.some(offer => offer.end < day())) render(latest.filter(offer => offer.end >= day())); }, 1000);
+  setInterval(() => {
+    if (!document.hidden && loaded && latest.some(offer => status(offer) !== 'In corso')) render(latest.filter(offer => status(offer) === 'In corso'));
+  }, 1000);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
+  window.addEventListener('pageshow', event => { if (event.persisted) { popup?.close(); refresh(); } });
 })();

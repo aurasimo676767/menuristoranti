@@ -22,6 +22,10 @@ test('offers route is available and protected with admin headers', async () => {
   for (const path of ['/admin/offerte', '/admin/offerte/', '/admin-offers.html']) {
     const response = await fetch(fixture.origin + path);
     assert.equal(response.status, 200); assert.match(response.headers.get('content-security-policy'), /frame-ancestors 'none'/);
+    // Upload compression decodes a local blob URL before producing a JPEG data URL.
+    const policy = response.headers.get('content-security-policy');
+    assert.match(policy, /img-src 'self' data: blob:(?:;|$)/);
+    assert.match(policy, /script-src 'self';/);
     assert.match(await response.text(), /id="offer-form"/);
   }
   assert.equal((await call('/api/admin?action=offers')).status, 401);

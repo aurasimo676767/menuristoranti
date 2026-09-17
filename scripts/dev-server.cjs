@@ -23,8 +23,8 @@ function createServer() {
         res.json = data => { res.setHeader('Content-Type', 'application/json'); res.end(JSON.stringify(data)); };
         await handlers[url.pathname](req, res); return;
       }
-      const pathname = url.pathname === '/' ? '/index.html' : ['/admin/offerte', '/admin/offerte/'].includes(url.pathname) ? '/admin-offers.html' : ['/admin', '/admin/'].includes(url.pathname) ? '/admin.html' : decodeURIComponent(url.pathname);
-      if (!/^\/(?:index\.html|robots\.txt|sitemap\.xml|admin\.(?:html|js|css)|admin-offers\.(?:html|js)|offers\.(?:js|css)|app\.js|style\.css|menu-data\.js|menu-loader\.js|assets\/[a-zA-Z0-9_./-]+)$/.test(pathname)) { res.writeHead(404); res.end('Not found'); return; }
+      const pathname = url.pathname === '/' ? '/index.html' : ['/offerte', '/offerte/'].includes(url.pathname) ? '/offerte.html' : ['/admin/offerte', '/admin/offerte/'].includes(url.pathname) ? '/admin-offers.html' : ['/admin', '/admin/'].includes(url.pathname) ? '/admin.html' : decodeURIComponent(url.pathname);
+      if (!/^\/(?:index\.html|offerte\.html|robots\.txt|sitemap\.xml|admin\.(?:html|js|css)|admin-offers\.(?:html|js)|offers\.(?:js|css)|app\.js|style\.css|menu-data\.js|menu-loader\.js|assets\/[a-zA-Z0-9_./-]+)$/.test(pathname)) { res.writeHead(404); res.end('Not found'); return; }
       const file = path.resolve(root, `.${pathname}`);
       if (!file.startsWith(root + path.sep)) { res.writeHead(403); res.end(); return; }
       const data = await fs.readFile(file);

@@ -52,7 +52,7 @@ Le foto JPG, PNG e WebP (massimo 15 MB in ingresso) vengono ridimensionate nel b
 
 **Applica alla bozza** aggiorna la pagina, **Salva bozza** conserva il lavoro, **Pubblica offerte** attiva la programmazione. Le offerte scadute restano nell’admin; puoi modificarle, duplicarle (la copia parte disattivata) o eliminarle. Abilitazione, disattivazione e ordine diventano pubblici dopo **Pubblica offerte**.
 
-Sul sito le offerte attive compaiono prima della presentazione del locale. Il popup è facoltativo, mostra la prima offerta attiva con l’opzione abilitata e viene ricordato nella sessione della scheda. La pagina ricontrolla le offerte ogni minuto e quando torna visibile; senza offerte attive la sezione scompare. L’API espone solo offerte pubblicate e attive, mai bozze, programmate o scadute.
+Le offerte attive sono nella pagina `/offerte`, raggiungibile dal pulsante fisso con fiamma e conteggio. La home mostra un invito compatto con il numero delle offerte una volta per sessione della scheda, indipendentemente dalla precedente opzione popup delle singole offerte. Senza offerte attive, invito e pulsante scompaiono; la pagina dedicata mostra un messaggio con rimando al menu. La pagina ricontrolla le offerte ogni minuto e quando torna visibile. Le animazioni rispettano la preferenza di movimento ridotto. L’API espone solo offerte pubblicate e attive, mai bozze, programmate o scadute.
 
 Apri `/admin` direttamente: non ci sono link all'amministrazione nel menu pubblico. La protezione dipende dall'autenticazione server, non dall'indirizzo nascosto.
 
