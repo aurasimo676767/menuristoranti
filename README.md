@@ -38,6 +38,10 @@ Se l'integrazione crea `KV_REST_API_URL` e `KV_REST_API_TOKEN`, sono riconosciut
 
 ## Uso quotidiano
 
+### Statistiche delle visite
+
+La pagina pubblica carica Vercel Web Analytics da `/_vercel/insights/script.js`, con l'integrazione HTML senza pacchetti o build aggiuntivi. Le pagine admin sono escluse. Abilita Web Analytics nel progetto Vercel e distribuisci il codice dopo l'attivazione. Per verificare la raccolta, visita il dominio pubblico senza blocchi dei contenuti e controlla la richiesta Analytics `view` nella scheda Network del browser e i dati nel pannello Vercel. Lo script è servito dalla piattaforma: non è disponibile nel server locale.
+
 ### Offerte programmate
 
 Apri **Offerte** nell’amministrazione oppure `/admin/offerte`. Questa pagina usa lo stesso accesso del menu, ma bozze, revisioni e pubblicazione sono separate: pubblicare le offerte non pubblica le modifiche ai piatti e viceversa.
