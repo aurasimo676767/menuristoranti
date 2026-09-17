@@ -8,6 +8,7 @@
         if (!response.ok) throw new Error('Menu unavailable');
         const result = await response.json();
         if (result.menu) window.MENU_DATA = result.menu;
+        window.dispatchEvent(new CustomEvent('offers-loaded', { detail: result.offers || [] }));
       }
     } catch {
       // Do not show outdated prices or deleted dishes when the live archive is down.

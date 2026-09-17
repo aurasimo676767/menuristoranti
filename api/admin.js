@@ -1,5 +1,6 @@
 const { HttpError, readState, readHistory, mutate } = require('../server/menu-store');
 const { requireSession, checkOrigin, login, logout } = require('../server/admin-auth');
+const { readOffers, mutateOffers } = require('../server/offers-store');
 
 module.exports = async function handler(req, res) {
   res.setHeader('Cache-Control', 'private, no-store');
@@ -9,6 +10,7 @@ module.exports = async function handler(req, res) {
     if (req.method === 'GET') {
       const user = await requireSession(req);
       const action = req.query?.action || new URL(req.url, 'http://local').searchParams.get('action');
+      if (action === 'offers') return res.status(200).json({ state: await readOffers(), csrf: user.nonce });
       if (action === 'history') return res.status(200).json({ history: (await readHistory()).map(({ menu, ...entry }) => entry) });
       return res.status(200).json({ state: await readState(), csrf: user.nonce });
     }
@@ -25,6 +27,7 @@ module.exports = async function handler(req, res) {
     const user = await requireSession(req);
     if (req.headers['x-csrf-token'] !== user.nonce) throw new HttpError(403, 'Sessione non valida. Ricarica la pagina.');
     if (body.action === 'logout') { await logout(req, res); return res.status(200).json({ ok: true }); }
+    if (['offers-save', 'offers-publish'].includes(body.action)) return res.status(200).json({ state: await mutateOffers(body.action, body) });
     if (!['save', 'publish', 'restore'].includes(body.action)) throw new HttpError(400, 'Operazione sconosciuta.');
     return res.status(200).json({ state: await mutate(body.action, body) });
   } catch (error) {

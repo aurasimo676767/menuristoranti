@@ -2,6 +2,7 @@ const { test, before, after, beforeEach } = require('node:test');
 const assert = require('node:assert/strict');
 const { startTestApp } = require('./test-store.cjs');
 const { validateMenu } = require('../server/menu-store');
+const { validateOffers, activeOffers } = require('../server/offers-store');
 let fixture;
 before(async () => { fixture = await startTestApp(); });
 after(async () => { await fixture.close(); });
@@ -16,6 +17,64 @@ async function auth() {
   return { Cookie: result.headers.get('set-cookie').split(';')[0], 'X-CSRF-Token': result.body.csrf };
 }
 const smallMenu = () => ({ categories: [{ id: 'new-category', name: 'Nuovi piatti', dishes: [{ id: 'new-dish', name: 'Speciale', description: 'Ingredienti', price: 8.5 }, { id: 'hidden', name: 'Nascosto', price: 5, available: false }] }] });
+const offer = (extra = {}) => ({ id: 'combo', title: 'Combo della settimana', description: 'Panino e bibita', price: 9.90, start: '2020-01-01', end: '2099-12-31', enabled: true, popup: false, image: '', ...extra });
+test('offers route is available and protected with admin headers', async () => {
+  for (const path of ['/admin/offerte', '/admin/offerte/', '/admin-offers.html']) {
+    const response = await fetch(fixture.origin + path);
+    assert.equal(response.status, 200); assert.match(response.headers.get('content-security-policy'), /frame-ancestors 'none'/);
+    assert.match(await response.text(), /id="offer-form"/);
+  }
+  assert.equal((await call('/api/admin?action=offers')).status, 401);
+  assert.equal((await call('/api/admin', { action: 'offers-publish', offers: [offer()], revision: 0 })).status, 401);
+});
+test('offers drafts are private; publication filters dates and leaves menu drafts untouched', async () => {
+  const headers = await auth();
+  await call('/api/admin', { action: 'save', menu: smallMenu(), revision: 0 }, headers);
+  const menuBefore = (await call('/api/menu')).body.menu;
+  const offers = [offer(), offer({ id: 'future', start: '2099-01-01' }), offer({ id: 'expired', end: '2021-01-01' }), offer({ id: 'disabled', enabled: false })];
+  assert.equal((await call('/api/admin', { action: 'offers-save', offers, revision: 0 }, headers)).status, 200);
+  assert.deepEqual((await call('/api/menu')).body.offers, []);
+  assert.equal((await call('/api/admin', { action: 'offers-publish', offers, revision: 1 }, headers)).status, 200);
+  const published = (await call('/api/menu')).body;
+  assert.deepEqual(published.offers.map(item => item.id), ['combo']); assert.deepEqual(published.menu, menuBefore);
+  assert.equal((await call('/api/admin', undefined, headers)).body.state.revision, 1);
+  assert.equal((await call('/api/admin', { action: 'publish', menu: smallMenu(), revision: 1 }, headers)).status, 200);
+  assert.deepEqual((await call('/api/menu')).body.offers.map(item => item.id), ['combo']);
+  assert.equal((await call('/api/admin', { action: 'offers-publish', offers: [], revision: 2 }, headers)).status, 200);
+  assert.deepEqual((await call('/api/menu')).body.offers, []);
+});
+test('offers use Italian calendar days including DST and inclusive expiry', () => {
+  const offers = [offer({ start: '2026-03-29', end: '2026-03-29' })];
+  assert.equal(activeOffers(offers, new Date('2026-03-28T22:59:59Z')).length, 0);
+  assert.equal(activeOffers(offers, new Date('2026-03-28T23:00:00Z')).length, 1);
+  assert.equal(activeOffers(offers, new Date('2026-03-29T21:59:59Z')).length, 1);
+  assert.equal(activeOffers(offers, new Date('2026-03-29T22:00:00Z')).length, 0);
+});
+test('invalid offers, image payloads and forged requests do not change state', async () => {
+  const headers = await auth();
+  for (const invalid of [null, [null], [offer(), offer()], [offer({ start: '2026-02-30' })], [offer({ start: '2026-10-10', end: '2026-10-09' })], [offer({ price: -1 })], [offer({ price: '9' })], [offer({ price: 1.001 })], [offer({ title: ' ' })], [offer({ image: 'data:image/svg+xml;base64,abc' })], [offer({ image: 'https://example.com/photo.jpg' })], Array.from({ length: 13 }, (_, i) => offer({ id: `offer-${i}` }))]) {
+    assert.equal((await call('/api/admin', { action: 'offers-publish', offers: invalid, revision: 0 }, headers)).status, 400);
+  }
+  assert.throws(() => validateOffers([offer({ price: Infinity })]), /Prezzo/);
+  assert.equal((await call('/api/admin', { action: 'offers-save', offers: [offer()], revision: 0 }, { ...headers, 'X-CSRF-Token': 'wrong' })).status, 403);
+  assert.equal((await call('/api/admin', { action: 'offers-save', offers: [offer()], revision: 0 }, { ...headers, Origin: 'https://example.com' })).status, 403);
+  assert.equal((await call('/api/admin?action=offers', undefined, headers)).body.state.revision, 0);
+});
+test('concurrent offer edits detect conflicts', async () => {
+  const headers = await auth();
+  const results = await Promise.all(['offers-save', 'offers-publish'].map(action => call('/api/admin', { action, offers: [offer()], revision: 0 }, headers)));
+  assert.deepEqual(results.map(result => result.status).sort(), [200, 409]);
+});
+test('offer photo survives saving and publishing; aggregate image size is bounded', async () => {
+  const headers = await auth();
+  const image = 'data:image/jpeg;base64,/9j/AA==';
+  assert.equal((await call('/api/admin', { action: 'offers-publish', offers: [offer({ image })], revision: 0 }, headers)).status, 200);
+  assert.equal((await call('/api/menu')).body.offers[0].image, image);
+  assert.equal((await call('/api/admin?action=offers', undefined, headers)).body.state.draft[0].image, image);
+  assert.throws(() => validateOffers([offer({ image: 'data:image/jpeg;base64,/9j/' + 'A'.repeat(130000) })]), /Foto/);
+  const large = Array.from({ length: 12 }, (_, i) => offer({ id: `photo-${i}`, image: 'data:image/jpeg;base64,/9j/' + 'A'.repeat(120000) }));
+  assert.throws(() => validateOffers(large), /spazio/);
+});
 test('private endpoints deny anonymous reads, writes and history', async () => {
   for (const path of ['/api/admin', '/api/admin?action=history']) assert.equal((await call(path)).status, 401);
   assert.equal((await call('/api/admin', { action: 'publish', menu: smallMenu(), revision: 0 })).status, 401);

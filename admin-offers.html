@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow">
+  <meta name="theme-color" content="#111110"><title>Offerte · Da Andrea BBQ</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/admin.css"><link rel="stylesheet" href="/offers.css">
+  <script src="/offers.js" defer></script><script src="/admin-offers.js" defer></script>
+</head>
+<body>
+  <header class="topbar"><a href="/admin" class="brand">ANDREA<span>BBQ</span><small>AREA RISERVATA</small></a><a href="/" target="_blank" rel="noopener">Apri il sito ↗</a></header>
+  <main>
+    <section id="login-panel" class="login-panel">
+      <span class="eyebrow">UN MOTIVO IN PIÙ PER TORNARE</span><h1>Le tue offerte<span>.</span></h1><p>Accedi per creare e programmare le promozioni.</p>
+      <form id="login-form"><label for="password">Password</label><input id="password" type="password" autocomplete="current-password" required maxlength="256"><button class="primary" type="submit">Accedi</button></form>
+    </section>
+    <p id="status" role="status" aria-live="polite"></p>
+    <section id="editor" hidden>
+      <nav class="bottom-tools" aria-label="Amministrazione"><a href="/admin">← Menu</a><a href="/admin/offerte" aria-current="page">Offerte</a></nav>
+      <div class="editor-heading"><div><span class="eyebrow">BUONE OCCASIONI. GRANDE FAME.</span><h1>Le tue offerte<span>.</span></h1><p id="publication-info"></p></div><button id="logout" type="button">Esci</button></div>
+      <div class="savebar"><span id="save-status"></span><div><button id="preview" type="button">Anteprima</button><button id="save" type="button">Salva bozza</button><button id="publish" type="button" class="primary">Pubblica offerte</button></div></div>
+      <p class="hint">Le offerte si pubblicano separatamente dal menu. Dopo la pubblicazione, iniziano e terminano automaticamente nelle date scelte.</p>
+      <div class="section-heading"><h2>Le promozioni nella bozza</h2><button id="add-offer" type="button" class="primary">+ Nuova offerta</button></div>
+      <div id="offers-list" class="admin-offers-list"></div>
+      <div class="bottom-tools"><button id="export" type="button">Scarica copia della bozza</button><button id="reload" type="button">Ricarica dal server</button></div>
+    </section>
+  </main>
+  <dialog id="offer-modal" aria-labelledby="offer-modal-title">
+    <form id="offer-form">
+      <div class="section-heading"><h2 id="offer-modal-title">Nuova offerta</h2><button type="button" data-close aria-label="Chiudi">×</button></div>
+      <label for="offer-title">Titolo</label><input id="offer-title" required maxlength="100" placeholder="Es. Combo della settimana">
+      <label for="offer-description">Descrizione e condizioni <span class="optional">(facoltative)</span></label><textarea id="offer-description" rows="3" maxlength="1000" placeholder="Cosa comprende? Ci sono giorni o condizioni particolari?"></textarea>
+      <label for="offer-price">Prezzo promozionale (€) <span class="optional">(facoltativo)</span></label><input id="offer-price" type="number" min="0" max="10000" step="0.01" inputmode="decimal">
+      <div class="two-cols"><div><label for="offer-start">Data di inizio</label><input id="offer-start" type="date" min="2000-01-01" max="2099-12-31" required></div><div><label for="offer-end">Ultimo giorno di validità</label><input id="offer-end" type="date" min="2000-01-01" max="2099-12-31" required></div></div>
+      <div class="bottom-tools"><button type="button" data-duration="week">7 giorni</button><button type="button" data-duration="month">1 mese</button></div>
+      <p class="hint">Dalle 00:00 del giorno iniziale alle 23:59 del giorno finale, ora italiana. Puoi scegliere liberamente entrambe le date.</p>
+      <label for="offer-image">Foto <span class="optional">(facoltativa)</span></label><input id="offer-image" type="file" accept="image/jpeg,image/png,image/webp"><p class="hint">JPG, PNG o WebP, fino a 15 MB. La foto viene alleggerita automaticamente.</p>
+      <img id="image-preview" class="offer-image-preview" alt="Anteprima della foto scelta" hidden><button id="remove-image" type="button" hidden>Rimuovi foto</button>
+      <p id="form-status" role="status" aria-live="polite"></p>
+      <label class="check"><input id="offer-enabled" type="checkbox" checked> Offerta abilitata</label>
+      <label class="check"><input id="offer-popup" type="checkbox"> Mostra anche un popup all’apertura del sito</label><p class="hint">Una sola volta per visita. Se più offerte richiedono il popup, viene mostrata la prima in elenco.</p>
+      <div class="modal-actions"><button id="delete-offer" type="button" class="danger">Elimina offerta</button><button type="submit" class="primary">Applica alla bozza</button></div>
+    </form>
+  </dialog>
+  <dialog id="preview-modal" aria-labelledby="preview-title"><div class="section-heading"><div><span class="eyebrow">NON ANCORA PUBBLICATO</span><h2 id="preview-title">Anteprima delle offerte</h2></div><button type="button" data-close aria-label="Chiudi">×</button></div><p class="hint">Qui vedi anche le offerte programmate, scadute e disattivate. Sul sito appariranno soltanto quelle abilitate e nel periodo di validità.</p><div id="preview-content" class="offers-grid"></div></dialog>
+</body>
+</html>

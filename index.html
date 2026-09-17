@@ -72,6 +72,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="offers.css">
+  <script src="offers.js" defer></script>
   <script src="menu-data.js" defer></script>
   <script src="menu-loader.js" defer></script>
 </head>
@@ -97,6 +99,10 @@
   </header>
 
   <main>
+    <section id="offers" class="offers-section" aria-labelledby="offers-title" hidden>
+      <div class="offers-heading"><div><span class="eyebrow">LE OCCASIONI DA PRENDERE AL VOLO</span><h2 id="offers-title">PIÙ GUSTO. <span>PER MENO.</span></h2></div><p>Le offerte del momento, appena sfornate da Andrea.</p></div>
+      <div id="offers-grid" class="offers-grid"></div>
+    </section>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy"><span class="eyebrow"><span class="live-dot"></span> IRON STYLE AND MEAT</span><h1 id="hero-title">FAME VERA.<br><span>GUSTO</span><br>ESAGERATO<span class="title-dot">.</span></h1><p>Benvenuto alla Panineria da Andrea, a Vittoria.<br>Panini, pizze e Ufficiali in Via Adua 298.</p><a class="button button-orange" href="#menu">FATTI UN GIRO NEL MENU <svg class="icon"><use href="#icon-arrow"/></svg></a><div class="hero-caption">PANINI <span>✳</span> PIZZE <span>✳</span> BBQ</div></div>
       <div class="hero-visual"><img src="assets/andrea-bbq-banner.png" width="1804" height="872" alt="Panineria da Andrea BBQ — Iron Style and Meat, King of BBQ" fetchpriority="high"><div class="hero-sticker"><span>QUI LA FAME</span><strong>FA SUL SERIO.</strong><svg class="icon"><use href="#icon-flame"/></svg></div><span class="visual-coordinate">DA ANDREA / KING OF BBQ</span></div>
@@ -130,7 +136,8 @@
     <section id="informazioni" class="info-section"><div class="info-heading"><span class="eyebrow">CI TROVI QUI</span><h2>DA ANDREA.<br><span>COME A CASA,</span><br>MA CON PIÙ FAME.</h2><a class="button button-outline" href="tel:+393667460906">FACCI UNO SQUILLO <svg class="icon"><use href="#icon-phone"/></svg></a></div><div class="info-cards"><article><span class="info-number">01</span><div><h3>PARLIAMONE.</h3><a href="tel:+393667460906">366 746 0906 ↗</a><a href="tel:+393386937565">338 693 7565 ↗</a></div></article><article><span class="info-number">02</span><div><h3>PASSI DA NOI?</h3><p>Via Adua 298<br>Vittoria (RG)</p><a class="maps-link" href="https://www.google.com/maps/place/Panineria+da+Andrea/@36.9489503,14.5218384,17z/data=!4m15!1m8!3m7!1s0x1311a4fc277b97e7:0xb5b09aba50d893b!2sVia+Adua,+298,+97019+Vittoria+RG!3b1!8m2!3d36.9489503!4d14.5218384!16s%2Fg%2F11csk3b_kf!3m5!1s0x1311a4fe7cee8cc1:0x4a5eee47940d04!8m2!3d36.9489547!4d14.5218388!16s%2Fg%2F11c1vblj7g?entry=ttu&amp;g_ep=EgoyMDI2MDkwOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">APRI SU MAPS <span aria-hidden="true">&#8599;</span></a></div></article><article><span class="info-number">03</span><div><h3>TI ASPETTIAMO.</h3><dl class="opening-hours"><div><dt>Da domenica a venerdì</dt><dd>17:00 &ndash; 03:00</dd></div><div><dt>Sabato</dt><dd>17:00 &ndash; 06:00</dd></div></dl><p class="hours-note">La chiusura è nella notte del giorno successivo.</p></div></article><article><span class="info-number">04</span><div><h3>AL TAVOLO.</h3><dl><div><dt>Coperto</dt><dd>0,50 €</dd></div><div><dt>Posate</dt><dd>0,50 €</dd></div></dl></div></article></div></section>
   </main>
 
-  <footer><a class="footer-brand" href="#">ANDREA<span>BBQ</span></a><p>IRON STYLE AND MEAT. KING OF BBQ.</p><a href="#">TORNA SU ↑</a></footer>
+  <footer><a class="footer-brand" href="#">ANDREA<span>BBQ</span></a><p>IRON STYLE AND MEAT. KING OF BBQ.</p><a id="offers-link" href="#offers" hidden>OFFERTE</a><a href="#">TORNA SU ↑</a></footer>
+  <dialog id="offer-popup-dialog" aria-labelledby="offer-popup-title"><div class="offer-popup-header"><h2 id="offer-popup-title">Un’occasione da mordere.</h2><button id="close-offer-popup" class="close-button" type="button" aria-label="Chiudi offerta">×</button></div><div id="offer-popup-content"></div><button id="view-offers" class="button button-orange" type="button">SCOPRI LE OFFERTE</button></dialog>
   <nav class="mobile-nav" aria-label="Navigazione rapida"><a href="#menu"><svg class="icon"><use href="#icon-burger"/></svg>MENU</a><button type="button" data-open-categories><svg class="icon"><use href="#icon-grid"/></svg>CATEGORIE</button><a href="tel:+393667460906"><svg class="icon"><use href="#icon-phone"/></svg>CHIAMA</a></nav>
 
   <dialog id="category-dialog" aria-labelledby="category-dialog-title"><div class="drawer-header"><div><span class="eyebrow">TROVA IL TUO PROSSIMO MORSO</span><h2 id="category-dialog-title">SCEGLI LA TUA <span>FAME.</span></h2></div><button type="button" class="close-categories close-button" aria-label="Chiudi categorie">×</button></div><div id="drawer-categories"></div></dialog>

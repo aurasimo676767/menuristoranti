@@ -38,6 +38,18 @@ Se l'integrazione crea `KV_REST_API_URL` e `KV_REST_API_TOKEN`, sono riconosciut
 
 ## Uso quotidiano
 
+### Offerte programmate
+
+Apri **Offerte** nell’amministrazione oppure `/admin/offerte`. Questa pagina usa lo stesso accesso del menu, ma bozze, revisioni e pubblicazione sono separate: pubblicare le offerte non pubblica le modifiche ai piatti e viceversa.
+
+Puoi creare fino a 12 offerte con titolo, descrizione/condizioni, prezzo facoltativo, foto facoltativa e date di inizio e fine. Le date seguono il fuso `Europe/Rome`: l’offerta parte alle 00:00 del giorno iniziale e rimane valida per tutto il giorno finale, anche al cambio dell’ora legale. I pulsanti **7 giorni** e **1 mese** compilano la scadenza; puoi modificarla liberamente.
+
+Le foto JPG, PNG e WebP (massimo 15 MB in ingresso) vengono ridimensionate nel browser fino a 960 pixel e compresse in JPEG prima del salvataggio. Sono conservate insieme alle offerte nel database esistente, senza nuovi servizi o credenziali. Ogni foto occupa al massimo circa 98 KB; la raccolta delle offerte è limitata a 1,2 MB serializzati. Le offerte non hanno uno storico versioni: usa **Scarica copia della bozza** per conservarne una copia.
+
+**Applica alla bozza** aggiorna la pagina, **Salva bozza** conserva il lavoro, **Pubblica offerte** attiva la programmazione. Le offerte scadute restano nell’admin; puoi modificarle, duplicarle (la copia parte disattivata) o eliminarle. Abilitazione, disattivazione e ordine diventano pubblici dopo **Pubblica offerte**.
+
+Sul sito le offerte attive compaiono prima della presentazione del locale. Il popup è facoltativo, mostra la prima offerta attiva con l’opzione abilitata e viene ricordato nella sessione della scheda. La pagina ricontrolla le offerte ogni minuto e quando torna visibile; senza offerte attive la sezione scompare. L’API espone solo offerte pubblicate e attive, mai bozze, programmate o scadute.
+
 Apri `/admin` direttamente: non ci sono link all'amministrazione nel menu pubblico. La protezione dipende dall'autenticazione server, non dall'indirizzo nascosto.
 
 **Applica alla bozza** aggiorna il lavoro nella pagina. **Salva bozza** lo conserva sul server. **Pubblica modifiche** salva e rende visibile il menu ai clienti che aprono o ricaricano la pagina. Chiudere una scheda con modifiche non salvate mostra un avviso.
@@ -59,6 +71,7 @@ npm test
 npm run check:menu
 node scripts/check-browser.cjs [percorso-modulo-playwright] [eseguibile-chromium]
 node scripts/check-admin-browser.cjs [percorso-modulo-playwright] [eseguibile-chromium]
+node scripts/check-offers-browser.cjs [percorso-modulo-playwright] [eseguibile-chromium]
 ```
 
 I test admin avviano le API locali e un simulatore HTTP del contratto Redis; non usano account o dati di produzione. Coprono autenticazione, CSRF, revoca, limiti di login, validazione, conflitti, bozze, pubblicazione, storico e indisponibilità del database. I test browser coprono il flusso completo, sessione scaduta e layout a più larghezze. Il collegamento a Upstash e il deploy Vercel vanno verificati dopo la configurazione reale.

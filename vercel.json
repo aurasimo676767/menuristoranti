@@ -1,6 +1,8 @@
 {
   "framework": null,
   "rewrites": [
+    { "source": "/admin/offerte", "destination": "/admin-offers.html" },
+    { "source": "/admin/offerte/", "destination": "/admin-offers.html" },
     { "source": "/admin", "destination": "/admin.html" }
   ],
   "headers": [
