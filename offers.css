@@ -13,6 +13,15 @@
 .offer-description{font-size:14px;line-height:1.7;color:#d1c7b8;white-space:pre-wrap;margin:0}
 .offer-price{font-size:30px;line-height:1.2;color:#ff9a53}
 .offer-expiry{font:500 12px/1.5 system-ui,sans-serif;color:#c2b09a;margin:8px 0 0;padding-top:12px;border-top:1px solid #54402d;width:100%}
+.offer-countdown{width:100%;margin-top:8px;padding:18px 14px;background:#ff8a2414;border:1px solid #ff8a2470;border-radius:10px}
+.offer-countdown-label{display:block;color:#ffad68;font:800 11px/1.5 system-ui,sans-serif;letter-spacing:1px;margin-bottom:12px}
+.offer-countdown-digits{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.offer-countdown-unit{text-align:center;min-width:0;background:#17120e;border:1px solid #72421f;border-radius:7px;padding:10px 2px}
+.offer-countdown-value{display:block;color:#ff9a45;font:900 clamp(26px,5vw,42px)/1.1 system-ui,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:-1px;text-shadow:0 0 20px #ff8a2433}
+.offer-countdown-unit>span{display:block;color:#d0baa4;font:700 9px/1.5 system-ui,sans-serif;letter-spacing:1px;margin-top:5px}
+.offer-countdown.is-urgent{border-color:#ff9747;animation:offer-heartbeat 2.4s ease-in-out infinite}
+@keyframes offer-heartbeat{0%,100%{box-shadow:0 0 0 0 #ff8a2400}50%{box-shadow:0 0 20px 2px #ff8a2438}}
+@media(prefers-reduced-motion:reduce){.offer-countdown.is-urgent{animation:none}}
 #offers-link{color:var(--orange)}
 #offer-popup-dialog{padding:18px;max-width:520px}
 .offer-popup-header{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:15px}

@@ -3,6 +3,37 @@
   const day = () => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   const date = value => new Intl.DateTimeFormat('it-IT', { dateStyle: 'long', timeZone: 'UTC' }).format(new Date(`${value}T12:00:00Z`));
   const status = offer => !offer.enabled ? 'Disattivata' : offer.start > day() ? 'Programmata' : offer.end < day() ? 'Scaduta' : 'In corso';
+  // Find midnight after the final day in Rome, independently of the visitor's timezone.
+  function deadline(end) {
+    const target = Date.parse(`${end}T00:00:00Z`) + 86400000;
+    let instant = target;
+    const formatter = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' });
+    for (let i = 0; i < 3; i++) {
+      const parts = Object.fromEntries(formatter.formatToParts(new Date(instant)).map(part => [part.type, part.value]));
+      const local = Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day), Number(parts.hour), Number(parts.minute), Number(parts.second));
+      instant += target - local;
+    }
+    return instant;
+  }
+  function updateTimer(timer, now = Date.now()) {
+    const seconds = Math.max(0, Math.ceil((Number(timer.dataset.deadline) - now) / 1000));
+    const values = [Math.floor(seconds / 86400), Math.floor(seconds / 3600) % 24, Math.floor(seconds / 60) % 60, seconds % 60];
+    timer.querySelector('.offer-countdown-label').textContent = !seconds ? 'OFFERTA TERMINATA' : seconds < 3600 ? 'ULTIMI MINUTI. APPROFITTANE!' : seconds < 86400 ? 'ULTIME ORE. NON PERDERTELA!' : 'IL TEMPO STRINGE. APPROFITTANE!';
+    timer.classList.toggle('is-urgent', seconds > 0 && seconds < 3600);
+    timer.querySelectorAll('.offer-countdown-value').forEach((part, index) => { part.textContent = String(values[index]).padStart(2, '0'); });
+  }
+  function countdown(offer) {
+    const timer = node('div', undefined, 'offer-countdown');
+    timer.dataset.deadline = deadline(offer.end);
+    timer.setAttribute('role', 'timer'); timer.setAttribute('aria-live', 'off');
+    timer.append(node('span', undefined, 'offer-countdown-label'));
+    const digits = node('div', undefined, 'offer-countdown-digits');
+    for (const label of ['GIORNI', 'ORE', 'MIN', 'SEC']) {
+      const unit = node('div', undefined, 'offer-countdown-unit');
+      unit.append(node('strong', '00', 'offer-countdown-value'), node('span', label)); digits.append(unit);
+    }
+    timer.append(digits); updateTimer(timer); return timer;
+  }
   function card(offer) {
     const article = node('article', undefined, 'offer-card');
     if (offer.image) { const image = node('img'); image.src = offer.image; image.alt = offer.title; image.loading = 'lazy'; image.className = 'offer-photo'; article.append(image); }
@@ -11,9 +42,14 @@
     if (offer.description) content.append(node('p', offer.description, 'offer-description'));
     if (offer.price !== null && offer.price !== undefined) content.append(node('strong', new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(offer.price), 'offer-price'));
     content.append(node('p', `${offer.start > day() ? `Dal ${date(offer.start)} · ` : ''}Fino al ${date(offer.end)}`, 'offer-expiry'));
+    if (status(offer) === 'In corso') content.append(countdown(offer));
     article.append(content); return article;
   }
-  window.Offers = { node, day, date, status, card };
+  window.Offers = { node, day, date, status, card, deadline };
+  setInterval(() => {
+    if (document.hidden) return;
+    document.querySelectorAll('.offer-countdown').forEach(timer => updateTimer(timer));
+  }, 1000);
   const section = document.querySelector('#offers');
   if (!section) return;
   let latest = [], shown = false, signature = '';
@@ -52,5 +88,7 @@
     } catch { render([]); }
   }
   setInterval(refresh, 60000);
+  // Remove expired promotions and close their popup at the actual deadline.
+  setInterval(() => { if (!document.hidden && latest.some(offer => offer.end < day())) render(latest.filter(offer => offer.end >= day())); }, 1000);
   document.addEventListener('visibilitychange', () => { if (!document.hidden) refresh(); });
 })();
